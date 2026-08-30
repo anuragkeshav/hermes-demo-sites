@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Trading Company | Wholesale Leaders in Bhagalpur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#ea580c', // orange-600
+                            600: '#c2410c', // orange-700
+                            900: '#111827', // gray-900
+                            950: '#030712', // gray-950
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Oswald', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.7)), url('https://loremflickr.com/1600/900/warehouse,industrial');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-brand-950 text-white sticky top-0 z-50 border-b-4 border-brand-500">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-brand-500 w-10 h-10 flex items-center justify-center font-heading text-2xl font-bold rounded-sm">AT</div>
+                <div>
+                    <h1 class="text-2xl font-heading tracking-wider m-0 leading-none">Ashish Trading</h1>
+                    <p class="text-xs text-gray-400 tracking-widest uppercase">Company</p>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-brand-500 font-medium hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">About</a>
+                <a href="products.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">Products</a>
+                <a href="contact.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">Contact</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-3">
+                <div class="text-right">
+                    <p class="text-xs text-gray-400 uppercase">Call for Bulk Orders</p>
+                    <p class="font-heading text-lg text-brand-500">+91 62042 68282</p>
+                </div>
+                <a href="contact.html" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 font-heading tracking-wide transition-colors">GET QUOTE</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-gray-300 hover:text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white pt-32 pb-40 px-6 relative flex-grow">
+        <div class="container mx-auto max-w-5xl relative z-10">
+            <div class="inline-block bg-brand-500 text-white px-4 py-1 text-sm font-bold tracking-widest mb-6">EST. 2010 | BHAGALPUR, BIHAR</div>
+            <h2 class="text-5xl md:text-7xl font-heading font-bold leading-tight mb-6 uppercase text-gray-100">
+                The Backbone of <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-yellow-500">Retail Supply</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl border-l-4 border-brand-500 pl-4 font-light">
+                Premier wholesale distributors delivering industrial-grade reliability, massive inventory, and unbeatable bulk pricing across Eastern India.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="products.html" class="bg-brand-500 hover:bg-brand-600 text-white text-center px-8 py-4 font-heading text-xl tracking-wider transition-all transform hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(234,88,12,0.3)]">EXPLORE CATALOG</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white hover:border-brand-500 hover:text-brand-500 text-white text-center px-8 py-4 font-heading text-xl tracking-wider transition-all">BECOME A PARTNER</a>
+            </div>
+        </div>
+        
+        <!-- Decorative industrial element -->
+        <div class="absolute bottom-0 right-0 w-64 h-64 border-t-8 border-l-8 border-brand-500 opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-brand-500 text-brand-950 py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-brand-600">
+                <div>
+                    <p class="text-4xl md:text-5xl font-heading font-bold mb-2">10K+</p>
+                    <p class="font-bold uppercase tracking-wider text-sm">Products in Stock</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-heading font-bold mb-2">500+</p>
+                    <p class="font-bold uppercase tracking-wider text-sm">Active Retailers</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-heading font-bold mb-2">24h</p>
+                    <p class="font-bold uppercase tracking-wider text-sm">Dispatch Time</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-heading font-bold mb-2">15+</p>
+                    <p class="font-bold uppercase tracking-wider text-sm">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-24 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h3 class="text-brand-500 font-bold tracking-widest text-sm mb-2">OUR INVENTORY</h3>
+                    <h2 class="text-4xl font-heading font-bold text-brand-900">CORE DEPARTMENTS</h2>
+                </div>
+                <a href="products.html" class="hidden md:inline-flex items-center gap-2 font-bold text-brand-950 hover:text-brand-500 transition-colors uppercase text-sm tracking-wider">
+                    View All Products
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <a href="products.html" class="group relative overflow-hidden bg-brand-900 h-80 block">
+                    <img src="https://loremflickr.com/600/800/hardware,tools" alt="Hardware" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 transform">
+                    <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
+                        <div class="bg-brand-500 w-12 h-1 mb-4 transform origin-left transition-transform duration-300 group-hover:scale-x-150"></div>
+                        <h4 class="text-2xl font-heading text-white mb-2">Industrial Hardware</h4>
+                        <p class="text-gray-400 text-sm">Heavy-duty tools, fasteners, and machinery components.</p>
+                    </div>
+                </a>
+                
+                <!-- Category 2 -->
+                <a href="products.html" class="group relative overflow-hidden bg-brand-900 h-80 block md:-mt-8">
+                    <img src="https://loremflickr.com/600/800/construction,materials" alt="Construction" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 transform">
+                    <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
+                        <div class="bg-brand-500 w-12 h-1 mb-4 transform origin-left transition-transform duration-300 group-hover:scale-x-150"></div>
+                        <h4 class="text-2xl font-heading text-white mb-2">Building Materials</h4>
+                        <p class="text-gray-400 text-sm">Cement, steel fixtures, and core construction supplies.</p>
+                    </div>
+                </a>
+                
+                <!-- Category 3 -->
+                <a href="products.html" class="group relative overflow-hidden bg-brand-900 h-80 block">
+                    <img src="https://loremflickr.com/600/800/electronics,supplies" alt="Electrical" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 transform">
+                    <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
+                        <div class="bg-brand-500 w-12 h-1 mb-4 transform origin-left transition-transform duration-300 group-hover:scale-x-150"></div>
+                        <h4 class="text-2xl font-heading text-white mb-2">Electrical Fittings</h4>
+                        <p class="text-gray-400 text-sm">Cabling, switches, and commercial electrical components.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-950 text-gray-400 py-16 border-t-8 border-brand-500 mt-auto">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-6 text-white">
+                    <div class="bg-brand-500 w-8 h-8 flex items-center justify-center font-heading text-xl font-bold rounded-sm">AT</div>
+                    <h2 class="text-xl font-heading tracking-wider m-0 leading-none">Ashish Trading Company</h2>
+                </div>
+                <p class="mb-6 max-w-md">The trusted wholesale partner for businesses across Bhagalpur and neighboring districts. We supply the materials that build our region's infrastructure.</p>
+                <div class="flex gap-4">
+                    <!-- Social placeholders -->
+                    <div class="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white cursor-pointer transition-colors"><span class="font-heading">FB</span></div>
+                    <div class="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white cursor-pointer transition-colors"><span class="font-heading">IN</span></div>
+                    <div class="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white cursor-pointer transition-colors"><span class="font-heading">WA</span></div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-heading text-lg mb-6 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-brand-500 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-brand-500 transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-brand-500 transition-colors">Our Products</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-500 transition-colors">Contact & Location</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-heading text-lg mb-6 uppercase tracking-wider">Headquarters</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Wholesale Market Area, <br>Bhagalpur, Bihar 812001</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-6 h-6 text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="text-white font-heading text-xl">+91 62042 68282</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-sm flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 Ashish Trading Company. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Built for Industrial Scale.</p>
+        </div>
+    </footer>
+</body>
+</html>

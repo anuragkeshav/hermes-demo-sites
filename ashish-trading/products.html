@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wholesale Catalog | Ashish Trading Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#ea580c',
+                            600: '#c2410c',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Oswald', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .page-header {
+            background-image: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.8)), url('https://loremflickr.com/1600/500/logistics,shipping');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased flex flex-col min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-brand-950 text-white sticky top-0 z-50 border-b-4 border-brand-500">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-brand-500 w-10 h-10 flex items-center justify-center font-heading text-2xl font-bold rounded-sm">AT</div>
+                <div>
+                    <h1 class="text-2xl font-heading tracking-wider m-0 leading-none">Ashish Trading</h1>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors">Home</a>
+                <a href="about.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors">About</a>
+                <a href="products.html" class="text-brand-500 font-medium hover:text-white transition-colors">Products</a>
+                <a href="contact.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors">Contact</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="contact.html" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 font-heading tracking-wide transition-colors">GET QUOTE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header py-24 px-6 text-white border-b-8 border-brand-500">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-heading font-bold mb-4">Wholesale Catalog</h1>
+            <p class="text-xl text-gray-300 max-w-2xl font-light">Browse our heavy-duty product divisions. Only bulk orders processed.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-20 px-6">
+        <div class="container mx-auto">
+            
+            <!-- Filter Bar (Visual only) -->
+            <div class="bg-white p-4 shadow-sm border border-gray-200 mb-12 flex flex-wrap gap-4 items-center justify-between">
+                <div class="flex gap-2 flex-wrap">
+                    <button class="bg-brand-900 text-white px-4 py-2 font-heading text-sm hover:bg-brand-500 transition-colors">ALL DEPARTMENTS</button>
+                    <button class="bg-gray-100 text-brand-900 border border-gray-300 px-4 py-2 font-heading text-sm hover:border-brand-500 transition-colors">HARDWARE</button>
+                    <button class="bg-gray-100 text-brand-900 border border-gray-300 px-4 py-2 font-heading text-sm hover:border-brand-500 transition-colors">ELECTRICAL</button>
+                    <button class="bg-gray-100 text-brand-900 border border-gray-300 px-4 py-2 font-heading text-sm hover:border-brand-500 transition-colors">CONSTRUCTION</button>
+                </div>
+                <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">
+                    Showing 6 Divisions
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Item 1 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/tools,hammer" alt="Tools" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-4 right-4 bg-brand-500 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider shadow-lg">In Stock</div>
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: HARDWARE</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Hand Tools & Power Tools</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">Drills, grinders, wrenches, and heavy-duty hand tools for professional contractors.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/fasteners,screws" alt="Fasteners" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: HARDWARE</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Industrial Fasteners</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">High-tensile nuts, bolts, screws, and anchoring systems in bulk tonnages.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/cables,wires" alt="Cables" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: ELECTRICAL</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Wiring & Cabling</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">Industrial-grade copper wiring, armored cables, and conduits.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/switches,panel" alt="Panels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: ELECTRICAL</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Switchgears & Panels</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">MCBs, distribution boards, and heavy-duty industrial switchgears.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/cement,bags" alt="Cement" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-4 right-4 bg-brand-500 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider shadow-lg">High Demand</div>
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: CONSTRUCTION</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Cement & Aggregates</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">Premium grade cement bags available by the truckload.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://loremflickr.com/600/400/plumbing,pipes" alt="Pipes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-brand-500 transition-colors">
+                        <p class="text-xs text-brand-500 font-bold tracking-widest mb-1">DEPT: CONSTRUCTION</p>
+                        <h3 class="text-2xl font-heading text-brand-950 mb-3">Pipes & Plumbing</h3>
+                        <p class="text-gray-600 text-sm mb-6 h-12 overflow-hidden">PVC, UPVC, and CPVC piping systems for commercial applications.</p>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-brand-900 font-bold hover:text-brand-500 uppercase text-sm tracking-wider">
+                            Request Bulk Pricing
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-20 bg-brand-900 text-white p-12 text-center border-l-8 border-brand-500">
+                <h2 class="text-3xl font-heading font-bold mb-4">NEED A CUSTOM ORDER?</h2>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">We source specialized industrial equipment upon request. Send us your requirements list for an immediate quotation.</p>
+                <a href="contact.html" class="inline-block bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 font-heading text-xl tracking-wider transition-colors shadow-lg">SUBMIT REQUIREMENTS</a>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-950 text-gray-400 py-16 border-t-8 border-brand-500 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-heading tracking-wider text-white mb-4">Ashish Trading Company</h2>
+            <p class="text-brand-500 font-heading text-2xl mb-8">+91 62042 68282</p>
+            <p class="text-sm">&copy; 2026 Ashish Trading Company. Built for Industrial Scale.</p>
+        </div>
+    </footer>
+</body>
+</html>

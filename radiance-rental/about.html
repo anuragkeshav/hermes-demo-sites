@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Radiance Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { teal: { 600: '#0d9488', 900: '#134e4a' }, orange: { 500: '#f97316', 600: '#ea580c' } },
+            fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+          }
+        }
+      }
+    </script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap');</style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center text-white font-display font-bold text-xl">R</div>
+                    <a href="index.html" class="font-display font-bold text-2xl text-teal-900 tracking-tight">RADIANCE</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">Home</a>
+                    <a href="about.html" class="text-teal-600 font-semibold border-b-2 border-teal-600 pb-1">About</a>
+                    <a href="properties.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">Properties</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">Contact</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5">Book a Tour</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 bg-teal-900 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h1 class="text-5xl font-display font-bold mb-6">Our Story</h1>
+            <p class="text-xl text-teal-100 font-light">Redefining commercial workspaces in Bhagalpur through premium infrastructure and exceptional service.</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2">
+                    <img src="https://loremflickr.com/800/800/office,building" alt="Radiance Office Building" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-sm text-orange-500 font-bold uppercase tracking-widest mb-2">Who We Are</h2>
+                    <h3 class="text-4xl font-display font-bold text-teal-900 mb-6">Elevating Bhagalpur's Business Landscape</h3>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Founded with a vision to modernize commercial real estate in Bhagalpur, Radiance Rental Property specializes in high-end office spaces tailored to modern businesses. We believe that a workspace is more than just a location—it is the foundation of your company's culture and success.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Our portfolio includes a curated selection of properties ranging from executive suites to sprawling tech hubs. We handle the infrastructure so you can focus entirely on growing your enterprise.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8">
+                        <div>
+                            <div class="text-4xl font-display font-bold text-teal-600 mb-2">50+</div>
+                            <div class="text-gray-500 font-semibold">Active Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-display font-bold text-teal-600 mb-2">10k+</div>
+                            <div class="text-gray-500 font-semibold">Sq Ft Managed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-teal-600 rounded flex items-center justify-center text-white font-display font-bold text-lg">R</div>
+                    <span class="font-display font-bold text-xl text-white tracking-tight">RADIANCE RENTALS</span>
+                </div>
+                <p class="text-gray-400 max-w-sm mb-6">Premium office spaces and commercial real estate solutions in Bhagalpur. Elevate your workspace today.</p>
+                <div class="text-gray-300">
+                    <p class="mb-2 flex items-center gap-2"><span>📞</span> +91 97989 12946</p>
+                    <p class="flex items-center gap-2"><span>📧</span> contact@radiancerentals.in</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-teal-500 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                    <li><a href="properties.html" class="hover:text-teal-500 transition-colors">Properties</a></li>
+                    <li><a href="contact.html" class="hover:text-teal-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Business Hours</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Monday - Friday: 9am - 6pm</li>
+                    <li>Saturday: 10am - 4pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

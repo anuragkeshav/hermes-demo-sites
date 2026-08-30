@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Silicon Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#0ea5e9', secondary: '#0f172a', accent: '#38bdf8', }, fontFamily: { sans: ['Inter', 'sans-serif'], } } } }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; }
+        .glass-panel { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        input, textarea { background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); color: white; border-radius: 0.5rem; padding: 0.75rem 1rem; width: 100%; outline: none; transition: border-color 0.3s; }
+        input:focus, textarea:focus { border-color: #0ea5e9; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/30">
+                        <i class="fas fa-microchip text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-white">Silicon <span class="text-primary">Enterprises</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-slate-300 hover:text-white font-medium px-3 py-2 transition-colors">Home</a>
+                        <a href="about.html" class="text-slate-300 hover:text-white font-medium px-3 py-2 transition-colors">About Us</a>
+                        <a href="services.html" class="text-slate-300 hover:text-white font-medium px-3 py-2 transition-colors">Services</a>
+                        <a href="contact.html" class="text-primary font-medium px-3 py-2 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 text-center max-w-3xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in <span class="text-primary">Touch</span></h1>
+        <p class="text-slate-400 text-lg">Have a project in mind or need tech support? We are here to help.</p>
+    </div>
+
+    <main class="flex-grow pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="glass-panel p-8 md:p-10 rounded-3xl border border-slate-700">
+                    <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">First Name</label>
+                                <input type="text" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">Last Name</label>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-primary hover:bg-accent text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-lg shadow-primary/20">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8 lg:py-8">
+                    <div class="flex items-start gap-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
+                            <i class="fas fa-phone-alt text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Phone</h4>
+                            <p class="text-slate-400 mb-1">Mon-Sat from 10am to 8pm.</p>
+                            <p class="text-xl font-medium text-white">+91 82717 93239</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
+                            <i class="fas fa-envelope text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Email</h4>
+                            <p class="text-slate-400 mb-1">Our friendly team is here to help.</p>
+                            <p class="text-lg font-medium text-white">hello@siliconenterprises.in</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
+                            <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Office</h4>
+                            <p class="text-slate-400 mb-1">Come say hello at our store.</p>
+                            <p class="text-lg font-medium text-white">Tech Hub, Main Road<br>Bhagalpur, Bihar 812002</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

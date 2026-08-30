@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ashish Trading Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#ea580c',
+                            600: '#c2410c',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Oswald', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .page-header {
+            background-image: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.8)), url('https://loremflickr.com/1600/500/warehouse,forklift');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-brand-950 text-white sticky top-0 z-50 border-b-4 border-brand-500">
+        <!-- Exact same header as index -->
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-brand-500 w-10 h-10 flex items-center justify-center font-heading text-2xl font-bold rounded-sm">AT</div>
+                <div>
+                    <h1 class="text-2xl font-heading tracking-wider m-0 leading-none">Ashish Trading</h1>
+                    <p class="text-xs text-gray-400 tracking-widest uppercase">Company</p>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-brand-500 font-medium hover:text-white transition-colors duration-300">About</a>
+                <a href="products.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">Products</a>
+                <a href="contact.html" class="text-gray-300 font-medium hover:text-brand-500 transition-colors duration-300">Contact</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-3">
+                <div class="text-right">
+                    <p class="text-xs text-gray-400 uppercase">Call for Bulk Orders</p>
+                    <p class="font-heading text-lg text-brand-500">+91 62042 68282</p>
+                </div>
+                <a href="contact.html" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 font-heading tracking-wide transition-colors">GET QUOTE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header py-24 px-6 text-white border-b-8 border-brand-500">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-heading font-bold mb-4">Company Profile</h1>
+            <div class="flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <span>/</span>
+                <span class="text-brand-500 font-bold">About Us</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-20 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-center mb-24">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://loremflickr.com/800/800/warehouse,interior" alt="Warehouse Interior" class="w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 border-4 border-brand-900">
+                        <div class="absolute -bottom-8 -right-8 bg-brand-500 text-brand-950 p-8 shadow-xl hidden md:block">
+                            <p class="text-6xl font-heading font-bold leading-none mb-2">15+</p>
+                            <p class="font-bold uppercase tracking-wider text-sm">Years of <br>Excellence</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-brand-500 font-bold tracking-widest text-sm mb-2">THE ASHISH LEGACY</h3>
+                    <h2 class="text-4xl font-heading font-bold text-brand-900 mb-6">BUILT ON TRUST, DRIVEN BY SCALE.</h2>
+                    
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed border-l-4 border-gray-200 pl-6">
+                        <p>Established in the heart of Bhagalpur, <strong>Ashish Trading Company</strong> has grown from a modest trading post into one of Eastern Bihar's most formidable wholesale distributors.</p>
+                        <p>We understand the mechanics of the supply chain. When retailers need bulk inventory without delays, they turn to our massive warehouse facilities and streamlined logistics network.</p>
+                        <p>Our philosophy is uncompromising: authentic products, aggressive wholesale pricing, and a logistical infrastructure that never sleeps.</p>
+                    </div>
+                    
+                    <div class="mt-10 grid grid-cols-2 gap-6">
+                        <div class="bg-gray-100 p-6 border-l-4 border-brand-900">
+                            <h4 class="font-heading text-xl mb-2 text-brand-900">Our Mission</h4>
+                            <p class="text-sm text-gray-600">To dominate the regional supply chain by empowering retailers with seamless access to high-volume goods.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 border-l-4 border-brand-500">
+                            <h4 class="font-heading text-xl mb-2 text-brand-900">Our Vision</h4>
+                            <p class="text-sm text-gray-600">To become the defining standard for wholesale distribution across the entire Eastern India corridor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Core Values -->
+            <div class="bg-brand-950 text-white p-12 lg:p-20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 border-t-8 border-r-8 border-brand-500 opacity-20"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 border-b-8 border-l-8 border-brand-500 opacity-20"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-heading font-bold mb-12 text-center">OUR OPERATIONAL PILLARS</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div class="text-center">
+                            <div class="w-20 h-20 mx-auto bg-gray-800 flex items-center justify-center rounded-full mb-6 border-2 border-brand-500">
+                                <span class="font-heading text-2xl text-brand-500">01</span>
+                            </div>
+                            <h4 class="font-heading text-xl mb-4">Volume Capacity</h4>
+                            <p class="text-gray-400">Massive warehouse footprint capable of handling container-load inventories to fulfill bulk orders instantly.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 mx-auto bg-gray-800 flex items-center justify-center rounded-full mb-6 border-2 border-brand-500">
+                                <span class="font-heading text-2xl text-brand-500">02</span>
+                            </div>
+                            <h4 class="font-heading text-xl mb-4">Pricing Authority</h4>
+                            <p class="text-gray-400">Direct manufacturer relationships allow us to offer rock-bottom wholesale rates that maximize your margins.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 mx-auto bg-gray-800 flex items-center justify-center rounded-full mb-6 border-2 border-brand-500">
+                                <span class="font-heading text-2xl text-brand-500">03</span>
+                            </div>
+                            <h4 class="font-heading text-xl mb-4">Logistical Might</h4>
+                            <p class="text-gray-400">A robust fleet and optimized routing ensuring your goods arrive on time, every time, no excuses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-950 text-gray-400 py-16 border-t-8 border-brand-500 mt-auto">
+        <!-- Reusing standard footer -->
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-heading tracking-wider text-white mb-4">Ashish Trading Company</h2>
+            <p class="text-brand-500 font-heading text-2xl mb-8">+91 62042 68282</p>
+            <p class="text-sm">&copy; 2026 Ashish Trading Company. Built for Industrial Scale.</p>
+        </div>
+    </footer>
+</body>
+</html>

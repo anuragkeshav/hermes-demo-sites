@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sunlight Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lora', serif; color: #2C2C2C; background-color: #FAFAFA; }
+        h1, h2, h3, h4, h5, h6, .font-playfair { font-family: 'Playfair Display', serif; }
+        .accent-gold { color: #C5A059; }
+        .hover-accent-gold:hover { color: #C5A059; transition: color 0.3s ease; }
+        .portfolio-item:hover img { transform: scale(1.05); transition: transform 0.7s ease; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="w-full z-10 py-8 px-6 md:px-16 flex justify-between items-center bg-white shadow-sm">
+        <a href="index.html" class="text-2xl font-playfair tracking-widest uppercase">Sunlight <span class="accent-gold">Enterprises</span></a>
+        <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase text-gray-800">
+            <a href="index.html" class="hover-accent-gold">Home</a>
+            <a href="about.html" class="hover-accent-gold">About</a>
+            <a href="portfolio.html" class="accent-gold">Portfolio</a>
+            <a href="contact.html" class="hover-accent-gold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-16 pb-24 px-6 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-playfair mb-4 text-center">Selected Works</h1>
+            <p class="text-center text-gray-500 uppercase tracking-widest text-sm mb-16">A glimpse into our crafted spaces</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="portfolio-item overflow-hidden group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-200 aspect-[4/3]">
+                        <img src="https://loremflickr.com/1200/900/interior,livingroom" class="w-full h-full object-cover transition duration-700">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="font-playfair text-2xl mb-2">Modern Minimalist Villa</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Residential</p>
+                    </div>
+                </div>
+                <div class="portfolio-item overflow-hidden group cursor-pointer mt-0 md:mt-24">
+                    <div class="overflow-hidden bg-gray-200 aspect-[4/3]">
+                        <img src="https://loremflickr.com/1200/900/interior,bedroom" class="w-full h-full object-cover transition duration-700">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="font-playfair text-2xl mb-2">The Heritage Suite</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Hospitality</p>
+                    </div>
+                </div>
+                <div class="portfolio-item overflow-hidden group cursor-pointer">
+                    <div class="overflow-hidden bg-gray-200 aspect-[4/3]">
+                        <img src="https://loremflickr.com/1200/900/interior,office" class="w-full h-full object-cover transition duration-700">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="font-playfair text-2xl mb-2">Boutique Workspace</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Commercial</p>
+                    </div>
+                </div>
+                <div class="portfolio-item overflow-hidden group cursor-pointer mt-0 md:mt-24">
+                    <div class="overflow-hidden bg-gray-200 aspect-[4/3]">
+                        <img src="https://loremflickr.com/1200/900/interior,kitchen" class="w-full h-full object-cover transition duration-700">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="font-playfair text-2xl mb-2">Culinary Artistry</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Residential</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-white py-12 px-6 md:px-16 mt-auto">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            &copy; 2026 Sunlight Enterprises, Bhagalpur. | +91 95538 80576
+        </div>
+    </footer>
+</body>
+</html>

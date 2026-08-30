@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiance Rental Property Bhagalpur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { teal: { 600: '#0d9488', 900: '#134e4a' }, orange: { 500: '#f97316', 600: '#ea580c' } },
+            fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center text-white font-display font-bold text-xl">R</div>
+                    <a href="index.html" class="font-display font-bold text-2xl text-teal-900 tracking-tight">RADIANCE</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-teal-600 font-semibold border-b-2 border-teal-600 pb-1">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">About</a>
+                    <a href="properties.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">Properties</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-teal-600 font-semibold transition-colors pb-1">Contact</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5">Book a Tour</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen min-h-[600px] flex items-center justify-center">
+        <div class="absolute inset-0">
+            <img src="https://loremflickr.com/1920/1080/office,architecture" class="w-full h-full object-cover" alt="Premium Office Space">
+            <div class="absolute inset-0 bg-gradient-to-r from-teal-900/90 to-teal-900/40 mix-blend-multiply"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <span class="text-orange-500 font-semibold tracking-wider uppercase mb-4 block">Premium Workspaces in Bhagalpur</span>
+            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">Elevate Your Business Presence</h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">Discover state-of-the-art office spaces designed for productivity, collaboration, and success. Located in the heart of Bhagalpur.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="properties.html" class="bg-teal-600 hover:bg-teal-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-xl transition-all">Explore Spaces</a>
+                <a href="contact.html" class="bg-white hover:bg-gray-50 text-teal-900 px-8 py-4 rounded-full font-semibold text-lg shadow-xl transition-all border border-transparent">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Properties -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-display font-bold text-teal-900 mb-4">Featured Workspaces</h2>
+                    <p class="text-gray-600 text-lg max-w-2xl">Curated office environments tailored for modern enterprises, startups, and creative agencies.</p>
+                </div>
+                <a href="properties.html" class="hidden md:block text-orange-500 font-semibold hover:text-orange-600 group">
+                    View all properties <span class="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="group rounded-2xl bg-gray-50 border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/office,desk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Office 1">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold text-teal-900">Available</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-900 mb-2">The Apex Suite</h3>
+                        <p class="text-gray-500 text-sm mb-4">Central Business District, Bhagalpur</p>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <span class="font-bold text-lg text-gray-900">₹45,000<span class="text-sm font-normal text-gray-500"> /mo</span></span>
+                            <span class="text-sm text-gray-600 flex items-center gap-1"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg> 1,200 sq ft</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 2 -->
+                <div class="group rounded-2xl bg-gray-50 border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/meeting,room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Office 2">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold text-teal-900">Available</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-900 mb-2">Radiance Hub</h3>
+                        <p class="text-gray-500 text-sm mb-4">Tech Park, Bhagalpur</p>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <span class="font-bold text-lg text-gray-900">₹85,000<span class="text-sm font-normal text-gray-500"> /mo</span></span>
+                            <span class="text-sm text-gray-600 flex items-center gap-1"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg> 2,500 sq ft</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 3 -->
+                <div class="group rounded-2xl bg-gray-50 border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/coworking" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Office 3">
+                        <div class="absolute top-4 right-4 bg-orange-500/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold text-white">Just Leased</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-900 mb-2">Creative Loft</h3>
+                        <p class="text-gray-500 text-sm mb-4">Heritage District, Bhagalpur</p>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <span class="font-bold text-lg text-gray-900">₹30,000<span class="text-sm font-normal text-gray-500"> /mo</span></span>
+                            <span class="text-sm text-gray-600 flex items-center gap-1"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg> 800 sq ft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-teal-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold mb-4">Why Radiance Rentals?</h2>
+                <p class="text-teal-100 max-w-2xl mx-auto">We provide more than just four walls. Our properties are designed to foster growth and inspire teams.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 rounded-2xl bg-teal-800/50 border border-teal-700">
+                    <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-6 text-2xl">🏢</div>
+                    <h4 class="text-xl font-bold mb-2">Prime Locations</h4>
+                    <p class="text-teal-100 text-sm">Strategically situated in high-footfall and accessible areas of Bhagalpur.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-teal-800/50 border border-teal-700">
+                    <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-6 text-2xl">⚡</div>
+                    <h4 class="text-xl font-bold mb-2">Modern Amenities</h4>
+                    <p class="text-teal-100 text-sm">High-speed internet, power backup, and contemporary interior layouts.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-teal-800/50 border border-teal-700">
+                    <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-6 text-2xl">🤝</div>
+                    <h4 class="text-xl font-bold mb-2">Flexible Terms</h4>
+                    <p class="text-teal-100 text-sm">Leasing options designed to scale dynamically alongside your business.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-teal-800/50 border border-teal-700">
+                    <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-6 text-2xl">🛡️</div>
+                    <h4 class="text-xl font-bold mb-2">Secure Spaces</h4>
+                    <p class="text-teal-100 text-sm">24/7 security, surveillance, and secure access systems for peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-teal-600 rounded flex items-center justify-center text-white font-display font-bold text-lg">R</div>
+                    <span class="font-display font-bold text-xl text-white tracking-tight">RADIANCE RENTALS</span>
+                </div>
+                <p class="text-gray-400 max-w-sm mb-6">Premium office spaces and commercial real estate solutions in Bhagalpur. Elevate your workspace today.</p>
+                <div class="text-gray-300">
+                    <p class="mb-2 flex items-center gap-2"><span>📞</span> +91 97989 12946</p>
+                    <p class="flex items-center gap-2"><span>📧</span> contact@radiancerentals.in</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-teal-500 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                    <li><a href="properties.html" class="hover:text-teal-500 transition-colors">Properties</a></li>
+                    <li><a href="contact.html" class="hover:text-teal-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Business Hours</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Monday - Friday: 9am - 6pm</li>
+                    <li>Saturday: 10am - 4pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; 2026 Radiance Rental Property Bhagalpur. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
