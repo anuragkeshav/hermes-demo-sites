@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact & Location | Jai Durga Sweet Shop & Restaurant - Jamalpur</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#EA580C',
+                        amberGold: '#D97706',
+                        warmGold: '#F59E0B',
+                        royalMaroon: '#7F1D1D',
+                        deepBrown: '#1C1917',
+                        cardDark: '#292524',
+                        creamBg: '#FFFBEB',
+                        softCream: '#FEF3C7',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background: linear-gradient(to bottom, rgba(28, 25, 23, 0.84), rgba(28, 25, 23, 0.95)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
+        }
+        .nav-blur {
+            background: rgba(28, 25, 23, 0.94);
+            backdrop-filter: blur(12px);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.25);
+        }
+    </style>
+
+</head>
+<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-amberGold selection:text-white">
+    
+    <!-- Top Announcement Bar -->
+    <div class="bg-royalMaroon text-amber-200 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-amberGold text-deepBrown">Dine-In • Takeaway • Delivery</span>
+                <span>📍 8F9V+66, Main Market, Jamalpur, Bihar 811214</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>⏰ Open Daily: 7:00 AM – 11:00 PM</span>
+                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1">
+                    📞 094730 45895
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amberGold via-saffron to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:rotate-6 transition">
+                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-bold">
+                            JD
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition">
+                            JAI DURGA
+                        </div>
+                        <div class="text-xs text-amber-400/90 font-medium tracking-wide flex items-center gap-1">
+                            <span>SWEET SHOP & RESTAURANT</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                    <a href="index.html" class="nav-link text-stone-300 hover:text-warmGold transition">HOME</a>
+                    <a href="about.html" class="nav-link text-stone-300 hover:text-warmGold transition">ABOUT US</a>
+                    <a href="menu.html" class="nav-link text-stone-300 hover:text-warmGold transition">OUR MENU</a>
+                    <a href="contact.html" class="nav-link text-warmGold border-b-2 border-warmGold pb-1 hover:text-warmGold transition">CONTACT & LOCATION</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:09473045895" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-warmGold/40 text-warmGold hover:bg-warmGold/10 text-xs font-bold transition">
+                        ORDER: 094730 45895
+                    </a>
+                    <a href="contact.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-5 py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105">
+                        BOOK A TABLE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <section class="pt-24 pb-16 bg-stone-950 border-b border-stone-800 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-warmGold text-xs font-bold tracking-widest uppercase mb-3">Visit Us or Connect</p>
+            <h1 class="font-cinzel text-4xl sm:text-5xl font-extrabold text-stone-100">
+                Contact & <span class="gold-gradient-text">Find Us in Jamalpur</span>
+            </h1>
+            <p class="text-stone-400 mt-4 text-sm sm:text-base max-w-xl mx-auto">
+                We're located in the heart of Jamalpur. Drop in for a meal, order takeaway, or reach out for bulk catering.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-deepBrown">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+
+                <!-- Left Details & Location -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- Phone -->
+                    <a href="tel:09473045895" class="flex items-start gap-4 p-6 rounded-2xl bg-cardDark border border-stone-800 hover:border-amber-700/60 transition group block">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold/10 border border-amberGold/30 flex items-center justify-center text-warmGold text-xl flex-shrink-0">
+                            📞
+                        </div>
+                        <div>
+                            <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Direct Phone / Orders</div>
+                            <div class="text-lg sm:text-xl font-bold text-stone-100 group-hover:text-warmGold transition">094730 45895</div>
+                            <div class="text-xs text-stone-500 mt-1">Available 7:00 AM – 11:00 PM</div>
+                        </div>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl bg-cardDark border border-stone-800">
+                        <div class="w-12 h-12 rounded-xl bg-saffron/10 border border-saffron/30 flex items-center justify-center text-saffron text-xl flex-shrink-0">
+                            📍
+                        </div>
+                        <div>
+                            <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Restaurant Address</div>
+                            <div class="text-sm sm:text-base font-bold text-stone-100 mt-0.5">8F9V+66, Jamalpur, Bihar 811214</div>
+                            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="inline-block text-xs text-warmGold font-semibold hover:underline mt-2">
+                                Open in Google Maps ➔
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="flex items-start gap-4 p-6 rounded-2xl bg-cardDark border border-stone-800">
+                        <div class="w-12 h-12 rounded-xl bg-warmGold/10 border border-warmGold/30 flex items-center justify-center text-warmGold text-xl flex-shrink-0">
+                            ⏰
+                        </div>
+                        <div>
+                            <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Operating Hours</div>
+                            <div class="text-sm font-bold text-stone-100 mt-0.5">Monday – Sunday: 7:00 AM – 11:00 PM</div>
+                            <div class="text-xs text-amber-400/90 mt-1">Dine-in • Drive-through • Takeaway • No-contact delivery</div>
+                        </div>
+                    </div>
+
+                    <!-- Map Embed -->
+                    <div class="rounded-2xl overflow-hidden border border-stone-800 shadow-xl h-64 relative">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14436.370217031123!2d86.4868!3d25.3094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2010c71a33a5b%3A0xb36b53fe8ec8c0f5!2sJamalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right Form (Table Booking & Bulk Inquiry) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-cardDark p-8 sm:p-10 rounded-3xl border border-stone-800 shadow-2xl">
+                        <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">
+                            Table Reservation & Catering Inquiry
+                        </h3>
+                        <p class="text-stone-400 text-sm mt-2 mb-8">
+                            Fill out the details below to book a family table or request bulk sweet gift packs for weddings and festive occasions.
+                        </p>
+
+                        <form class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-400 mb-2">Full Name</label>
+                                    <input type="text" placeholder="e.g. Ramesh Verma" class="w-full bg-deepBrown border border-stone-700 rounded-xl px-4 py-3.5 text-sm text-stone-100 focus:outline-none focus:border-amberGold transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-400 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="e.g. 094730 45895" class="w-full bg-deepBrown border border-stone-700 rounded-xl px-4 py-3.5 text-sm text-stone-100 focus:outline-none focus:border-amberGold transition">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-400 mb-2">Inquiry Type</label>
+                                    <select class="w-full bg-deepBrown border border-stone-700 rounded-xl px-4 py-3.5 text-sm text-stone-100 focus:outline-none focus:border-amberGold transition">
+                                        <option>Family Table Reservation</option>
+                                        <option>Bulk Sweet Box Order (Wedding / Event)</option>
+                                        <option>Party Catering</option>
+                                        <option>Home Delivery Enquiry</option>
+                                        <option>General Feedback</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-400 mb-2">Date & Time / Guests</label>
+                                    <input type="text" placeholder="e.g. Tomorrow 8:00 PM (4 Guests)" class="w-full bg-deepBrown border border-stone-700 rounded-xl px-4 py-3.5 text-sm text-stone-100 focus:outline-none focus:border-amberGold transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-stone-400 mb-2">Special Requests or Items</label>
+                                <textarea rows="4" placeholder="Tell us if you have any specific sweet preferences or dining requirements..." class="w-full bg-deepBrown border border-stone-700 rounded-xl px-4 py-3.5 text-sm text-stone-100 focus:outline-none focus:border-amberGold transition resize-none"></textarea>
+                            </div>
+
+                            <button type="button" class="w-full bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold py-4 rounded-xl text-sm tracking-wider hover:brightness-110 transition transform hover:scale-[1.01] shadow-xl">
+                                SUBMIT INQUIRY ➔
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-14 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Brand Col -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amberGold to-saffron flex items-center justify-center font-cinzel text-stone-950 font-bold">
+                            JD
+                        </div>
+                        <span class="font-cinzel text-xl font-bold text-stone-100">JAI DURGA SWEET SHOP & RESTAURANT</span>
+                    </div>
+                    <p class="text-stone-400 text-sm max-w-md leading-relaxed">
+                        Jamalpur's premier destination for authentic Indian sweets, North & South Indian meals, and Chinese delicacies. Experience quality taste, pure desi ghee preparations, and comfortable family dining.
+                    </p>
+                    <div class="text-xs text-amber-400/90 font-medium">
+                        📍 8F9V+66 Jamalpur, Bihar 811214 • Open 7:00 AM – 11:00 PM Daily
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-warmGold transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-warmGold transition">About Heritage</a></li>
+                        <li><a href="menu.html" class="hover:text-warmGold transition">Full Menu & Pricing</a></li>
+                        <li><a href="contact.html" class="hover:text-warmGold transition">Contact & Table Reservation</a></li>
+                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition">Google Maps Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Col -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Contact Details</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">📞</span>
+                            <a href="tel:09473045895" class="hover:text-warmGold transition font-semibold text-stone-200">094730 45895</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-warmGold">📍</span>
+                            <span>8F9V+66, Jamalpur, Bihar 811214</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">⏰</span>
+                            <span>7:00 AM – 11:00 PM Everyday</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved.</p>
+                <p>Designed as an Exclusive High-Performance Digital Demo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

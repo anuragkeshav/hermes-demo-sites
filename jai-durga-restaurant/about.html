@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us | Jai Durga Sweet Shop & Restaurant - Jamalpur's Culinary Heritage</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#EA580C',
+                        amberGold: '#D97706',
+                        warmGold: '#F59E0B',
+                        royalMaroon: '#7F1D1D',
+                        deepBrown: '#1C1917',
+                        cardDark: '#292524',
+                        creamBg: '#FFFBEB',
+                        softCream: '#FEF3C7',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background: linear-gradient(to bottom, rgba(28, 25, 23, 0.84), rgba(28, 25, 23, 0.95)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
+        }
+        .nav-blur {
+            background: rgba(28, 25, 23, 0.94);
+            backdrop-filter: blur(12px);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.25);
+        }
+    </style>
+
+</head>
+<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-amberGold selection:text-white">
+    
+    <!-- Top Announcement Bar -->
+    <div class="bg-royalMaroon text-amber-200 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-amberGold text-deepBrown">Dine-In • Takeaway • Delivery</span>
+                <span>📍 8F9V+66, Main Market, Jamalpur, Bihar 811214</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>⏰ Open Daily: 7:00 AM – 11:00 PM</span>
+                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1">
+                    📞 094730 45895
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amberGold via-saffron to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:rotate-6 transition">
+                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-bold">
+                            JD
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition">
+                            JAI DURGA
+                        </div>
+                        <div class="text-xs text-amber-400/90 font-medium tracking-wide flex items-center gap-1">
+                            <span>SWEET SHOP & RESTAURANT</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                    <a href="index.html" class="nav-link text-stone-300 hover:text-warmGold transition">HOME</a>
+                    <a href="about.html" class="nav-link text-warmGold border-b-2 border-warmGold pb-1 hover:text-warmGold transition">ABOUT US</a>
+                    <a href="menu.html" class="nav-link text-stone-300 hover:text-warmGold transition">OUR MENU</a>
+                    <a href="contact.html" class="nav-link text-stone-300 hover:text-warmGold transition">CONTACT & LOCATION</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:09473045895" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-warmGold/40 text-warmGold hover:bg-warmGold/10 text-xs font-bold transition">
+                        ORDER: 094730 45895
+                    </a>
+                    <a href="contact.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-5 py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105">
+                        BOOK A TABLE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 bg-stone-950 border-b border-stone-800 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <p class="text-warmGold text-xs font-bold tracking-widest uppercase mb-3">Our Roots & Commitment</p>
+            <h1 class="font-cinzel text-4xl sm:text-5xl font-extrabold text-stone-100">
+                A Legacy of Pure Taste in <span class="gold-gradient-text">Jamalpur</span>
+            </h1>
+            <p class="text-stone-400 mt-4 text-base sm:text-lg max-w-2xl mx-auto">
+                Discover the story behind Jai Durga Sweet Shop & Restaurant — delivering culinary joy, authentic flavors, and unmatched hospitality.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Story -->
+    <section class="py-20 bg-deepBrown">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <span class="px-3 py-1 bg-royalMaroon/80 border border-amber-800/40 text-amber-200 text-xs font-bold rounded-full uppercase tracking-wider">
+                        Tradition & Purity
+                    </span>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-100">
+                        Crafting Happiness One Mithai & Meal at a Time
+                    </h2>
+                    <p class="text-stone-300 leading-relaxed">
+                        Situated at the bustling heart of Jamalpur (Bihar 811214), <strong class="text-warmGold">Jai Durga Sweet Shop & Restaurant</strong> started with a clear vision: to bring pure, unadulterated traditional Indian sweets and hearty family meals to the community at honest, affordable prices.
+                    </p>
+                    <p class="text-stone-400 leading-relaxed">
+                        Over the years, we have grown into one of Jamalpur's most recognized food landmarks, with over 1,000+ positive customer reviews on Google. From early morning breakfast seekers enjoying fresh Dosas and hot Kachoris, to families gathering in the evening for rich Shahi Paneer, Mughlai Parathas, and Veg Hakka Noodles — Jai Durga is a household name for taste and trust.
+                    </p>
+
+                    <div class="border-l-4 border-amberGold pl-4 py-2 bg-stone-900/60 rounded-r-xl">
+                        <p class="text-sm italic text-amber-200">
+                            "Purity is not a compromise for us; it is our foundation. Every batch of sweet is prepared using fresh milk and pure ghee."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=80" alt="Making Sweets" class="rounded-2xl h-72 w-full object-cover border border-stone-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&q=80" alt="Dining Room" class="rounded-2xl h-72 w-full object-cover border border-stone-800 shadow-xl mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Pillars -->
+    <section class="py-20 bg-stone-950 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <p class="text-warmGold text-xs font-bold tracking-widest uppercase">The Pillars We Stand By</p>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold mt-2 text-stone-100">
+                    Why Jamalpur Chooses Us
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
+                    <div class="w-14 h-14 rounded-2xl bg-amberGold/10 border border-amberGold/30 flex items-center justify-center text-3xl mb-6">
+                        🥛
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">100% Pure Raw Materials</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        We source our milk, chhena, khoya, and desi ghee directly from reliable, certified local suppliers to ensure rich authentic flavor in all our mithais.
+                    </p>
+                </div>
+
+                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron/10 border border-saffron/30 flex items-center justify-center text-3xl mb-6">
+                        👨‍🍳
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">Master Halwais & Chefs</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Our skilled culinary masters have perfected the art of traditional Indian confectionery, slow-cooking techniques, and Chinese wok cooking over decades.
+                    </p>
+                </div>
+
+                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
+                    <div class="w-14 h-14 rounded-2xl bg-warmGold/10 border border-warmGold/30 flex items-center justify-center text-3xl mb-6">
+                        💰
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">Unbeatable Value</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        High quality does not mean high prices. With meals averaging ₹1–200 per person, everyone in Jamalpur can enjoy restaurant-quality dining anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us CTA -->
+    <section class="py-16 bg-deepBrown border-t border-stone-800 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-100">
+                Experience Authentic Hospitality at Jamalpur
+            </h2>
+            <p class="text-stone-400 mt-3 text-sm sm:text-base">
+                Drop by with your family or friends today and treat your tastebuds.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="menu.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-8 py-3.5 rounded-full text-sm">
+                    VIEW MENU
+                </a>
+                <a href="contact.html" class="bg-stone-800 text-stone-200 border border-stone-700 font-semibold px-8 py-3.5 rounded-full text-sm hover:bg-stone-700">
+                    CONTACT & DIRECTIONS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-14 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Brand Col -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amberGold to-saffron flex items-center justify-center font-cinzel text-stone-950 font-bold">
+                            JD
+                        </div>
+                        <span class="font-cinzel text-xl font-bold text-stone-100">JAI DURGA SWEET SHOP & RESTAURANT</span>
+                    </div>
+                    <p class="text-stone-400 text-sm max-w-md leading-relaxed">
+                        Jamalpur's premier destination for authentic Indian sweets, North & South Indian meals, and Chinese delicacies. Experience quality taste, pure desi ghee preparations, and comfortable family dining.
+                    </p>
+                    <div class="text-xs text-amber-400/90 font-medium">
+                        📍 8F9V+66 Jamalpur, Bihar 811214 • Open 7:00 AM – 11:00 PM Daily
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-warmGold transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-warmGold transition">About Heritage</a></li>
+                        <li><a href="menu.html" class="hover:text-warmGold transition">Full Menu & Pricing</a></li>
+                        <li><a href="contact.html" class="hover:text-warmGold transition">Contact & Table Reservation</a></li>
+                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition">Google Maps Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Col -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Contact Details</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">📞</span>
+                            <a href="tel:09473045895" class="hover:text-warmGold transition font-semibold text-stone-200">094730 45895</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-warmGold">📍</span>
+                            <span>8F9V+66, Jamalpur, Bihar 811214</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">⏰</span>
+                            <span>7:00 AM – 11:00 PM Everyday</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved.</p>
+                <p>Designed as an Exclusive High-Performance Digital Demo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

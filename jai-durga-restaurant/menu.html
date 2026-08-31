@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu & Pricing | Jai Durga Sweet Shop & Restaurant - Jamalpur</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#EA580C',
+                        amberGold: '#D97706',
+                        warmGold: '#F59E0B',
+                        royalMaroon: '#7F1D1D',
+                        deepBrown: '#1C1917',
+                        cardDark: '#292524',
+                        creamBg: '#FFFBEB',
+                        softCream: '#FEF3C7',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background: linear-gradient(to bottom, rgba(28, 25, 23, 0.84), rgba(28, 25, 23, 0.95)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
+        }
+        .nav-blur {
+            background: rgba(28, 25, 23, 0.94);
+            backdrop-filter: blur(12px);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.25);
+        }
+    </style>
+
+    <style>
+        .menu-tab.active {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+            color: #0c0a09;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-amberGold selection:text-white">
+    
+    <!-- Top Announcement Bar -->
+    <div class="bg-royalMaroon text-amber-200 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-amberGold text-deepBrown">Dine-In • Takeaway • Delivery</span>
+                <span>📍 8F9V+66, Main Market, Jamalpur, Bihar 811214</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>⏰ Open Daily: 7:00 AM – 11:00 PM</span>
+                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1">
+                    📞 094730 45895
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amberGold via-saffron to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:rotate-6 transition">
+                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-bold">
+                            JD
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition">
+                            JAI DURGA
+                        </div>
+                        <div class="text-xs text-amber-400/90 font-medium tracking-wide flex items-center gap-1">
+                            <span>SWEET SHOP & RESTAURANT</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                    <a href="index.html" class="nav-link text-stone-300 hover:text-warmGold transition">HOME</a>
+                    <a href="about.html" class="nav-link text-stone-300 hover:text-warmGold transition">ABOUT US</a>
+                    <a href="menu.html" class="nav-link text-warmGold border-b-2 border-warmGold pb-1 hover:text-warmGold transition">OUR MENU</a>
+                    <a href="contact.html" class="nav-link text-stone-300 hover:text-warmGold transition">CONTACT & LOCATION</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:09473045895" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-warmGold/40 text-warmGold hover:bg-warmGold/10 text-xs font-bold transition">
+                        ORDER: 094730 45895
+                    </a>
+                    <a href="contact.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-5 py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105">
+                        BOOK A TABLE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <section class="pt-24 pb-16 bg-stone-950 border-b border-stone-800 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-warmGold text-xs font-bold tracking-widest uppercase mb-3">Freshly Prepared Daily</p>
+            <h1 class="font-cinzel text-4xl sm:text-5xl font-extrabold text-stone-100">
+                Our Delicious <span class="gold-gradient-text">Menu & Specialties</span>
+            </h1>
+            <p class="text-stone-400 mt-4 text-sm sm:text-base max-w-xl mx-auto">
+                Explore our full range of traditional sweets, sizzling South Indian dosas, spicy Chinese fast food, and rich North Indian curries.
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 bg-stone-900 border border-amber-800/40 px-4 py-2 rounded-full text-xs text-amber-300">
+                <span>💡 Average Meal Cost: ₹1–200 per person</span>
+                <span>• Call <a href="tel:09473045895" class="underline font-bold text-white">094730 45895</a> for Takeaway</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-16 bg-deepBrown">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Category 1: Traditional Sweets & Mithai -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-amber-900/50 pb-4 mb-8">
+                    <span class="text-3xl">🍨</span>
+                    <div>
+                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">Traditional Sweets & Mithai</h2>
+                        <p class="text-xs text-stone-400">Pure Desi Ghee & Fresh Milk Confectionery</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Royal Kesariya Rasmalai (2 Pcs)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Spongy chhena patties in thick saffron-pistachio milk</p>
+                            <span class="inline-block mt-2 text-[11px] bg-royalMaroon/80 text-amber-200 px-2 py-0.5 rounded font-semibold">Bestseller</span>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹60</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Bengali Spongy Rosogulla (2 Pcs)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Classic Kolkata-style soft chhena balls in light syrup</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹30</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Desi Ghee Gulab Jamun (2 Pcs)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Warm golden fried mawa dumplings in cardamom sugar syrup</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹40</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Kaju Katli (250g Box)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Diamond-cut cashew fudge layered with edible silver vark</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹220</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Motichoor Ladoo (Pure Ghee - 500g)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Tiny gram-flour pearls fried in pure ghee, melt in mouth</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹180</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Malai Cham Cham / Sandesh</h4>
+                            <p class="text-xs text-stone-400 mt-1">Stuffed sweet chhena rolls topped with grated mawa</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: South Indian Specials -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-amber-900/50 pb-4 mb-8">
+                    <span class="text-3xl">🥟</span>
+                    <div>
+                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">South Indian Delights</h2>
+                        <p class="text-xs text-stone-400">Crispy Dosas, Steaming Idlis & Vadas with Sambhar & Chutney</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Special Butter Masala Dosa</h4>
+                            <p class="text-xs text-stone-400 mt-1">Crispy fermented crepe with spiced aloo masala & amul butter</p>
+                            <span class="inline-block mt-2 text-[11px] bg-amberGold/20 text-warmGold px-2 py-0.5 rounded font-semibold">Chef's Special</span>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹80</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Paneer Masala Dosa</h4>
+                            <p class="text-xs text-stone-400 mt-1">Stuffed with seasoned cottage cheese & fresh herbs</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹110</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Plain Butter Roast Dosa</h4>
+                            <p class="text-xs text-stone-400 mt-1">Ultra-crispy paper thin dosa roasted to golden perfection</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹65</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Steaming Idli Sambhar (2 Pcs)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Fluffy steamed rice cakes served with spicy lentil stew</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹50</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Crispy Medu Vada (2 Pcs)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Golden crispy fried urad dal donuts with coconut chutney</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹55</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Onion Uttapam</h4>
+                            <p class="text-xs text-stone-400 mt-1">Thick savory pancake topped with caramelized onions & chillies</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹75</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Chinese & Fast Food -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-amber-900/50 pb-4 mb-8">
+                    <span class="text-3xl">🍜</span>
+                    <div>
+                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">Chinese & Fast Food</h2>
+                        <p class="text-xs text-stone-400">Sizzling Wok Favorites & Indo-Chinese Specialties</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Veg Hakka Noodles</h4>
+                            <p class="text-xs text-stone-400 mt-1">Wok tossed noodles with crunchy cabbage, bell peppers & onions</p>
+                            <span class="inline-block mt-2 text-[11px] bg-saffron text-white px-2 py-0.5 rounded font-semibold">Popular</span>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹90</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Veg Manchurian (Dry / Gravy)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Fried vegetable balls tossed in spicy soya-garlic sauce</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹110</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Chilli Paneer (Dry / Gravy)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Crisp fried paneer cubes with green chillies, capsicum & spring onions</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹140</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Veg Fried Rice</h4>
+                            <p class="text-xs text-stone-400 mt-1">Aromatic basmati rice stir-fried with diced veggies and light seasoning</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹95</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Crispy Veg Spring Rolls</h4>
+                            <p class="text-xs text-stone-400 mt-1">Crunchy rolls stuffed with spiced noodles and vegetables</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹80</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Schezwan Noodles (Spicy)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Fiery noodles tossed in homemade authentic Schezwan sauce</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹105</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: North Indian & Mughlai Mains -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-amber-900/50 pb-4 mb-8">
+                    <span class="text-3xl">🥘</span>
+                    <div>
+                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">North Indian & Mughlai Curries</h2>
+                        <p class="text-xs text-stone-400">Rich Gravies, Breads, Biryani & Mughlai Specialties</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Crispy Mughlai Paratha</h4>
+                            <p class="text-xs text-stone-400 mt-1">Special layered shallow-fried paratha with spicy potato curry</p>
+                            <span class="inline-block mt-2 text-[11px] bg-royalMaroon/80 text-amber-200 px-2 py-0.5 rounded font-semibold">House Specialty</span>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹70</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Shahi Paneer Deluxe</h4>
+                            <p class="text-xs text-stone-400 mt-1">Fresh paneer in a rich cashew, cream and tomato butter sauce</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹140</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Kadai Paneer</h4>
+                            <p class="text-xs text-stone-400 mt-1">Cottage cheese with bell peppers and roasted coriander gravy</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹130</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Dal Makhani (Slow-Cooked)</h4>
+                            <p class="text-xs text-stone-400 mt-1">Black lentils simmered overnight with butter & cream</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹110</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Hyderabadi Veg Dum Biryani</h4>
+                            <p class="text-xs text-stone-400 mt-1">Fragrant basmati rice layered with vegetables, saffron & raita</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹130</span>
+                    </div>
+
+                    <div class="bg-cardDark p-5 rounded-xl border border-stone-800 flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-stone-100 text-base">Butter Naan / Tandoori Roti</h4>
+                            <p class="text-xs text-stone-400 mt-1">Freshly baked in clay tandoor with pure amul butter</p>
+                        </div>
+                        <span class="text-warmGold font-bold text-lg whitespace-nowrap ml-4">₹30 / ₹15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct Call Box -->
+            <div class="bg-gradient-to-r from-royalMaroon to-cardDark p-8 rounded-3xl border border-amber-800/40 text-center max-w-3xl mx-auto shadow-2xl">
+                <h3 class="font-cinzel text-2xl font-bold text-stone-100">Ready to Order or Reserve?</h3>
+                <p class="text-stone-300 text-sm mt-2">
+                    Give us a direct call for fresh takeaway parcels or sweet delivery across Jamalpur.
+                </p>
+                <a href="tel:09473045895" class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-8 py-3.5 rounded-full text-sm hover:brightness-110 transition transform hover:scale-105">
+                    📞 Call to Order: 094730 45895
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-14 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Brand Col -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amberGold to-saffron flex items-center justify-center font-cinzel text-stone-950 font-bold">
+                            JD
+                        </div>
+                        <span class="font-cinzel text-xl font-bold text-stone-100">JAI DURGA SWEET SHOP & RESTAURANT</span>
+                    </div>
+                    <p class="text-stone-400 text-sm max-w-md leading-relaxed">
+                        Jamalpur's premier destination for authentic Indian sweets, North & South Indian meals, and Chinese delicacies. Experience quality taste, pure desi ghee preparations, and comfortable family dining.
+                    </p>
+                    <div class="text-xs text-amber-400/90 font-medium">
+                        📍 8F9V+66 Jamalpur, Bihar 811214 • Open 7:00 AM – 11:00 PM Daily
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-warmGold transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-warmGold transition">About Heritage</a></li>
+                        <li><a href="menu.html" class="hover:text-warmGold transition">Full Menu & Pricing</a></li>
+                        <li><a href="contact.html" class="hover:text-warmGold transition">Contact & Table Reservation</a></li>
+                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition">Google Maps Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Col -->
+                <div>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Contact Details</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">📞</span>
+                            <a href="tel:09473045895" class="hover:text-warmGold transition font-semibold text-stone-200">094730 45895</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-warmGold">📍</span>
+                            <span>8F9V+66, Jamalpur, Bihar 811214</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-warmGold">⏰</span>
+                            <span>7:00 AM – 11:00 PM Everyday</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved.</p>
+                <p>Designed as an Exclusive High-Performance Digital Demo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
