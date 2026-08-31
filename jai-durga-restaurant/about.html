@@ -4,624 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story & Heritage | Jai Durga Sweet Shop & Restaurant</title>
-    <meta name="description" content="Jai Durga Sweet Shop & Restaurant - Modern Indian Mithai House & Family Dining in Jamalpur, Bihar. Pure Desi Ghee Sweets, Dosas, Biryani & Chinese.">
-    
-    <!-- Tailwind CSS -->
+    <meta name="description" content="Jai Durga Sweet Shop & Restaurant — Modern Indian Mithai House & Family Dining in Jamalpur, Bihar.">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Manrope (UI & Body), Rozha One (Heritage Hindi) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600;1,700&family=Manrope:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        ivory: '#F6F0E6',
-                        sand: '#E9DDCD',
-                        bottle: {
-                            DEFAULT: '#173B32',
-                            dark: '#0E2620',
-                            light: '#235347',
-                        },
-                        terracotta: {
-                            DEFAULT: '#B65C43',
-                            dark: '#964732',
-                            light: '#C9765F',
-                        },
-                        brass: {
-                            DEFAULT: '#B2935B',
-                            light: '#C7AA73',
-                            dark: '#93753E',
-                        },
-                        coffee: {
-                            DEFAULT: '#29231F',
-                            muted: '#5C534D',
-                            light: '#857A73',
-                        },
+                        ivory: '#F6F0E6', sand: '#E9DDCD',
+                        bottle: { DEFAULT:'#173B32', dark:'#0E2620', light:'#235347' },
+                        terracotta: { DEFAULT:'#B65C43', dark:'#964732', light:'#C9765F' },
+                        brass: { DEFAULT:'#B2935B', light:'#C7AA73', dark:'#93753E' },
+                        coffee: { DEFAULT:'#29231F', muted:'#5C534D', light:'#857A73' },
                     },
                     fontFamily: {
-                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
-                        sans: ['Manrope', '-apple-system', 'sans-serif'],
-                        hindi: ['Rozha One', 'serif']
+                        serif: ['Cormorant Garamond','Georgia','serif'],
+                        sans: ['Manrope','-apple-system','sans-serif'],
+                        hindi: ['Rozha One','serif'],
                     }
                 }
             }
         }
     </script>
     <style>
-        ::selection {
-            background: #E9DDCD;
-            color: #173B32;
-        }
-        .subtle-border {
-            border-color: #DCD3C4;
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #E9DDCD;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #B2935B;
-            border-radius: 2px;
+        ::selection { background:#E9DDCD; color:#173B32; }
+        .custom-scrollbar::-webkit-scrollbar { width:5px; height:5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background:#E9DDCD; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background:#B2935B; border-radius:2px; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important; }
         }
     </style>
 </head>
 <body class="bg-ivory text-coffee font-sans antialiased pb-16 md:pb-0 custom-scrollbar">
 
-    <!-- Subtle Top Information Strip -->
-    <header class="bg-sand/80 border-b border-[#DCD3C4] text-[11px] text-coffee-muted py-2 px-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
-            <div class="flex items-center space-x-3 tracking-[0.10em] uppercase text-[10px] font-medium">
-                <span class="text-bottle font-semibold">Fresh Daily</span>
-                <span class="text-brass font-serif">•</span>
-                <span>Jamalpur, Bihar 811214</span>
-                <span class="text-brass font-serif hidden sm:inline">•</span>
-                <span class="hidden sm:inline">Open 7:00 AM – 11:00 PM</span>
-            </div>
-            <div class="flex items-center space-x-4 text-[11px]">
-                <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-bottle transition hidden md:flex items-center gap-1">
-                    <svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> Plus Code: 8F9V+66
-                </a>
-                <a href="tel:09473045895" class="text-bottle font-bold hover:text-terracotta transition flex items-center gap-1">
-                    <svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> 094730 45895
-                </a>
-            </div>
-        </div>
-    </header>
+<!-- Top Info Strip -->
+<header class="bg-sand/80 border-b border-[#DCD3C4] text-[11px] text-coffee-muted py-2 px-4">
+ <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+  <div class="flex items-center space-x-3 tracking-[0.10em] uppercase text-[10px] font-medium">
+   <span class="text-bottle font-semibold">Fresh Daily</span>
+   <span class="text-brass font-serif">•</span>
+   <span>Jamalpur, Bihar 811214</span>
+   <span class="text-brass font-serif hidden sm:inline">•</span>
+   <span class="hidden sm:inline">Open 7:00 AM – 11:00 PM</span>
+  </div>
+  <div class="flex items-center space-x-4 text-[11px]">
+   <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-bottle transition hidden md:flex items-center gap-1"><svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> Plus Code: 8F9V+66</a>
+   <a href="tel:09473045895" class="text-bottle font-bold hover:text-terracotta transition flex items-center gap-1"><svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> 094730 45895</a>
+  </div>
+ </div>
+</header>
 
-    <!-- Main Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-ivory/95 backdrop-blur-md border-b border-[#DCD3C4]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Brand Lockup -->
-                <a href="index.html" class="flex flex-col group py-1">
-                    <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-bottle group-hover:text-terracotta transition leading-none">
-                        Jai Durga
-                    </span>
-                    <span class="font-sans text-[9px] uppercase tracking-[0.24em] text-coffee-muted font-semibold mt-1">
-                        Sweet Shop • Restaurant
-                    </span>
-                    <span class="font-hindi text-[10px] text-brass leading-none mt-0.5">
-                        जय दुर्गा • जमालपुर
-                    </span>
-                </a>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-ivory/95 backdrop-blur-md border-b border-[#DCD3C4]">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-20">
+   <a href="index.html" class="flex flex-col group py-1">
+    <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-bottle group-hover:text-terracotta transition leading-none">Jai Durga</span>
+    <span class="font-sans text-[9px] uppercase tracking-[0.24em] text-coffee-muted font-semibold mt-1">Sweet Shop • Restaurant</span>
+    <span class="font-hindi text-[10px] text-brass leading-none mt-0.5">जय दुर्गा • जमालपुर</span>
+   </a>
+   <div class="hidden md:flex items-center space-x-9">
+    <a href="index.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Home</a>
+    <a href="menu.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Menu</a>
+    <a href="about.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-bottle border-b-2 border-bottle">Our Story</a>
+    <a href="menu.html?cat=sweets" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Sweets</a>
+    <a href="contact.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Location</a>
+   </div>
+   <div class="hidden sm:flex items-center gap-3">
+    <button onclick="toggleCartDrawer()" class="relative bg-sand hover:bg-[#DFCDB9] text-bottle border border-[#D5C6B1] px-4 py-2 rounded text-xs font-semibold tracking-[0.10em] uppercase transition flex items-center gap-2"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg><span>Basket</span><span id="cartCountBadge" class="bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[10px] font-bold">0</span></button>
+    <a href="tel:09473045895" class="bg-bottle hover:bg-bottle-dark text-ivory px-5 py-2 rounded text-xs font-semibold tracking-[0.12em] uppercase transition flex items-center gap-1.5 shadow-sm"><svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span>Call to Order</span></a>
+   </div>
+   <div class="flex items-center gap-2 sm:hidden">
+    <button onclick="toggleCartDrawer()" class="relative p-2 text-bottle bg-sand rounded border border-[#D5C6B1]" aria-label="Open food basket"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg><span id="cartCountBadgeMobile" class="absolute -top-1 -right-1 bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span></button>
+    <button onclick="toggleMobileMenu()" class="p-2 text-bottle bg-sand rounded border border-[#D5C6B1]" aria-label="Toggle navigation"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg></button>
+   </div>
+  </div>
+ </div>
+ <div id="mobileMenu" class="hidden sm:hidden bg-sand/95 border-b border-[#DCD3C4] px-5 pt-3 pb-5 space-y-3">
+  <a href="index.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Home</a>
+  <a href="menu.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Full Menu & Pricing</a>
+  <a href="about.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Our Story & Heritage</a>
+  <a href="contact.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Location & Reservations</a>
+  <div class="pt-3 border-t border-[#DCD3C4] flex gap-2">
+   <a href="tel:09473045895" class="flex-1 text-center bg-bottle text-ivory py-2.5 rounded text-xs font-semibold tracking-wider uppercase">Call: 094730 45895</a>
+   <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 text-center bg-ivory text-bottle border border-bottle py-2.5 rounded text-xs font-semibold tracking-wider uppercase">Petpooja</a>
+  </div>
+ </div>
+</nav>
 
-                <!-- Nav Links -->
-                <div class="hidden md:flex items-center space-x-9">
-                    <a href="menu.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Menu</a>
-                    <a href="about.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-bottle border-b-2 border-bottle">Our Story</a>
-                    <a href="menu.html?cat=sweets" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Sweets</a>
-                    <a href="contact.html" class="text-xs font-semibold uppercase tracking-[0.14em] transition py-1 text-coffee-muted hover:text-bottle">Location</a>
-                </div>
+<div id="cartOverlay" class="fixed inset-0 bg-coffee/50 backdrop-blur-sm z-50 hidden" onclick="toggleCartDrawer()"></div>
+<div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-ivory border-l border-[#DCD3C4] z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-xl">
+ <div class="p-5 bg-bottle text-ivory flex items-center justify-between">
+  <div class="flex items-center gap-3"><span class="text-brass"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></span><div><h3 class="font-serif text-xl font-bold text-ivory">Your Food Basket</h3><p class="text-[10px] tracking-[0.12em] uppercase text-sand/80 font-medium">Jai Durga • Jamalpur</p></div></div>
+  <button onclick="toggleCartDrawer()" class="text-sand/80 hover:text-ivory p-1" aria-label="Close"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+ </div>
+ <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-3 custom-scrollbar bg-ivory">
+  <div id="emptyCartMessage" class="text-center py-16 text-coffee-muted"><p class="font-serif text-lg text-bottle font-bold">Your basket is empty</p><p class="text-xs mt-1">Select fresh sweets, dosas, biryani or snacks to get started.</p><a href="menu.html" class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider text-bottle border border-bottle px-4 py-2 rounded hover:bg-sand transition">Explore Menu</a></div>
+ </div>
+ <div class="p-5 bg-sand/60 border-t border-[#DCD3C4] space-y-3">
+  <div class="flex justify-between items-center"><span class="uppercase tracking-wider text-[11px] text-coffee-muted font-semibold">Subtotal:</span><span id="cartSubtotal" class="text-bottle font-serif text-2xl font-bold">₹0</span></div>
+  <div class="space-y-1"><label class="text-[10px] text-coffee-muted font-bold uppercase tracking-[0.14em] block">Service:</label><div class="grid grid-cols-3 gap-2 text-xs"><label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory"><input type="radio" name="orderType" value="Dine-in" class="hidden" checked> Dine-in</label><label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory"><input type="radio" name="orderType" value="Takeaway" class="hidden"> Takeaway</label><label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory"><input type="radio" name="orderType" value="Delivery" class="hidden"> Delivery</label></div></div>
+  <div class="grid grid-cols-2 gap-2"><input id="cartCustomerName" type="text" placeholder="Your Name" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle"><input id="cartCustomerPhone" type="tel" placeholder="Mobile Number" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle"></div>
+  <input id="cartCustomerNotes" type="text" placeholder="Table No. / Delivery Address / Notes" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle">
+  <div class="space-y-2 pt-1">
+   <button onclick="sendOrderViaWhatsApp()" class="w-full bg-bottle hover:bg-bottle-dark text-ivory font-semibold py-3 rounded text-xs tracking-[0.14em] uppercase transition flex items-center justify-center gap-2 shadow-sm"><svg class="w-4 h-4 inline-block fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.664.08-2.128-.528-1.748-.727-2.883-2.508-2.97-2.624-.088-.117-.716-.953-.716-1.819 0-.866.452-1.292.613-1.468.161-.176.353-.22.47-.22.118 0 .235.001.338.006.107.005.251-.041.393.299.144.348.491 1.2.535 1.288.044.088.073.191.015.308-.059.117-.088.191-.176.293-.088.103-.186.229-.265.308-.088.088-.18.184-.077.36.103.176.458.756.984 1.224.678.604 1.25.791 1.426.879.176.088.279.073.382-.044.103-.118.441-.514.558-.69.117-.176.235-.147.397-.088.161.059 1.028.485 1.205.573.176.088.293.132.338.206.044.074.044.425-.1 1.042zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.662 1.438 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg><span>Send Order to WhatsApp</span></button>
+   <div class="flex gap-2"><a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 bg-ivory hover:bg-sand text-bottle border border-[#D5C6B1] font-semibold py-2 rounded text-[11px] tracking-wider uppercase text-center transition">Petpooja Menu</a><button onclick="clearCart()" class="px-3 bg-ivory hover:bg-sand text-coffee-muted border border-[#D5C6B1] rounded text-[11px] tracking-wider uppercase transition">Clear</button></div>
+  </div>
+ </div>
+</div>
 
-                <!-- CTA Actions -->
-                <div class="hidden sm:flex items-center gap-3">
-                    <button onclick="toggleCartDrawer()" class="relative bg-sand hover:bg-[#DFCDB9] text-bottle border border-[#D5C6B1] px-4 py-2 rounded text-xs font-semibold tracking-[0.10em] uppercase transition flex items-center gap-2">
-                        <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
-                        <span>Basket</span>
-                        <span id="cartCountBadge" class="bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[10px] font-bold">0</span>
-                    </button>
-                    <a href="tel:09473045895" class="bg-bottle hover:bg-bottle-dark text-ivory px-5 py-2 rounded text-xs font-semibold tracking-[0.12em] uppercase transition flex items-center gap-1.5 shadow-sm">
-                        <svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-                        <span>Call to Order</span>
-                    </a>
-                </div>
+<section class="pt-16 pb-12 bg-sand/40 border-b border-[#DCD3C4] text-center"><div class="max-w-4xl mx-auto px-4"><span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">Since Inception</span><h1 class="font-serif text-4xl sm:text-5xl font-bold text-bottle tracking-tight mt-1">Our Story & Heritage</h1><p class="font-hindi text-brass text-base mt-1">जय दुर्गा स्वीट शॉप & रेस्टोरेंट — जमालपुर की परंपरा</p><p class="text-xs sm:text-sm text-coffee-muted mt-2 max-w-lg mx-auto">Discover the story behind Jamalpur's trusted dining haven and pure desi ghee sweets destination.</p></div></section>
 
-                <!-- Mobile Menu Button & Cart -->
-                <div class="flex items-center gap-2 sm:hidden">
-                    <button onclick="toggleCartDrawer()" class="relative p-2 text-bottle bg-sand rounded border border-[#D5C6B1]">
-                        <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
-                        <span id="cartCountBadgeMobile" class="absolute -top-1 -right-1 bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
-                    </button>
-                    <button onclick="toggleMobileMenu()" class="p-2 text-bottle bg-sand rounded border border-[#D5C6B1]" aria-label="Toggle navigation menu">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
-                    </button>
-                </div>
-            </div>
-        </div>
+<section class="py-16 bg-ivory border-b border-[#DCD3C4]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid lg:grid-cols-12 gap-12 items-center">
+ <div class="lg:col-span-6 space-y-5"><span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">The Tradition of Taste</span><h2 class="font-serif text-3xl sm:text-4xl font-bold text-bottle tracking-tight leading-tight">Built on pure ingredients and family warmth.</h2><p class="text-xs sm:text-sm text-coffee-muted leading-relaxed">In the historic railway town of <strong>Jamalpur, Bihar</strong>, Jai Durga was founded with a singular focus: serving wholesome meals and authentic Indian sweets without taking shortcuts on ingredient purity.</p><p class="text-xs sm:text-sm text-coffee-muted leading-relaxed">Every day begins before sunrise with fresh farm milk deliveries. Our halwais start boiling milk for thick saffron Rasmalai and curdling chhena for sponge Rosogullas. By 7:00 AM, the breakfast tawa starts sizzling with butter masala dosas.</p>
+  <div class="pt-4 grid grid-cols-3 gap-4 text-center"><div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]"><div class="font-serif text-2xl font-bold text-bottle">1,027+</div><div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Google Reviews</div></div><div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]"><div class="font-serif text-2xl font-bold text-bottle">₹1–200</div><div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Average Meal</div></div><div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]"><div class="font-serif text-2xl font-bold text-bottle">80+</div><div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Dishes & Sweets</div></div></div>
+ </div>
+ <div class="lg:col-span-6"><div class="bg-sand/60 p-3 sm:p-4 rounded border border-[#DCD3C4]"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Family Dining Hall at Jai Durga" class="w-full h-80 object-cover rounded border border-[#DCD3C4]"><div class="mt-3 text-xs text-coffee-muted"><strong class="text-bottle font-semibold block">Spacious Family AC Dining Hall</strong><span>Hygienic, comfortable and welcoming dining space in Jamalpur.</span></div></div></div>
+</div></div></section>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden sm:hidden bg-sand/95 border-b border-[#DCD3C4] px-5 pt-3 pb-5 space-y-3">
-            <a href="index.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Home</a>
-            <a href="menu.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Full Menu & Pricing</a>
-            <a href="about.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Our Story & Heritage</a>
-            <a href="contact.html" class="block py-2 text-xs uppercase tracking-[0.14em] font-semibold text-bottle">Location & Reservations</a>
-            <div class="pt-3 border-t border-[#DCD3C4] flex gap-2">
-                <a href="tel:09473045895" class="flex-1 text-center bg-bottle text-ivory py-2.5 rounded text-xs font-semibold tracking-wider uppercase">Call: 094730 45895</a>
-                <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 text-center bg-ivory text-bottle border border-bottle py-2.5 rounded text-xs font-semibold tracking-wider uppercase">Petpooja</a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Cart Drawer Overlay -->
-    <div id="cartOverlay" class="fixed inset-0 bg-coffee/50 backdrop-blur-xs z-50 hidden transition-opacity" onclick="toggleCartDrawer()"></div>
+<section class="py-16 bg-sand/30 border-b border-[#DCD3C4]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">Our Philosophy</span><h2 class="font-serif text-3xl font-bold text-bottle tracking-tight mt-1">Four Core Commitments</h2></div>
+ <div class="grid md:grid-cols-4 gap-6 text-xs text-coffee-muted">
+  <div class="p-5 bg-ivory rounded border border-[#DCD3C4]"><h3 class="font-serif text-lg font-bold text-bottle mb-1">100% Pure Desi Ghee</h3><p class="leading-relaxed">All traditional sweets and laddoos prepared strictly in authentic desi ghee.</p></div>
+  <div class="p-5 bg-ivory rounded border border-[#DCD3C4]"><h3 class="font-serif text-lg font-bold text-bottle mb-1">Spotless Kitchen Hygiene</h3><p class="leading-relaxed">RO purified water, stainless steel vessels, and strict daily sanitization.</p></div>
+  <div class="p-5 bg-ivory rounded border border-[#DCD3C4]"><h3 class="font-serif text-lg font-bold text-bottle mb-1">Honest & Approachable</h3><p class="leading-relaxed">Hearty thalis, biryanis, and rich sweets starting at ₹30–₹140.</p></div>
+  <div class="p-5 bg-ivory rounded border border-[#DCD3C4]"><h3 class="font-serif text-lg font-bold text-bottle mb-1">Festive Gifting Care</h3><p class="leading-relaxed">Custom sweet gift boxes for Chhath Puja, Diwali, weddings, and corporate celebrations.</p></div>
+ </div>
+</div></section>
 
-    <!-- Cart Drawer Panel -->
-    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-ivory border-l border-[#DCD3C4] z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-xl">
-        <!-- Header -->
-        <div class="p-5 bg-bottle text-ivory flex items-center justify-between border-b border-bottle-dark">
-            <div class="flex items-center gap-3">
-                <span class="text-brass"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></span>
-                <div>
-                    <h3 class="font-serif text-xl font-bold tracking-wide text-ivory">Your Food Basket</h3>
-                    <p class="text-[10px] tracking-[0.12em] uppercase text-sand/80 font-medium">Jai Durga • Jamalpur</p>
-                </div>
-            </div>
-            <button onclick="toggleCartDrawer()" class="text-sand/80 hover:text-ivory p-1" aria-label="Close basket drawer">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-        </div>
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-sand border-t border-[#DCD3C4] py-2 px-3 shadow-lg">
+ <div class="grid grid-cols-4 gap-2 text-center text-xs">
+  <a href="tel:09473045895" class="flex flex-col items-center justify-center p-1 rounded text-bottle font-semibold"><svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span class="text-[10px] uppercase tracking-wider mt-0.5">Call</span></a>
+  <a href="menu.html" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle"><span class="text-xs font-serif font-bold">M</span><span class="text-[10px] uppercase tracking-wider mt-0.5">Menu</span></a>
+  <button onclick="toggleCartDrawer()" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle relative"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg><span class="text-[10px] uppercase tracking-wider mt-0.5">Basket</span><span id="cartCountBadgeFloating" class="absolute -top-1 right-3 bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span></button>
+  <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle"><svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span class="text-[10px] uppercase tracking-wider mt-0.5">Map</span></a>
+ </div>
+</div>
 
-        <!-- Items Container -->
-        <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-3 custom-scrollbar bg-ivory">
-            <div id="emptyCartMessage" class="text-center py-16 text-coffee-muted">
-                <p class="font-serif text-lg text-bottle font-bold">Your basket is empty</p>
-                <p class="text-xs text-coffee-muted mt-1 font-sans">Select fresh sweets, hot dosas, biryani or snacks to get started.</p>
-                <a href="menu.html" class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider text-bottle border border-bottle px-4 py-2 rounded hover:bg-sand transition">
-                    Explore Menu
-                </a>
-            </div>
-        </div>
-
-        <!-- Checkout Form -->
-        <div id="cartCheckoutForm" class="p-5 bg-sand/60 border-t border-[#DCD3C4] space-y-3">
-            <div class="flex justify-between items-center text-xs font-semibold text-coffee">
-                <span class="uppercase tracking-wider text-[11px] text-coffee-muted">Subtotal:</span>
-                <span id="cartSubtotal" class="text-bottle font-serif text-2xl font-bold">₹0</span>
-            </div>
-            
-            <div class="space-y-1">
-                <label class="text-[10px] text-coffee-muted font-bold uppercase tracking-[0.14em] block">Service Preference:</label>
-                <div class="grid grid-cols-3 gap-2 text-xs">
-                    <label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory">
-                        <input type="radio" name="orderType" value="Dine-in (Table)" class="hidden" checked> Dine-in
-                    </label>
-                    <label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory">
-                        <input type="radio" name="orderType" value="Takeaway / Parcel" class="hidden"> Takeaway
-                    </label>
-                    <label class="flex items-center justify-center p-2 rounded bg-ivory border border-[#D5C6B1] cursor-pointer text-coffee font-medium text-[11px] text-center has-[:checked]:border-bottle has-[:checked]:bg-bottle has-[:checked]:text-ivory">
-                        <input type="radio" name="orderType" value="Home Delivery" class="hidden"> Delivery
-                    </label>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-2">
-                <input id="cartCustomerName" type="text" placeholder="Your Name" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle">
-                <input id="cartCustomerPhone" type="tel" placeholder="Mobile Number" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle">
-            </div>
-            <input id="cartCustomerNotes" type="text" placeholder="Table No. / Delivery Address / Instructions" class="w-full bg-ivory border border-[#D5C6B1] rounded px-3 py-2 text-xs text-coffee placeholder-coffee-light focus:outline-none focus:border-bottle">
-
-            <!-- Checkout Buttons -->
-            <div class="space-y-2 pt-1">
-                <button onclick="sendOrderViaWhatsApp()" class="w-full bg-bottle hover:bg-bottle-dark text-ivory font-semibold py-3 rounded text-xs tracking-[0.14em] uppercase transition flex items-center justify-center gap-2 shadow-sm">
-                    <span><svg class="w-4 h-4 inline-block fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.664.08-2.128-.528-1.748-.727-2.883-2.508-2.97-2.624-.088-.117-.716-.953-.716-1.819 0-.866.452-1.292.613-1.468.161-.176.353-.22.47-.22.118 0 .235.001.338.006.107.005.251-.041.393.299.144.348.491 1.2.535 1.288.044.088.073.191.015.308-.059.117-.088.191-.176.293-.088.103-.186.229-.265.308-.088.088-.18.184-.077.36.103.176.458.756.984 1.224.678.604 1.25.791 1.426.879.176.088.279.073.382-.044.103-.118.441-.514.558-.69.117-.176.235-.147.397-.088.161.059 1.028.485 1.205.573.176.088.293.132.338.206.044.074.044.425-.1 1.042zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.662 1.438 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.162c-1.637 0-3.167-.47-4.463-1.28l-.32-.201-2.955.775.789-2.88-.221-.351A8.13 8.13 0 013.84 12c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.162-8.16 8.162z"/></svg></span>
-                    <span>Send Order to WhatsApp</span>
-                </button>
-                <div class="flex gap-2">
-                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 bg-ivory hover:bg-sand text-bottle border border-[#D5C6B1] font-semibold py-2 rounded text-[11px] tracking-wider uppercase text-center transition">
-                        Petpooja Menu
-                    </a>
-                    <button onclick="clearCart()" class="px-3 bg-ivory hover:bg-sand text-coffee-muted border border-[#D5C6B1] rounded text-[11px] tracking-wider uppercase transition">
-                        Clear
-                    </button>
-                </div>
-            </div>
-        </div>
+<footer class="bg-bottle text-sand pt-16 pb-12 border-t border-bottle-dark">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="border-b border-bottle-light/60 pb-12 mb-12">
+   <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+    <div>
+     <div class="text-[10px] uppercase tracking-[0.24em] text-brass font-bold">Mithai House & Indian Restaurant</div>
+     <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-ivory tracking-tight mt-1">Jai Durga</h2>
+     <div class="font-hindi text-brass text-lg sm:text-xl font-normal mt-1">जय दुर्गा स्वीट शॉप & रेस्टोरेंट</div>
     </div>
-    
-    
-    <!-- About Header -->
-    <section class="pt-16 pb-12 bg-sand/40 border-b border-[#DCD3C4] text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">Since Inception</span>
-            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-bottle tracking-tight mt-1">
-                Our Story & Heritage
-            </h1>
-            <p class="font-hindi text-brass text-base mt-1">जय दुर्गा स्वीट शॉप & रेस्टोरेंट — जमालपुर की परंपरा</p>
-            <p class="text-xs sm:text-sm text-coffee-muted mt-2 max-w-lg mx-auto">
-                Discover the story behind Jamalpur's trusted dining haven and pure desi ghee sweets destination.
-            </p>
-        </div>
-    </section>
-
-    <!-- Heritage Narrative -->
-    <section class="py-16 bg-ivory border-b border-[#DCD3C4]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-6 space-y-5">
-                    <span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">The Tradition of Taste</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bottle tracking-tight leading-tight">
-                        Built on pure ingredients and family warmth.
-                    </h2>
-                    <p class="text-xs sm:text-sm text-coffee-muted leading-relaxed">
-                        In the historic railway town of <strong>Jamalpur, Bihar</strong>, Jai Durga was founded with a singular focus: serving wholesome meals and authentic Indian sweets without taking shortcuts on ingredient purity.
-                    </p>
-                    <p class="text-xs sm:text-sm text-coffee-muted leading-relaxed">
-                        Every day begins before sunrise with fresh farm milk deliveries. Our halwais start boiling milk for thick saffron Rasmalai and curdling chhena for sponge Rosogullas. By 7:00 AM, the breakfast tawa starts sizzling with butter masala dosas, welcoming morning commuters and families.
-                    </p>
-
-                    <!-- Trust Box -->
-                    <div class="pt-4 grid grid-cols-3 gap-4 text-center">
-                        <div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]">
-                            <div class="font-serif text-2xl font-bold text-bottle">1,027+</div>
-                            <div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Google Reviews</div>
-                        </div>
-                        <div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]">
-                            <div class="font-serif text-2xl font-bold text-bottle">₹1–200</div>
-                            <div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Average Meal</div>
-                        </div>
-                        <div class="p-3 bg-sand/50 rounded border border-[#E5DCCE]">
-                            <div class="font-serif text-2xl font-bold text-bottle">80+</div>
-                            <div class="text-[10px] uppercase tracking-wider text-coffee-muted mt-0.5">Dishes & Sweets</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-6">
-                    <div class="bg-sand/60 p-3 sm:p-4 rounded border border-[#DCD3C4]">
-                        <img 
-                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" 
-                            alt="Family Dining Hall at Jai Durga Jamalpur" 
-                            class="w-full h-80 object-cover rounded border border-[#DCD3C4]"
-                        >
-                        <div class="mt-3 text-xs text-coffee-muted">
-                            <strong class="text-bottle font-semibold block">Spacious Family AC Dining Hall</strong>
-                            <span>Hygienic, comfortable and welcoming dining space in Jamalpur.</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 4 Commitments -->
-    <section class="py-16 bg-sand/30 border-b border-[#DCD3C4]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-[10px] uppercase tracking-[0.24em] text-terracotta font-bold block">Our Philosophy</span>
-                <h2 class="font-serif text-3xl font-bold text-bottle tracking-tight mt-1">Four Core Commitments</h2>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-6 text-xs text-coffee-muted">
-                <div class="p-5 bg-ivory rounded border border-[#DCD3C4]">
-                    <h3 class="font-serif text-lg font-bold text-bottle mb-1">100% Pure Desi Ghee</h3>
-                    <p class="leading-relaxed">All our traditional sweets and laddoos are prepared strictly in authentic desi ghee without synthetic compromises.</p>
-                </div>
-
-                <div class="p-5 bg-ivory rounded border border-[#DCD3C4]">
-                    <h3 class="font-serif text-lg font-bold text-bottle mb-1">Spotless Kitchen Hygiene</h3>
-                    <p class="leading-relaxed">RO purified water, stainless steel preparation vessels, and strict daily sanitization standards.</p>
-                </div>
-
-                <div class="p-5 bg-ivory rounded border border-[#DCD3C4]">
-                    <h3 class="font-serif text-lg font-bold text-bottle mb-1">Honest & Approachable</h3>
-                    <p class="leading-relaxed">Hearty thalis, fragrant biryanis, and rich sweets starting at ₹30–₹140. Premium food within reach of every family.</p>
-                </div>
-
-                <div class="p-5 bg-ivory rounded border border-[#DCD3C4]">
-                    <h3 class="font-serif text-lg font-bold text-bottle mb-1">Festive Gifting Care</h3>
-                    <p class="leading-relaxed">Custom designed sweet gift boxes for Chhath Puja, Diwali, weddings, and corporate celebrations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Mobile Sticky Navigation Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-sand border-t border-[#DCD3C4] py-2 px-3 shadow-lg">
-        <div class="grid grid-cols-4 gap-2 text-center text-xs">
-            <a href="tel:09473045895" class="flex flex-col items-center justify-center p-1 rounded text-bottle font-semibold">
-                <svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-                <span class="text-[10px] uppercase tracking-wider mt-0.5">Call</span>
-            </a>
-            <a href="menu.html" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle">
-                <span class="text-xs font-serif font-bold">M</span>
-                <span class="text-[10px] uppercase tracking-wider mt-0.5">Menu</span>
-            </a>
-            <button onclick="toggleCartDrawer()" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle relative">
-                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
-                <span class="text-[10px] uppercase tracking-wider mt-0.5">Basket</span>
-                <span id="cartCountBadgeFloating" class="absolute -top-1 right-3 bg-bottle text-ivory rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
-            </button>
-            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="flex flex-col items-center justify-center p-1 rounded text-coffee-muted hover:text-bottle">
-                <svg class="w-3.5 h-3.5 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-                <span class="text-[10px] uppercase tracking-wider mt-0.5">Map</span>
-            </a>
-        </div>
+    <div class="text-left md:text-right">
+     <div class="text-xs uppercase tracking-[0.14em] text-ivory font-semibold">Jamalpur • Bihar 811214</div>
+     <div class="text-xs text-sand/70 mt-1">Plus Code: 8F9V+66 Jamalpur</div>
+     <div class="text-xs text-brass font-serif italic mt-0.5">4.0 / 5.0 Google • 1,027+ verified reviews</div>
     </div>
-    
-    <!-- Editorial Restaurant Signboard Footer -->
-    <footer class="bg-bottle text-sand pt-16 pb-12 border-t border-bottle-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Brand Signboard Lockup -->
-            <div class="border-b border-bottle-light/60 pb-12 mb-12">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-                    <div>
-                        <div class="text-[10px] uppercase tracking-[0.24em] text-brass font-bold">Mithai House & Indian Restaurant</div>
-                        <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-ivory tracking-tight mt-1">
-                            Jai Durga
-                        </h2>
-                        <div class="font-hindi text-brass text-lg sm:text-xl font-normal mt-1">
-                            जय दुर्गा स्वीट शॉप & रेस्टोरेंट
-                        </div>
-                    </div>
-                    <div class="text-left md:text-right">
-                        <div class="text-xs uppercase tracking-[0.14em] text-ivory font-semibold">Jamalpur • Bihar 811214</div>
-                        <div class="text-xs text-sand/70 mt-1">Plus Code: 8F9V+66 Jamalpur</div>
-                        <div class="text-xs text-brass font-serif italic mt-0.5">4.0 / 5.0 Google • 1,027+ verified reviews</div>
-                    </div>
-                </div>
-            </div>
+   </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-xs text-sand/80">
+   <div><h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Service Hours</h4><p class="text-sand/90">Open Everyday</p><p class="text-ivory font-semibold text-sm mt-0.5">7:00 AM – 11:00 PM</p><p class="text-[11px] text-sand/60 mt-2">Breakfast • Lunch • Chaat • Dinner</p></div>
+   <div><h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Direct Phone</h4><a href="tel:09473045895" class="text-ivory font-bold text-base hover:text-brass transition block">094730 45895</a><p class="text-[11px] text-sand/60 mt-1">Takeaway orders & bulk sweet bookings</p></div>
+   <div><h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Explore Menu</h4><ul class="space-y-1.5"><li><a href="menu.html" class="hover:text-ivory transition">Full 80+ Item Menu</a></li><li><a href="menu.html?cat=sweets" class="hover:text-ivory transition">Desi Ghee Mithai & Sweets</a></li><li><a href="menu.html?cat=south-indian" class="hover:text-ivory transition">Crispy South Indian Dosas</a></li><li><a href="menu.html?cat=mughlai-biryani" class="hover:text-ivory transition">Mughlai Paratha & Biryani</a></li><li><a href="about.html" class="hover:text-ivory transition">Our Heritage Story</a></li></ul></div>
+   <div><h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Online Links</h4><ul class="space-y-1.5"><li><a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-ivory text-brass transition flex items-center gap-1">Petpooja Online Menu <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a></li><li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-ivory transition flex items-center gap-1">Google Maps Directions <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a></li><li><a href="contact.html" class="hover:text-ivory transition">Table Reservations</a></li></ul></div>
+  </div>
+  <div class="mt-12 pt-8 border-t border-bottle-light/40 flex flex-col sm:flex-row justify-between items-center text-[11px] text-sand/60 gap-3"><p>&copy; 2026 Jai Durga Sweet Shop & Restaurant. All rights reserved.</p><div class="flex gap-4"><span>Dine-in</span><span>•</span><span>Takeaway</span><span>•</span><span>No-Contact Delivery</span></div></div>
+ </div>
+</footer>
 
-            <!-- 4 Column Directory -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-xs text-sand/80">
-                <!-- Hours -->
-                <div>
-                    <h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Service Hours</h4>
-                    <p class="leading-relaxed text-sand/90">Open Everyday</p>
-                    <p class="text-ivory font-semibold text-sm mt-0.5">7:00 AM – 11:00 PM</p>
-                    <p class="text-[11px] text-sand/60 mt-2">Breakfast • Lunch • Chaat • Dinner</p>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Direct Phone</h4>
-                    <a href="tel:09473045895" class="text-ivory font-bold text-base hover:text-brass transition block">
-                        094730 45895
-                    </a>
-                    <p class="text-[11px] text-sand/60 mt-1">Takeaway orders & bulk sweet bookings</p>
-                </div>
-
-                <!-- Navigation -->
-                <div>
-                    <h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Explore Menu</h4>
-                    <ul class="space-y-1.5">
-                        <li><a href="menu.html" class="hover:text-ivory transition">Full 80+ Item Menu</a></li>
-                        <li><a href="menu.html?cat=sweets" class="hover:text-ivory transition">Desi Ghee Mithai & Sweets</a></li>
-                        <li><a href="menu.html?cat=south-indian" class="hover:text-ivory transition">Crispy South Indian Dosas</a></li>
-                        <li><a href="menu.html?cat=mughlai-biryani" class="hover:text-ivory transition">Mughlai Paratha & Biryani</a></li>
-                        <li><a href="about.html" class="hover:text-ivory transition">Our Heritage Story</a></li>
-                    </ul>
-                </div>
-
-                <!-- External Actions -->
-                <div>
-                    <h4 class="font-sans font-bold uppercase tracking-[0.16em] text-ivory mb-3">Online Links</h4>
-                    <ul class="space-y-1.5">
-                        <li>
-                            <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-ivory text-brass transition flex items-center gap-1">
-                                <span>Petpooja Online Menu</span>
-                                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-ivory transition flex items-center gap-1">
-                                <span>Google Maps Directions</span>
-                                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="hover:text-ivory transition">Table Reservations</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="mt-12 pt-8 border-t border-bottle-light/40 flex flex-col sm:flex-row justify-between items-center text-[11px] text-sand/60 gap-3">
-                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All rights reserved.</p>
-                <div class="flex gap-4">
-                    <span>Dine-in</span>
-                    <span>•</span>
-                    <span>Takeaway</span>
-                    <span>•</span>
-                    <span>No-Contact Delivery</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <script>
-        let cart = JSON.parse(localStorage.getItem('jd_cart_mithai_v1') || '[]');
-
-        function saveCart() {
-            localStorage.setItem('jd_cart_mithai_v1', JSON.stringify(cart));
-            updateCartUI();
-        }
-
-        function addToCart(name, price, category) {
-            const existing = cart.find(item => item.name === name);
-            if (existing) {
-                existing.qty += 1;
-            } else {
-                cart.push({ name, price, category, qty: 1 });
-            }
-            saveCart();
-            showToast(`Added "${name}" to basket.`);
-        }
-
-        function updateQty(name, delta) {
-            const item = cart.find(i => i.name === name);
-            if (item) {
-                item.qty += delta;
-                if (item.qty <= 0) {
-                    cart = cart.filter(i => i.name !== name);
-                }
-                saveCart();
-            }
-        }
-
-        function clearCart() {
-            cart = [];
-            saveCart();
-            showToast('Basket cleared.');
-        }
-
-        function updateCartUI() {
-            const count = cart.reduce((acc, item) => acc + item.qty, 0);
-            const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
-
-            const bD = document.getElementById('cartCountBadge');
-            const bM = document.getElementById('cartCountBadgeMobile');
-            const bF = document.getElementById('cartCountBadgeFloating');
-            if (bD) bD.innerText = count;
-            if (bM) bM.innerText = count;
-            if (bF) bF.innerText = count;
-
-            const subtotalEl = document.getElementById('cartSubtotal');
-            if (subtotalEl) subtotalEl.innerText = `₹${total}`;
-
-            const listEl = document.getElementById('cartItemsList');
-            if (listEl) {
-                if (cart.length === 0) {
-                    listEl.innerHTML = `
-                        <div id="emptyCartMessage" class="text-center py-16 text-coffee-muted">
-                            <p class="font-serif text-lg text-bottle font-bold">Your basket is empty</p>
-                            <p class="text-xs text-coffee-muted mt-1 font-sans">Select fresh sweets, hot dosas, biryani or snacks to get started.</p>
-                            <a href="menu.html" class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider text-bottle border border-bottle px-4 py-2 rounded hover:bg-sand transition">
-                                Explore Menu
-                            </a>
-                        </div>
-                    `;
-                } else {
-                    let html = '';
-                    cart.forEach(item => {
-                        html += `
-                            <div class="flex items-center justify-between p-3 rounded bg-white border border-[#DCD3C4]">
-                                <div class="flex-1 pr-2">
-                                    <h4 class="text-xs font-bold text-bottle">${item.name}</h4>
-                                    <div class="text-[11px] text-coffee-muted">₹${item.price} each • Subtotal: ₹${item.price * item.qty}</div>
-                                </div>
-                                <div class="flex items-center gap-1.5">
-                                    <button onclick="updateQty('${item.name}', -1)" class="w-6 h-6 rounded bg-sand text-bottle font-bold text-xs hover:bg-[#D5C6B1] transition">-</button>
-                                    <span class="text-xs font-bold text-bottle min-w-[16px] text-center">${item.qty}</span>
-                                    <button onclick="updateQty('${item.name}', 1)" class="w-6 h-6 rounded bg-bottle text-ivory font-bold text-xs hover:bg-bottle-dark transition">+</button>
-                                </div>
-                            </div>
-                        `;
-                    });
-                    listEl.innerHTML = html;
-                }
-            }
-        }
-
-        function toggleCartDrawer() {
-            const drawer = document.getElementById('cartDrawer');
-            const overlay = document.getElementById('cartOverlay');
-            if (drawer && overlay) {
-                if (drawer.classList.contains('translate-x-full')) {
-                    drawer.classList.remove('translate-x-full');
-                    overlay.classList.remove('hidden');
-                } else {
-                    drawer.classList.add('translate-x-full');
-                    overlay.classList.add('hidden');
-                }
-            }
-        }
-
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            if (menu) {
-                menu.classList.toggle('hidden');
-            }
-        }
-
-        function sendOrderViaWhatsApp() {
-            if (cart.length === 0) {
-                alert("Your basket is empty! Please add items from our menu first.");
-                return;
-            }
-            const name = document.getElementById('cartCustomerName')?.value.trim() || 'Valued Guest';
-            const phone = document.getElementById('cartCustomerPhone')?.value.trim() || 'Not specified';
-            const notes = document.getElementById('cartCustomerNotes')?.value.trim() || 'None';
-            const orderType = document.querySelector('input[name="orderType"]:checked')?.value || 'Dine-in';
-            const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
-
-            let msg = `*NEW ORDER - JAI DURGA RESTAURANT (JAMALPUR)*%0A`;
-            msg += `=================================%0A`;
-            msg += `*Service:* ${orderType}%0A`;
-            msg += `*Name:* ${name}%0A`;
-            msg += `*Phone:* ${phone}%0A`;
-            if (notes !== 'None') {
-                msg += `*Note/Address/Table:* ${notes}%0A`;
-            }
-            msg += `=================================%0A`;
-            msg += `*ITEMS ORDERED:*%0A`;
-            cart.forEach(item => {
-                msg += `• ${item.name} [x${item.qty}] = ₹${item.price * item.qty}%0A`;
-            });
-            msg += `=================================%0A`;
-            msg += `*TOTAL BILL AMOUNT:* ₹${total}%0A%0A`;
-            msg += `_Please confirm my order. Thank you!_`;
-
-            window.open(`https://api.whatsapp.com/send?phone=919473045895&text=${msg}`, '_blank');
-        }
-
-        function showToast(message) {
-            const toast = document.createElement('div');
-            toast.className = 'fixed bottom-20 right-6 bg-bottle text-ivory font-medium text-xs px-4 py-2.5 rounded shadow-xl z-50 transition transform duration-300 flex items-center gap-2 border border-brass/50';
-            toast.innerHTML = `<span class="text-brass">◆</span><span>${message}</span>`;
-            document.body.appendChild(toast);
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 300);
-            }, 2200);
-        }
-
-        function handleReservation(e) {
-            e.preventDefault();
-            const name = document.getElementById('resName')?.value;
-            const phone = document.getElementById('resPhone')?.value;
-            const date = document.getElementById('resDate')?.value;
-            const time = document.getElementById('resTime')?.value;
-            const guests = document.getElementById('resGuests')?.value;
-            const notes = document.getElementById('resNotes')?.value || 'None';
-
-            let msg = `*TABLE RESERVATION / PARTY INQUIRY*%0A`;
-            msg += `*Jai Durga Restaurant Jamalpur*%0A`;
-            msg += `-----------------------------------%0A`;
-            msg += `*Name:* ${name}%0A`;
-            msg += `*Phone:* ${phone}%0A`;
-            msg += `*Date:* ${date}%0A`;
-            msg += `*Time:* ${time}%0A`;
-            msg += `*Guests:* ${guests}%0A`;
-            msg += `*Special Request:* ${notes}%0A`;
-            msg += `-----------------------------------%0A`;
-            msg += `_Kindly confirm availability._`;
-
-            window.open(`https://api.whatsapp.com/send?phone=919473045895&text=${msg}`, '_blank');
-            showToast('Reservation request sent to WhatsApp.');
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            updateCartUI();
-        });
-    </script>
-    </body></html>
+<script>
+let cart=JSON.parse(localStorage.getItem('jd_cart_v2')||'[]');
+function saveCart(){localStorage.setItem('jd_cart_v2',JSON.stringify(cart));updateCartUI();}
+function addToCart(name,price,cat){const e=cart.find(i=>i.name===name);if(e){e.qty+=1}else{cart.push({name,price,category:cat,qty:1})}saveCart();showToast('Added "'+name+'" to basket.');}
+function updateQty(name,d){const i=cart.find(x=>x.name===name);if(i){i.qty+=d;if(i.qty<=0)cart=cart.filter(x=>x.name!==name);saveCart();}}
+function clearCart(){cart=[];saveCart();showToast('Basket cleared.');}
+function updateCartUI(){
+ const count=cart.reduce((a,i)=>a+i.qty,0),total=cart.reduce((a,i)=>a+(i.price*i.qty),0);
+ ['cartCountBadge','cartCountBadgeMobile','cartCountBadgeFloating'].forEach(id=>{const el=document.getElementById(id);if(el)el.innerText=count;});
+ const s=document.getElementById('cartSubtotal');if(s)s.innerText='₹'+total;
+ const l=document.getElementById('cartItemsList');
+ if(l){if(cart.length===0){l.innerHTML='<div class="text-center py-16 text-coffee-muted"><p class="font-serif text-lg text-bottle font-bold">Your basket is empty</p><p class="text-xs mt-1">Select fresh sweets, dosas, biryani or snacks.</p><a href="menu.html" class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider text-bottle border border-bottle px-4 py-2 rounded hover:bg-sand transition">Explore Menu</a></div>';}
+ else{let h='';cart.forEach(i=>{h+='<div class="flex items-center justify-between p-3 rounded bg-white border border-[#DCD3C4]"><div class="flex-1 pr-2"><h4 class="text-xs font-bold text-bottle">'+i.name+'</h4><div class="text-[11px] text-coffee-muted">₹'+i.price+' each • ₹'+(i.price*i.qty)+'</div></div><div class="flex items-center gap-1.5"><button onclick="updateQty(\''+i.name+'\', -1)" class="w-6 h-6 rounded bg-sand text-bottle font-bold text-xs">-</button><span class="text-xs font-bold text-bottle min-w-[16px] text-center">'+i.qty+'</span><button onclick="updateQty(\''+i.name+'\', 1)" class="w-6 h-6 rounded bg-bottle text-ivory font-bold text-xs">+</button></div></div>';});l.innerHTML=h;}}}
+function toggleCartDrawer(){const d=document.getElementById('cartDrawer'),o=document.getElementById('cartOverlay');if(d&&o){d.classList.toggle('translate-x-full');o.classList.toggle('hidden');}}
+function toggleMobileMenu(){const m=document.getElementById('mobileMenu');if(m)m.classList.toggle('hidden');}
+function sendOrderViaWhatsApp(){
+ if(cart.length===0){alert("Your basket is empty!");return;}
+ const n=document.getElementById('cartCustomerName')?.value.trim()||'Guest',p=document.getElementById('cartCustomerPhone')?.value.trim()||'N/A',notes=document.getElementById('cartCustomerNotes')?.value.trim()||'',ot=document.querySelector('input[name="orderType"]:checked')?.value||'Dine-in',total=cart.reduce((a,i)=>a+(i.price*i.qty),0);
+ let m='*NEW ORDER - JAI DURGA (JAMALPUR)*%0A=================================%0A*Service:* '+ot+'%0A*Name:* '+n+'%0A*Phone:* '+p+'%0A';
+ if(notes)m+='*Note:* '+notes+'%0A';
+ m+='=================================%0A*ITEMS:*%0A';
+ cart.forEach(i=>{m+='• '+i.name+' [x'+i.qty+'] = ₹'+(i.price*i.qty)+'%0A';});
+ m+='=================================%0A*TOTAL:* ₹'+total+'%0A%0A_Please confirm. Thank you!_';
+ window.open('https://api.whatsapp.com/send?phone=919473045895&text='+m,'_blank');
+}
+function handleReservation(e){
+ e.preventDefault();
+ const n=document.getElementById('resName')?.value,p=document.getElementById('resPhone')?.value,d=document.getElementById('resDate')?.value,t=document.getElementById('resTime')?.value,g=document.getElementById('resGuests')?.value,notes=document.getElementById('resNotes')?.value||'None';
+ let m='*TABLE RESERVATION / INQUIRY*%0A*Jai Durga Restaurant Jamalpur*%0A-----------------------------------%0A*Name:* '+n+'%0A*Phone:* '+p+'%0A*Date:* '+d+'%0A*Time:* '+t+'%0A*Guests:* '+g+'%0A*Request:* '+notes+'%0A-----------------------------------%0A_Kindly confirm availability._';
+ window.open('https://api.whatsapp.com/send?phone=919473045895&text='+m,'_blank');
+ showToast('Reservation sent to WhatsApp.');
+}
+function showToast(msg){const t=document.createElement('div');t.className='fixed bottom-20 right-6 bg-bottle text-ivory font-medium text-xs px-4 py-2.5 rounded shadow-xl z-[60] flex items-center gap-2 border border-brass/50';t.innerHTML='<span class="text-brass">◆</span><span>'+msg+'</span>';document.body.appendChild(t);setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),300);},2200);}
+document.addEventListener('DOMContentLoaded',()=>updateCartUI());
+</script>
+</body></html>
