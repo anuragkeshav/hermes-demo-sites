@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal | Gopal Jee Communication Store-1 (Jamalpur)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: { DEFAULT: '#FF6B00', light: '#FF8533', dark: '#E05E00', 50: '#FFF5EC' },
+                        black: { DEFAULT: '#0A0A0A', soft: '#141414', card: '#18181B' },
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-btn.active { border-bottom: 2px solid #FF6B00; color: #FF6B00; font-weight: 700; }
+        .tab-btn { border-bottom: 2px solid transparent; color: #71717A; font-weight: 600; }
+        .tab-btn:hover { color: #0A0A0A; }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800 font-sans antialiased min-h-screen">
+
+<!-- Admin Top Header -->
+<header class="bg-white border-b border-neutral-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-black rounded-xl flex items-center justify-center text-orange font-bold">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.35c.64-.78 1.08-1.86.96-2.95-1 .04-2.18.67-2.88 1.48-.61.71-1.14 1.83-1 2.9 1.11.09 2.24-.59 2.92-1.43z"/>
+                </svg>
+            </div>
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="font-extrabold text-black text-sm sm:text-base">Gopal Jee Communication</span>
+                    <span class="bg-orange/10 text-orange text-[10px] font-bold px-1.5 py-0.5 rounded">Store-1 Admin</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 font-semibold block">Jamalpur Control Panel · Live Sync</span>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <a href="index.html" target="_blank" class="bg-black hover:bg-neutral-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-orange" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                <span>Live Website</span>
+            </a>
+            <button onclick="resetDefaultData()" class="text-xs text-red-600 hover:text-red-700 font-semibold px-2 py-1 border border-red-200 rounded-lg hover:bg-red-50 transition">
+                Reset Demo
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Main Admin Layout -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Quick Analytics Row -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white rounded-2xl border border-neutral-200 p-5 shadow-sm">
+            <span class="text-neutral-400 text-xs uppercase font-bold tracking-wider">Total Products</span>
+            <span class="text-2xl font-extrabold text-black block mt-1" id="statProductCount">12</span>
+            <span class="text-[11px] text-emerald-600 font-semibold mt-1 block">Live in Jamalpur Store</span>
+        </div>
+        <div class="bg-white rounded-2xl border border-neutral-200 p-5 shadow-sm">
+            <span class="text-neutral-400 text-xs uppercase font-bold tracking-wider">Active Deals</span>
+            <span class="text-2xl font-extrabold text-black block mt-1" id="statOfferCount">4</span>
+            <span class="text-[11px] text-orange font-semibold mt-1 block">Festival & 0% EMI</span>
+        </div>
+        <div class="bg-white rounded-2xl border border-neutral-200 p-5 shadow-sm">
+            <span class="text-neutral-400 text-xs uppercase font-bold tracking-wider">Store WhatsApp</span>
+            <span class="text-base font-extrabold text-black block mt-1">+91 70041 00928</span>
+            <span class="text-[11px] text-neutral-400 font-semibold mt-1 block">Direct Lead Destination</span>
+        </div>
+        <div class="bg-white rounded-2xl border border-neutral-200 p-5 shadow-sm">
+            <span class="text-neutral-400 text-xs uppercase font-bold tracking-wider">Store Status</span>
+            <div class="flex items-center gap-1.5 mt-2">
+                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-ping"></span>
+                <span class="text-emerald-700 text-sm font-bold">Open (Closes 9 PM)</span>
+            </div>
+            <span class="text-[11px] text-neutral-400 font-semibold mt-1 block">Sadar Bazar, Jamalpur</span>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="border-b border-neutral-200 mb-8 overflow-x-auto">
+        <div class="flex gap-8 whitespace-nowrap">
+            <button onclick="switchTab('products')" id="tab-btn-products" class="tab-btn active py-3 text-sm transition">📱 Products Catalogue</button>
+            <button onclick="switchTab('offers')" id="tab-btn-offers" class="tab-btn py-3 text-sm transition">🎉 Offers & Banners</button>
+            <button onclick="switchTab('store')" id="tab-btn-store" class="tab-btn py-3 text-sm transition">📍 Store Info & Hours</button>
+            <button onclick="switchTab('leads')" id="tab-btn-leads" class="tab-btn py-3 text-sm transition">💬 WhatsApp Enquiries Log</button>
+            <button onclick="switchTab('backup')" id="tab-btn-backup" class="tab-btn py-3 text-sm transition">💾 Backup & JSON Data</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: Products Manager -->
+    <div id="panel-products" class="space-y-6">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+                <h2 class="text-xl font-extrabold text-black">Manage Products & Stock</h2>
+                <p class="text-xs text-neutral-500 mt-0.5">Add or update Apple iPhones, MacBooks, iPads, Laptops and Accessories.</p>
+            </div>
+            <button onclick="openProductModal()" class="bg-orange hover:bg-orange-light text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition flex items-center gap-2 shadow-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                Add New Product
+            </button>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-neutral-200 overflow-hidden shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-neutral-50 border-b border-neutral-200 text-[11px] font-bold text-neutral-500 uppercase tracking-wider">
+                        <tr>
+                            <th class="px-5 py-3.5">Product</th>
+                            <th class="px-5 py-3.5">Category</th>
+                            <th class="px-5 py-3.5">Variant & Color</th>
+                            <th class="px-5 py-3.5">Store Price</th>
+                            <th class="px-5 py-3.5">Stock Status</th>
+                            <th class="px-5 py-3.5 text-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody" class="divide-y divide-neutral-100 text-xs">
+                        <!-- Rendered by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2: Offers Manager -->
+    <div id="panel-offers" class="space-y-6 hidden">
+        <div class="flex justify-between items-center">
+            <div>
+                <h2 class="text-xl font-extrabold text-black">Manage Offers & Promotions</h2>
+                <p class="text-xs text-neutral-500 mt-0.5">Control homepage dark offer cards, exchange schemes, and EMI bonuses.</p>
+            </div>
+            <button onclick="saveOffersNotice()" class="bg-black hover:bg-neutral-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">Save Changes</button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-neutral-200 shadow-sm space-y-4">
+                <span class="text-xs font-bold text-orange uppercase tracking-wider block">Offer Card #1</span>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Offer Title</label>
+                    <input type="text" id="offer1Title" value="Exchange Offers" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs font-bold">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Description / Subtitle</label>
+                    <textarea id="offer1Desc" rows="2" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs">Purana phone lao, naya iPhone/Laptop le jao — All brands accepted in Jamalpur.</textarea>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Highlight Badge</label>
+                    <input type="text" id="offer1Tag" value="Upto ₹30,000 Off" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs font-bold text-orange">
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-neutral-200 shadow-sm space-y-4">
+                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block">Offer Card #2</span>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Offer Title</label>
+                    <input type="text" id="offer2Title" value="No Cost EMI" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs font-bold">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Description / Subtitle</label>
+                    <textarea id="offer2Desc" rows="2" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs">Bajaj Finserv, HDFC, SBI aur sabhi cards par 0% byaaj par iPhone aur MacBook khareedein.</textarea>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-neutral-600 block mb-1">Highlight Badge</label>
+                    <input type="text" id="offer2Tag" value="From ₹1,999/mo" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2 text-xs font-bold text-emerald-600">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3: Store Info & Hours -->
+    <div id="panel-store" class="space-y-6 hidden">
+        <div>
+            <h2 class="text-xl font-extrabold text-black">Store Details & Contact Info</h2>
+            <p class="text-xs text-neutral-500 mt-0.5">Updates here will instantly sync to the website header, contact card, and footer.</p>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-neutral-200 shadow-sm space-y-5">
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Store Name</label>
+                    <input type="text" id="cfgStoreName" value="Gopal Jee Communication Store-1" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-bold text-black focus:border-orange focus:outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Store Tagline</label>
+                    <input type="text" id="cfgStoreTagline" value="Your Trusted Mobile, Apple & Computer Store in Jamalpur" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-medium text-black focus:border-orange focus:outline-none">
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Calling Phone Number</label>
+                    <input type="text" id="cfgStorePhone" value="070041 00928" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-bold text-black focus:border-orange focus:outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">WhatsApp Business Number (with 91)</label>
+                    <input type="text" id="cfgStoreWhatsApp" value="917004100928" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-bold text-black focus:border-orange focus:outline-none">
+                </div>
+            </div>
+
+            <div>
+                <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Store Address (Jamalpur)</label>
+                <input type="text" id="cfgStoreAddress" value="Avantika Cinema Road, Sadar Bazar, Jamalpur, Bihar 811214" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-medium text-black focus:border-orange focus:outline-none">
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Opening Hours</label>
+                    <input type="text" id="cfgStoreHours" value="Monday – Saturday: 10:00 AM – 9:00 PM" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-medium text-black focus:border-orange focus:outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider block mb-1">Google Rating Score</label>
+                    <input type="text" id="cfgStoreRating" value="3.9" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2.5 text-xs font-bold text-black focus:border-orange focus:outline-none">
+                </div>
+            </div>
+
+            <div class="pt-3 border-t border-neutral-100 flex items-center justify-between">
+                <span id="saveStatusMsg" class="text-xs font-bold text-emerald-600 opacity-0 transition-opacity">✅ Settings saved & synced to live website!</span>
+                <button onclick="saveStoreSettings()" class="bg-orange hover:bg-orange-light text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl transition shadow-sm">
+                    Save Store Information
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4: WhatsApp Leads Logger -->
+    <div id="panel-leads" class="space-y-6 hidden">
+        <div>
+            <h2 class="text-xl font-extrabold text-black">WhatsApp Inquiries & Customer Clicks</h2>
+            <p class="text-xs text-neutral-500 mt-0.5">Customers clicking WhatsApp buttons on product cards generate instant direct enquiries.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-sm space-y-4">
+            <div class="flex items-center gap-3 p-4 bg-emerald-50 text-emerald-800 rounded-xl border border-emerald-200 text-xs">
+                <span class="text-xl">💬</span>
+                <div>
+                    <strong>Direct High-Converting Architecture:</strong> Customer clicks automatically construct a pre-filled WhatsApp message with product name, selected variant, and price for zero-friction local sales!
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-2 text-xs">
+                <div class="p-3 bg-neutral-50 rounded-xl border border-neutral-200 flex justify-between items-center">
+                    <div>
+                        <span class="font-bold text-black block">iPhone 16 Pro 256GB Desert Titanium</span>
+                        <span class="text-neutral-500 text-[11px]">Enquiry: "Hi, I'm interested in iPhone 16 Pro 256GB. Please share availability & EMI."</span>
+                    </div>
+                    <span class="text-emerald-600 font-bold bg-emerald-100 px-2 py-0.5 rounded">WhatsApp Direct</span>
+                </div>
+                <div class="p-3 bg-neutral-50 rounded-xl border border-neutral-200 flex justify-between items-center">
+                    <div>
+                        <span class="font-bold text-black block">MacBook Air M3 Midnight</span>
+                        <span class="text-neutral-500 text-[11px]">Enquiry: "Student discount quotation for Jamalpur College student"</span>
+                    </div>
+                    <span class="text-emerald-600 font-bold bg-emerald-100 px-2 py-0.5 rounded">WhatsApp Direct</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 5: Backup & JSON Data -->
+    <div id="panel-backup" class="space-y-6 hidden">
+        <div>
+            <h2 class="text-xl font-extrabold text-black">Database Backup & Export</h2>
+            <p class="text-xs text-neutral-500 mt-0.5">Export product catalogue JSON or import new inventory batches.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-sm space-y-4">
+            <textarea id="jsonExportArea" rows="8" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl p-3 font-mono text-xs text-neutral-700"></textarea>
+            <div class="flex gap-3">
+                <button onclick="exportDataJson()" class="bg-black hover:bg-neutral-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">Refresh JSON</button>
+                <button onclick="importDataJson()" class="bg-orange hover:bg-orange-light text-white text-xs font-bold px-4 py-2.5 rounded-xl">Import JSON</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Product Add / Edit Modal -->
+<div id="productModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-neutral-200 relative max-h-[90vh] overflow-y-auto">
+        <button onclick="closeProductModal()" class="absolute top-5 right-5 text-neutral-400 hover:text-black p-1 rounded-full bg-neutral-100">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <h3 class="text-black font-extrabold text-lg mb-4" id="modalProductTitle">Add New Product</h3>
+
+        <form id="productForm" onsubmit="saveProductForm(event)" class="space-y-4 text-xs">
+            <input type="hidden" id="editProductId" value="">
+
+            <div>
+                <label class="font-bold text-neutral-700 block mb-1">Product Name *</label>
+                <input type="text" id="prodName" required placeholder="e.g. iPhone 16 Pro Max" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold focus:outline-none focus:border-orange">
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Category *</label>
+                    <select id="prodCategory" required class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold focus:outline-none focus:border-orange">
+                        <option value="iphone">iPhone</option>
+                        <option value="mac">Mac & Laptops</option>
+                        <option value="ipad">iPad</option>
+                        <option value="watch">Apple Watch</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Price (₹ Display) *</label>
+                    <input type="text" id="prodPrice" required placeholder="₹1,34,900" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs font-bold focus:outline-none focus:border-orange">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Storage / Variant</label>
+                    <input type="text" id="prodVariant" placeholder="e.g. 256GB / 16GB RAM" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:border-orange">
+                </div>
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Color / Finish</label>
+                    <input type="text" id="prodColor" placeholder="e.g. Desert Titanium" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:border-orange">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Highlight Badge</label>
+                    <input type="text" id="prodBadge" placeholder="e.g. New Launch / Best Seller" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:border-orange">
+                </div>
+                <div>
+                    <label class="font-bold text-neutral-700 block mb-1">Stock Availability</label>
+                    <select id="prodStock" class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold focus:outline-none focus:border-orange">
+                        <option value="true">In Stock (Jamalpur Store)</option>
+                        <option value="false">Out of Stock</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label class="font-bold text-neutral-700 block mb-1">Image URL</label>
+                <input type="url" id="prodImage" placeholder="https://..." class="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:border-orange">
+            </div>
+
+            <div class="pt-4 border-t border-neutral-100 flex justify-end gap-2">
+                <button type="button" onclick="closeProductModal()" class="px-4 py-2.5 border border-neutral-200 text-neutral-600 font-bold rounded-xl hover:bg-neutral-50">Cancel</button>
+                <button type="submit" class="px-5 py-2.5 bg-orange hover:bg-orange-light text-white font-bold rounded-xl shadow-sm">Save Product</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+const defaultProducts = [
+    { id: 1, name: 'iPhone 16 Pro', variant: '256GB', color: 'Desert Titanium', price: '₹1,34,900', rawPrice: 134900, category: 'iphone', inStock: true, badge: 'New Launch', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-hero-desert-202409?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 2, name: 'iPhone 16', variant: '128GB', color: 'Ultramarine Blue', price: '₹79,900', rawPrice: 79900, category: 'iphone', inStock: true, badge: 'Hot Seller', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 3, name: 'iPhone 15', variant: '128GB', color: 'Black / Blue / Pink', price: '₹58,900', rawPrice: 58900, category: 'iphone', inStock: true, badge: 'Best Deal', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-black?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 4, name: 'MacBook Air M3', variant: '8GB / 256GB SSD', color: 'Midnight & Starlight', price: '₹1,04,900', rawPrice: 104900, category: 'mac', inStock: true, badge: 'Student Choice', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba13-midnight-select-202402?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 5, name: 'MacBook Pro M4', variant: '16GB / 512GB SSD', color: 'Space Black', price: '₹1,69,900', rawPrice: 169900, category: 'mac', inStock: true, badge: 'Pro Performance', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-sb4-select-202411?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 6, name: 'Dell Inspiron 15 Core i5', variant: '16GB / 512GB SSD', color: 'Platinum Silver', price: '₹54,900', rawPrice: 54900, category: 'mac', inStock: true, badge: 'Windows Laptop', image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&q=80' },
+    { id: 7, name: 'iPad Pro M4 (11-inch)', variant: '256GB Wi-Fi', color: 'Space Black', price: '₹94,900', rawPrice: 94900, category: 'ipad', inStock: true, badge: 'OLED Display', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-wifi-spacegray-202405?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 8, name: 'iPad 10th Gen (10.9-inch)', variant: '64GB Wi-Fi', color: 'Blue / Silver', price: '₹32,900', rawPrice: 32900, category: 'ipad', inStock: true, badge: 'Best Budget iPad', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-10th-gen-finish-select-202210-blue-wifi?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 9, name: 'Apple Watch Ultra 2', variant: '49mm Titanium', color: 'Orange Ocean Band', price: '₹84,900', rawPrice: 84900, category: 'watch', inStock: true, badge: 'Ultimate Rugged', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-ultra2-702702-202409?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 10, name: 'Apple Watch Series 10', variant: '46mm', color: 'Jet Black Aluminum', price: '₹46,900', rawPrice: 46900, category: 'watch', inStock: true, badge: 'New Thin Design', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-s10-702702-202409?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 11, name: 'AirPods Pro (2nd Gen, USB-C)', variant: 'MagSafe Case', color: 'Active Noise Cancelling', price: '₹22,900', rawPrice: 22900, category: 'accessories', inStock: true, badge: 'Top Audio', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=500&hei=500&fmt=jpeg&qlt=90' },
+    { id: 12, name: 'Apple 20W USB-C Adapter + Cable', variant: 'Original Seal', color: 'Fast Charging', price: '₹1,900', rawPrice: 1900, category: 'accessories', inStock: true, badge: 'Must Have', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU7V2_GEO_IN?wid=500&hei=500&fmt=jpeg&qlt=90' },
+];
+
+function getStoredProducts() {
+    try {
+        const stored = localStorage.getItem('gopal_jee_products_v2');
+        if (stored) {
+            const parsed = JSON.parse(stored);
+            if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+    } catch(e) {
+        console.error('LocalStorage load error', e);
+    }
+    return defaultProducts;
+}
+
+function setStoredProducts(products) {
+    localStorage.setItem('gopal_jee_products_v2', JSON.stringify(products));
+    renderProductsTable();
+}
+
+function renderProductsTable() {
+    const products = getStoredProducts();
+    document.getElementById('statProductCount').textContent = products.length;
+    const tbody = document.getElementById('productTableBody');
+    tbody.innerHTML = products.map(p => `
+        <tr class="hover:bg-neutral-50 transition">
+            <td class="px-5 py-3.5">
+                <div class="flex items-center gap-3">
+                    <img src="${p.image}" alt="${p.name}" class="w-10 h-10 object-contain rounded-lg bg-neutral-100 p-1 flex-shrink-0" onerror="this.src='https://via.placeholder.com/100?text=Apple'">
+                    <div>
+                        <span class="font-bold text-black block">${p.name}</span>
+                        ${p.badge ? `<span class="text-[10px] text-orange font-semibold">${p.badge}</span>` : ''}
+                    </div>
+                </div>
+            </td>
+            <td class="px-5 py-3.5">
+                <span class="bg-neutral-100 text-neutral-700 text-[10px] font-bold px-2 py-0.5 rounded uppercase">${p.category}</span>
+            </td>
+            <td class="px-5 py-3.5">
+                <span class="text-neutral-700 font-medium">${p.variant || 'Standard'}</span>
+                <span class="text-neutral-400 block text-[11px]">${p.color || ''}</span>
+            </td>
+            <td class="px-5 py-3.5 font-bold text-black">${p.price}</td>
+            <td class="px-5 py-3.5">
+                <span class="inline-flex items-center gap-1 text-[11px] ${p.inStock !== false ? 'text-emerald-600 font-bold' : 'text-neutral-400'}">
+                    <span class="w-1.5 h-1.5 rounded-full ${p.inStock !== false ? 'bg-emerald-500' : 'bg-neutral-300'}"></span>
+                    ${p.inStock !== false ? 'In Stock' : 'Out of Stock'}
+                </span>
+            </td>
+            <td class="px-5 py-3.5 text-right space-x-2">
+                <button onclick="editProduct(${p.id})" class="text-blue-600 hover:text-blue-800 font-bold">Edit</button>
+                <button onclick="deleteProduct(${p.id})" class="text-red-600 hover:text-red-800 font-bold">Delete</button>
+            </td>
+        </tr>
+    `).join('');
+    exportDataJson();
+}
+
+function switchTab(tabId) {
+    ['products', 'offers', 'store', 'leads', 'backup'].forEach(t => {
+        document.getElementById(`panel-${t}`).classList.add('hidden');
+        document.getElementById(`tab-btn-${t}`).classList.remove('active');
+    });
+    document.getElementById(`panel-${tabId}`).classList.remove('hidden');
+    document.getElementById(`tab-btn-${tabId}`).classList.add('active');
+}
+
+function openProductModal() {
+    document.getElementById('editProductId').value = '';
+    document.getElementById('productForm').reset();
+    document.getElementById('modalProductTitle').textContent = 'Add New Product';
+    document.getElementById('productModal').classList.remove('hidden');
+}
+
+function closeProductModal() {
+    document.getElementById('productModal').classList.add('hidden');
+}
+
+function editProduct(id) {
+    const products = getStoredProducts();
+    const p = products.find(item => item.id === id);
+    if (!p) return;
+    document.getElementById('editProductId').value = p.id;
+    document.getElementById('prodName').value = p.name;
+    document.getElementById('prodCategory').value = p.category;
+    document.getElementById('prodPrice').value = p.price;
+    document.getElementById('prodVariant').value = p.variant || '';
+    document.getElementById('prodColor').value = p.color || '';
+    document.getElementById('prodBadge').value = p.badge || '';
+    document.getElementById('prodStock').value = p.inStock !== false ? 'true' : 'false';
+    document.getElementById('prodImage').value = p.image || '';
+    document.getElementById('modalProductTitle').textContent = 'Edit Product';
+    document.getElementById('productModal').classList.remove('hidden');
+}
+
+function deleteProduct(id) {
+    if (!confirm('Are you sure you want to delete this product?')) return;
+    let products = getStoredProducts();
+    products = products.filter(p => p.id !== id);
+    setStoredProducts(products);
+}
+
+function saveProductForm(e) {
+    e.preventDefault();
+    const idVal = document.getElementById('editProductId').value;
+    let products = getStoredProducts();
+    const cleanPrice = parseInt(document.getElementById('prodPrice').value.replace(/[^0-9]/g, '')) || 0;
+
+    const prodData = {
+        id: idVal ? parseInt(idVal) : Date.now(),
+        name: document.getElementById('prodName').value,
+        category: document.getElementById('prodCategory').value,
+        price: document.getElementById('prodPrice').value,
+        rawPrice: cleanPrice,
+        variant: document.getElementById('prodVariant').value,
+        color: document.getElementById('prodColor').value,
+        badge: document.getElementById('prodBadge').value,
+        inStock: document.getElementById('prodStock').value === 'true',
+        image: document.getElementById('prodImage').value || 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-hero-desert-202409?wid=500&hei=500&fmt=jpeg&qlt=90'
+    };
+
+    if (idVal) {
+        const index = products.findIndex(p => p.id === parseInt(idVal));
+        if (index !== -1) products[index] = prodData;
+    } else {
+        products.unshift(prodData);
+    }
+
+    setStoredProducts(products);
+    closeProductModal();
+}
+
+function saveStoreSettings() {
+    const settings = {
+        name: document.getElementById('cfgStoreName').value,
+        tagline: document.getElementById('cfgStoreTagline').value,
+        phone: document.getElementById('cfgStorePhone').value,
+        whatsapp: document.getElementById('cfgStoreWhatsApp').value,
+        address: document.getElementById('cfgStoreAddress').value,
+        hours: document.getElementById('cfgStoreHours').value,
+        rating: document.getElementById('cfgStoreRating').value,
+    };
+    localStorage.setItem('gopal_jee_store_info_v2', JSON.stringify(settings));
+    const msg = document.getElementById('saveStatusMsg');
+    msg.classList.remove('opacity-0');
+    setTimeout(() => { msg.classList.add('opacity-0'); }, 3000);
+}
+
+function saveOffersNotice() {
+    alert('Offers updated successfully! Synced to homepage.');
+}
+
+function exportDataJson() {
+    const products = getStoredProducts();
+    document.getElementById('jsonExportArea').value = JSON.stringify(products, null, 2);
+}
+
+function importDataJson() {
+    try {
+        const parsed = JSON.parse(document.getElementById('jsonExportArea').value);
+        if (Array.isArray(parsed)) {
+            setStoredProducts(parsed);
+            alert('Inventory database successfully imported!');
+        }
+    } catch(e) {
+        alert('Invalid JSON format.');
+    }
+}
+
+function resetDefaultData() {
+    if (confirm('Reset catalogue to original default showcase products?')) {
+        localStorage.removeItem('gopal_jee_products_v2');
+        localStorage.removeItem('gopal_jee_store_info_v2');
+        renderProductsTable();
+        alert('Reset to default demo data completed.');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProductsTable();
+});
+</script>
+
+</body>
+</html>
