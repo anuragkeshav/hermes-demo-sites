@@ -1,31 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>About Us | Jai Durga Sweet Shop & Restaurant - Jamalpur's Culinary Heritage</title>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Heritage | Jai Durga Sweet Shop & Restaurant - Jamalpur</title>
+    <meta name="description" content="Jai Durga Sweet Shop & Restaurant - Authentic Pure Desi Ghee Sweets, South Indian, Mughlai & Chinese in Jamalpur, Bihar. Rating 4.0 (1,027+ reviews).">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        saffron: '#EA580C',
-                        amberGold: '#D97706',
-                        warmGold: '#F59E0B',
-                        royalMaroon: '#7F1D1D',
-                        deepBrown: '#1C1917',
-                        cardDark: '#292524',
-                        creamBg: '#FFFBEB',
-                        softCream: '#FEF3C7',
+                        saffron: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        warmGold: {
+                            DEFAULT: '#F59E0B',
+                            light: '#FBBF24',
+                            dark: '#D97706',
+                            glow: '#FDE68A'
+                        },
+                        royalMaroon: {
+                            DEFAULT: '#881337',
+                            dark: '#4C0519',
+                            light: '#9F1239'
+                        },
+                        deepBrown: '#12100E',
+                        surfaceDark: '#1C1815',
+                        cardDark: '#26211C',
+                        borderGold: '#854D0E',
                     },
                     fontFamily: {
                         cinzel: ['Cinzel', 'serif'],
                         body: ['Plus Jakarta Sans', 'sans-serif'],
+                        hindi: ['Rozha One', 'serif']
                     }
                 }
             }
@@ -33,37 +55,56 @@
     </script>
     <style>
         .gold-gradient-text {
-            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 50%, #B45309 100%);
+            background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 45%, #EA580C 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .hero-pattern {
-            background: linear-gradient(to bottom, rgba(28, 25, 23, 0.84), rgba(28, 25, 23, 0.95)), 
+            background: linear-gradient(to bottom, rgba(18, 16, 14, 0.88), rgba(18, 16, 14, 0.98)), 
                         url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
         }
         .nav-blur {
-            background: rgba(28, 25, 23, 0.94);
-            backdrop-filter: blur(12px);
+            background: rgba(18, 16, 14, 0.94);
+            backdrop-filter: blur(14px);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card-hover:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.25);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.22);
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1C1815;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #F59E0B;
+            border-radius: 4px;
         }
     </style>
-
 </head>
-<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-amberGold selection:text-white">
-    
+<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-warmGold selection:text-deepBrown pb-16 md:pb-0 custom-scrollbar">
+
     <!-- Top Announcement Bar -->
-    <div class="bg-royalMaroon text-amber-200 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40">
+    <div class="bg-royalMaroon text-amber-200 text-xs py-2 px-4 border-b border-amber-900/40">
         <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
-            <div class="flex items-center space-x-3">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-amberGold text-deepBrown">Dine-In • Takeaway • Delivery</span>
-                <span>📍 8F9V+66, Main Market, Jamalpur, Bihar 811214</span>
+            <div class="flex items-center space-x-3 text-xs sm:text-sm">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-warmGold text-deepBrown">
+                    Dine-In • Takeaway • Delivery • Drive-Through
+                </span>
+                <span class="hidden md:inline text-amber-300/90">📍 8F9V+66 Jamalpur, Bihar 811214</span>
             </div>
-            <div class="flex items-center space-x-4">
-                <span>⏰ Open Daily: 7:00 AM – 11:00 PM</span>
-                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1">
+            <div class="flex items-center space-x-4 text-xs sm:text-sm">
+                <span class="flex items-center gap-1.5 text-amber-100">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Open Daily: 7:00 AM – 11:00 PM
+                </span>
+                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1 bg-royalMaroon-dark px-2.5 py-0.5 rounded border border-amber-500/30">
                     📞 094730 45895
                 </a>
             </div>
@@ -71,217 +112,538 @@
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800">
+    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo & Brand -->
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amberGold via-saffron to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:rotate-6 transition">
-                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-bold">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-600 via-warmGold to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:scale-105 transition">
+                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-black">
                             JD
                         </div>
                     </div>
                     <div>
-                        <div class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition">
-                            JAI DURGA
+                        <div class="font-cinzel text-lg sm:text-xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition flex items-center gap-2">
+                            <span>JAI DURGA</span>
+                            <span class="text-[10px] uppercase font-normal px-2 py-0.5 rounded bg-amber-950/80 text-amber-400 border border-amber-800/50">Jamalpur</span>
                         </div>
                         <div class="text-xs text-amber-400/90 font-medium tracking-wide flex items-center gap-1">
-                            <span>SWEET SHOP & RESTAURANT</span>
+                            <span class="font-hindi text-sm">जय दुर्गा स्वीट शॉप & रेस्टोरेंट</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Nav Links -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
-                    <a href="index.html" class="nav-link text-stone-300 hover:text-warmGold transition">HOME</a>
-                    <a href="about.html" class="nav-link text-warmGold border-b-2 border-warmGold pb-1 hover:text-warmGold transition">ABOUT US</a>
-                    <a href="menu.html" class="nav-link text-stone-300 hover:text-warmGold transition">OUR MENU</a>
-                    <a href="contact.html" class="nav-link text-stone-300 hover:text-warmGold transition">CONTACT & LOCATION</a>
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-7 text-sm font-semibold tracking-wide">
+                    <a href="index.html" class="text-stone-300 hover:text-warmGold transition">HOME</a>
+                    <a href="menu.html" class="text-stone-300 hover:text-warmGold transition">OUR MENU</a>
+                    <a href="about.html" class="text-warmGold border-b-2 border-warmGold pb-1 font-bold">ABOUT US</a>
+                    <a href="contact.html" class="text-stone-300 hover:text-warmGold transition">CONTACT & LOCATION</a>
                 </div>
 
-                <!-- CTA Buttons -->
-                <div class="flex items-center gap-3">
-                    <a href="tel:09473045895" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full border border-warmGold/40 text-warmGold hover:bg-warmGold/10 text-xs font-bold transition">
-                        ORDER: 094730 45895
-                    </a>
-                    <a href="contact.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-5 py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105">
-                        BOOK A TABLE
+                <!-- Desktop CTA Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="toggleCartDrawer()" class="relative bg-surfaceDark hover:bg-stone-800 border border-amber-600/40 text-warmGold px-3.5 py-2 rounded-full text-xs font-bold transition flex items-center gap-2">
+                        <span>🛒 BASKET</span>
+                        <span id="cartCountBadge" class="bg-saffron-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] font-bold">0</span>
+                    </button>
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="bg-gradient-to-r from-warmGold to-saffron-600 text-stone-950 font-bold px-4 py-2 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105 flex items-center gap-1.5">
+                        <span>⚡ ORDER ONLINE</span>
                     </a>
                 </div>
+
+                <!-- Mobile Menu Button & Cart -->
+                <div class="flex items-center gap-2 sm:hidden">
+                    <button onclick="toggleCartDrawer()" class="relative p-2 text-warmGold bg-surfaceDark rounded-lg border border-stone-800">
+                        <span class="text-lg">🛒</span>
+                        <span id="cartCountBadgeMobile" class="absolute -top-1 -right-1 bg-saffron-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="p-2 text-stone-300 hover:text-white bg-surfaceDark rounded-lg border border-stone-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden sm:hidden bg-surfaceDark border-b border-stone-800 px-4 pt-3 pb-5 space-y-3">
+            <a href="index.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">🏠 Home Overview</a>
+            <a href="menu.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📜 Full Menu & Prices</a>
+            <a href="about.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📖 About Heritage</a>
+            <a href="contact.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📍 Contact & Location</a>
+            <div class="pt-3 border-t border-stone-800 flex gap-2">
+                <a href="tel:09473045895" class="flex-1 text-center bg-stone-800 text-warmGold py-2 rounded-lg text-xs font-bold">📞 Call 094730 45895</a>
+                <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 text-center bg-warmGold text-deepBrown py-2 rounded-lg text-xs font-bold">⚡ Petpooja Menu</a>
             </div>
         </div>
     </nav>
+    
+    <!-- Shopping Cart Drawer Overlay -->
+    <div id="cartOverlay" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden transition-opacity" onclick="toggleCartDrawer()"></div>
 
-
-    <!-- Page Header -->
-    <section class="pt-24 pb-16 bg-stone-950 border-b border-stone-800 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 relative z-10">
-            <p class="text-warmGold text-xs font-bold tracking-widest uppercase mb-3">Our Roots & Commitment</p>
-            <h1 class="font-cinzel text-4xl sm:text-5xl font-extrabold text-stone-100">
-                A Legacy of Pure Taste in <span class="gold-gradient-text">Jamalpur</span>
-            </h1>
-            <p class="text-stone-400 mt-4 text-base sm:text-lg max-w-2xl mx-auto">
-                Discover the story behind Jai Durga Sweet Shop & Restaurant — delivering culinary joy, authentic flavors, and unmatched hospitality.
-            </p>
-        </div>
-    </section>
-
-    <!-- Main Story -->
-    <section class="py-20 bg-deepBrown">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-6">
-                    <span class="px-3 py-1 bg-royalMaroon/80 border border-amber-800/40 text-amber-200 text-xs font-bold rounded-full uppercase tracking-wider">
-                        Tradition & Purity
-                    </span>
-                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-100">
-                        Crafting Happiness One Mithai & Meal at a Time
-                    </h2>
-                    <p class="text-stone-300 leading-relaxed">
-                        Situated at the bustling heart of Jamalpur (Bihar 811214), <strong class="text-warmGold">Jai Durga Sweet Shop & Restaurant</strong> started with a clear vision: to bring pure, unadulterated traditional Indian sweets and hearty family meals to the community at honest, affordable prices.
-                    </p>
-                    <p class="text-stone-400 leading-relaxed">
-                        Over the years, we have grown into one of Jamalpur's most recognized food landmarks, with over 1,000+ positive customer reviews on Google. From early morning breakfast seekers enjoying fresh Dosas and hot Kachoris, to families gathering in the evening for rich Shahi Paneer, Mughlai Parathas, and Veg Hakka Noodles — Jai Durga is a household name for taste and trust.
-                    </p>
-
-                    <div class="border-l-4 border-amberGold pl-4 py-2 bg-stone-900/60 rounded-r-xl">
-                        <p class="text-sm italic text-amber-200">
-                            "Purity is not a compromise for us; it is our foundation. Every batch of sweet is prepared using fresh milk and pure ghee."
-                        </p>
-                    </div>
+    <!-- Shopping Cart Drawer Panel -->
+    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-surfaceDark border-l border-amber-900/40 z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+        <!-- Header -->
+        <div class="p-5 bg-cardDark border-b border-stone-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">🛍️</span>
+                <div>
+                    <h3 class="font-cinzel text-lg font-bold text-stone-100">Your Order Basket</h3>
+                    <p class="text-xs text-stone-400">Jai Durga Restaurant • Jamalpur</p>
                 </div>
+            </div>
+            <button onclick="toggleCartDrawer()" class="text-stone-400 hover:text-white p-2 text-lg">✕</button>
+        </div>
 
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=80" alt="Making Sweets" class="rounded-2xl h-72 w-full object-cover border border-stone-800 shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&q=80" alt="Dining Room" class="rounded-2xl h-72 w-full object-cover border border-stone-800 shadow-xl mt-8">
+        <!-- Items List -->
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-4 custom-scrollbar">
+            <div id="emptyCartMessage" class="text-center py-16 text-stone-400">
+                <div class="text-5xl mb-3">🍽️</div>
+                <p class="text-sm font-semibold">Your basket is currently empty.</p>
+                <p class="text-xs text-stone-500 mt-1">Browse our delicious sweets, dosas, noodles & biryanis to add items.</p>
+                <a href="menu.html" class="inline-block mt-4 text-xs font-bold text-warmGold border border-warmGold/40 px-4 py-2 rounded-full hover:bg-warmGold hover:text-deepBrown transition">
+                    Explore Menu
+                </a>
+            </div>
+        </div>
+
+        <!-- Order Type & Customer Details Form -->
+        <div id="cartCheckoutForm" class="p-5 bg-cardDark border-t border-stone-800 space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold text-stone-300">
+                <span>Subtotal Amount</span>
+                <span id="cartSubtotal" class="text-warmGold font-bold text-lg">₹0</span>
+            </div>
+            
+            <div class="space-y-1.5">
+                <label class="text-xs text-stone-400 font-semibold block">Select Service Type:</label>
+                <div class="grid grid-cols-3 gap-2 text-xs">
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                        <input type="radio" name="orderType" value="Dine-in (Table)" class="hidden" checked> Dine-in
+                    </label>
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                        <input type="radio" name="orderType" value="Takeaway / Parcel" class="hidden"> Takeaway
+                    </label>
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                        <input type="radio" name="orderType" value="Home Delivery" class="hidden"> Delivery
+                    </label>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+                <input id="cartCustomerName" type="text" placeholder="Your Name" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
+                <input id="cartCustomerPhone" type="tel" placeholder="Mobile Number" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
+            </div>
+            <input id="cartCustomerNotes" type="text" placeholder="Table No. / Delivery Address / Instructions" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
+
+            <!-- Checkout Action Buttons -->
+            <div class="space-y-2 pt-2">
+                <button onclick="sendOrderViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs tracking-wider transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950">
+                    <span>📲 SEND ORDER TO WHATSAPP (+91 94730 45895)</span>
+                </button>
+                <div class="flex gap-2">
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 bg-stone-800 hover:bg-stone-700 text-warmGold border border-warmGold/30 font-semibold py-2 rounded-lg text-[11px] text-center transition">
+                        ⚡ Petpooja Order
+                    </a>
+                    <button onclick="clearCart()" class="px-3 bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-800/40 rounded-lg text-[11px] transition">
+                        Clear
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Our Core Pillars -->
-    <section class="py-20 bg-stone-950 border-t border-stone-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <p class="text-warmGold text-xs font-bold tracking-widest uppercase">The Pillars We Stand By</p>
-                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold mt-2 text-stone-100">
-                    Why Jamalpur Chooses Us
-                </h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
-                    <div class="w-14 h-14 rounded-2xl bg-amberGold/10 border border-amberGold/30 flex items-center justify-center text-3xl mb-6">
-                        🥛
-                    </div>
-                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">100% Pure Raw Materials</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">
-                        We source our milk, chhena, khoya, and desi ghee directly from reliable, certified local suppliers to ensure rich authentic flavor in all our mithais.
-                    </p>
-                </div>
-
-                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
-                    <div class="w-14 h-14 rounded-2xl bg-saffron/10 border border-saffron/30 flex items-center justify-center text-3xl mb-6">
-                        👨‍🍳
-                    </div>
-                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">Master Halwais & Chefs</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">
-                        Our skilled culinary masters have perfected the art of traditional Indian confectionery, slow-cooking techniques, and Chinese wok cooking over decades.
-                    </p>
-                </div>
-
-                <div class="bg-cardDark p-8 rounded-2xl border border-stone-800">
-                    <div class="w-14 h-14 rounded-2xl bg-warmGold/10 border border-warmGold/30 flex items-center justify-center text-3xl mb-6">
-                        💰
-                    </div>
-                    <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">Unbeatable Value</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">
-                        High quality does not mean high prices. With meals averaging ₹1–200 per person, everyone in Jamalpur can enjoy restaurant-quality dining anytime.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Visit Us CTA -->
-    <section class="py-16 bg-deepBrown border-t border-stone-800 text-center">
+    </div>
+    
+    <!-- Header -->
+    <section class="pt-20 pb-16 bg-surfaceDark border-b border-stone-800 text-center">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-100">
-                Experience Authentic Hospitality at Jamalpur
-            </h2>
-            <p class="text-stone-400 mt-3 text-sm sm:text-base">
-                Drop by with your family or friends today and treat your tastebuds.
+            <div class="inline-block px-3 py-1 rounded-full bg-royalMaroon text-amber-200 text-xs font-bold uppercase tracking-wider mb-3">
+                Culinary Heritage of Jamalpur
+            </div>
+            <h1 class="font-cinzel text-3xl sm:text-5xl font-extrabold text-stone-100">
+                Crafting Purity & Taste <span class="gold-gradient-text">Since Inception</span>
+            </h1>
+            <p class="font-hindi text-amber-400 text-lg mt-2">
+                जय दुर्गा स्वीट शॉप & रेस्टोरेंट — शुद्धता, स्वाद और परंपरा
             </p>
-            <div class="mt-8 flex justify-center gap-4">
-                <a href="menu.html" class="bg-gradient-to-r from-amberGold to-saffron text-stone-950 font-bold px-8 py-3.5 rounded-full text-sm">
-                    VIEW MENU
-                </a>
-                <a href="contact.html" class="bg-stone-800 text-stone-200 border border-stone-700 font-semibold px-8 py-3.5 rounded-full text-sm hover:bg-stone-700">
-                    CONTACT & DIRECTIONS
-                </a>
+            <p class="text-stone-400 text-xs sm:text-sm mt-3 max-w-xl mx-auto">
+                Discover the story behind Jamalpur's most beloved family dining venue and pure desi ghee confectionery.
+            </p>
+        </div>
+    </section>
+
+    <!-- Heritage Story -->
+    <section class="py-16 bg-deepBrown">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="text-xs font-bold text-warmGold tracking-widest uppercase">The Jai Durga Tradition</div>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-100 leading-tight">
+                        A Journey of Flavour, Freshness & Family Values
+                    </h2>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Established with a humble mission to provide unadulterated pure desi ghee sweets and hygienic, appetizing meals to the citizens of Jamalpur and nearby areas, <strong>Jai Durga Sweet Shop & Restaurant</strong> has grown into a revered dining icon.
+                    </p>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Every single morning starts before sunrise with boiling farm-fresh milk to make our signature chhena for sponge Rosogulla and rich Rasmalai. As the clock strikes 7:00 AM, our tawa starts sizzling with crispy South Indian Dosas, followed by afternoon royal thalis and evening Chinese and Mughlai feasts.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 pt-4 text-center">
+                        <div class="bg-cardDark p-4 rounded-2xl border border-stone-800">
+                            <div class="text-2xl font-bold text-warmGold font-cinzel">1,027+</div>
+                            <div class="text-[11px] text-stone-400 mt-1">Google Reviews</div>
+                        </div>
+                        <div class="bg-cardDark p-4 rounded-2xl border border-stone-800">
+                            <div class="text-2xl font-bold text-warmGold font-cinzel">₹1–200</div>
+                            <div class="text-[11px] text-stone-400 mt-1">Average Meal Cost</div>
+                        </div>
+                        <div class="bg-cardDark p-4 rounded-2xl border border-stone-800">
+                            <div class="text-2xl font-bold text-warmGold font-cinzel">80+</div>
+                            <div class="text-[11px] text-stone-400 mt-1">Menu Items</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-amber-900/50 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant Interior" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepBrown via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-surfaceDark/90 backdrop-blur-md border border-stone-700">
+                            <h4 class="font-cinzel text-stone-100 font-bold text-sm">Hygienic Family AC Dining Hall</h4>
+                            <p class="text-stone-400 text-xs mt-0.5">Spacious, clean, and comfortable seating for families and friends.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- 4 Pillars of Excellence -->
+    <section class="py-16 bg-surfaceDark border-y border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <p class="text-warmGold text-xs font-bold uppercase tracking-widest">Our Core Commitments</p>
+                <h2 class="font-cinzel text-3xl font-bold text-stone-100 mt-1">Why Jamalpur Loves Us</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-cardDark p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-3xl mb-3">🧈</div>
+                    <h3 class="font-bold text-stone-100 text-sm mb-1">100% Pure Desi Ghee</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">No synthetic fats or low-grade oils. Pure desi ghee is used in all our festive sweets.</p>
+                </div>
+
+                <div class="bg-cardDark p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-3xl mb-3">🧼</div>
+                    <h3 class="font-bold text-stone-100 text-sm mb-1">Strict Kitchen Hygiene</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">Stainless steel cooking equipment, filtered water, and spotless preparation standards.</p>
+                </div>
+
+                <div class="bg-cardDark p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-3xl mb-3">💰</div>
+                    <h3 class="font-bold text-stone-100 text-sm mb-1">Honest Affordable Rates</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">Delicious meals starting from ₹60–₹140. Premium dining experience at pocket-friendly pricing.</p>
+                </div>
+
+                <div class="bg-cardDark p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-3xl mb-3">🎁</div>
+                    <h3 class="font-bold text-stone-100 text-sm mb-1">Festive Gifting Boxes</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">Bulk orders for Diwali, Chhath Puja, Eid, and weddings with customized packaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Call to action -->
+    <section class="py-16 bg-gradient-to-r from-royalMaroon via-deepBrown to-surfaceDark border-b border-stone-800 text-center">
+        <div class="max-w-3xl mx-auto px-4 space-y-5">
+            <h2 class="font-cinzel text-3xl font-bold text-stone-100">Experience the Real Flavours Today</h2>
+            <p class="text-stone-300 text-xs sm:text-sm">Visit our restaurant or order online through WhatsApp and Petpooja menu.</p>
+            <div class="flex flex-wrap justify-center gap-3 pt-2">
+                <a href="menu.html" class="bg-warmGold text-deepBrown font-bold px-7 py-3 rounded-full text-xs sm:text-sm hover:bg-warmGold-light transition">
+                    View Full Menu ➔
+                </a>
+                <a href="contact.html" class="bg-cardDark text-stone-200 border border-stone-700 px-6 py-3 rounded-full text-xs sm:text-sm hover:bg-stone-800 transition">
+                    Contact & Directions
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mobile Sticky Floating Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-surfaceDark/95 backdrop-blur-md border-t border-stone-800 py-2 px-3 shadow-2xl">
+        <div class="grid grid-cols-4 gap-2 text-center text-xs">
+            <a href="tel:09473045895" class="flex flex-col items-center justify-center p-1 rounded-lg bg-royalMaroon/90 text-amber-200 hover:bg-royalMaroon transition font-medium">
+                <span class="text-base">📞</span>
+                <span class="text-[10px] mt-0.5 font-bold">Call Now</span>
+            </a>
+            <a href="menu.html" class="flex flex-col items-center justify-center p-1 rounded-lg bg-cardDark text-stone-200 hover:text-warmGold transition">
+                <span class="text-base">📜</span>
+                <span class="text-[10px] mt-0.5">Menu</span>
+            </a>
+            <button onclick="toggleCartDrawer()" class="flex flex-col items-center justify-center p-1 rounded-lg bg-cardDark text-warmGold relative">
+                <span class="text-base">🛒</span>
+                <span class="text-[10px] mt-0.5 font-bold">Basket</span>
+                <span id="cartCountBadgeFloating" class="absolute -top-1 right-2 bg-saffron-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
+            </button>
+            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="flex flex-col items-center justify-center p-1 rounded-lg bg-amber-600/20 border border-amber-600/40 text-warmGold hover:bg-amber-600/30 transition">
+                <span class="text-base">📍</span>
+                <span class="text-[10px] mt-0.5 font-bold">Maps</span>
+            </a>
+        </div>
+    </div>
     
     <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-400 py-14 border-t border-stone-900">
+    <footer class="bg-stone-950 text-stone-400 py-16 border-t border-stone-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-                <!-- Brand Col -->
+                <!-- Brand & Heritage -->
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amberGold to-saffron flex items-center justify-center font-cinzel text-stone-950 font-bold">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-warmGold to-saffron-600 flex items-center justify-center font-cinzel text-deepBrown font-extrabold text-lg">
                             JD
                         </div>
-                        <span class="font-cinzel text-xl font-bold text-stone-100">JAI DURGA SWEET SHOP & RESTAURANT</span>
+                        <div>
+                            <span class="font-cinzel text-lg font-bold text-stone-100 block">JAI DURGA SWEET SHOP & RESTAURANT</span>
+                            <span class="font-hindi text-amber-400 text-xs">जय दुर्गा स्वीट शॉप & रेस्टोरेंट (जमालपुर, बिहार)</span>
+                        </div>
                     </div>
                     <p class="text-stone-400 text-sm max-w-md leading-relaxed">
-                        Jamalpur's premier destination for authentic Indian sweets, North & South Indian meals, and Chinese delicacies. Experience quality taste, pure desi ghee preparations, and comfortable family dining.
+                        Jamalpur's premier destination for pure desi ghee sweets, melt-in-mouth Rasmalai, crispy South Indian dosas, spicy Hakka noodles, and authentic Mughlai biryani. Serving generations with purity, taste, and affordability.
                     </p>
-                    <div class="text-xs text-amber-400/90 font-medium">
-                        📍 8F9V+66 Jamalpur, Bihar 811214 • Open 7:00 AM – 11:00 PM Daily
+                    <div class="flex flex-wrap items-center gap-2 pt-2">
+                        <span class="bg-amber-950/80 text-amber-300 border border-amber-800/60 text-xs px-2.5 py-1 rounded-md font-semibold">⭐ 4.0 (1,027 Google Reviews)</span>
+                        <span class="bg-stone-900 text-stone-300 text-xs px-2.5 py-1 rounded-md font-semibold">₹1–200 per person</span>
+                        <span class="bg-emerald-950/80 text-emerald-300 border border-emerald-800/60 text-xs px-2.5 py-1 rounded-md font-semibold">100% Pure & Fresh</span>
                     </div>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Quick Navigation -->
                 <div>
-                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Quick Navigation</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-warmGold transition">Home</a></li>
-                        <li><a href="about.html" class="hover:text-warmGold transition">About Heritage</a></li>
-                        <li><a href="menu.html" class="hover:text-warmGold transition">Full Menu & Pricing</a></li>
-                        <li><a href="contact.html" class="hover:text-warmGold transition">Contact & Table Reservation</a></li>
-                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition">Google Maps Page</a></li>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4 border-l-2 border-warmGold pl-2">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="index.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Home Overview</a></li>
+                        <li><a href="menu.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Full Menu & Pricing</a></li>
+                        <li><a href="about.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Our Heritage & Quality</a></li>
+                        <li><a href="contact.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Table Reservation & Contact</a></li>
+                        <li><a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-warmGold transition flex items-center gap-1.5 text-warmGold font-semibold"><span>›</span> Petpooja Online Menu</a></li>
+                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Google Maps Location</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact Col -->
+                <!-- Contact & Timings -->
                 <div>
-                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4">Contact Details</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2">
-                            <span class="text-warmGold">📞</span>
-                            <a href="tel:09473045895" class="hover:text-warmGold transition font-semibold text-stone-200">094730 45895</a>
+                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4 border-l-2 border-warmGold pl-2">Store Info & Timing</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-warmGold text-base">📞</span>
+                            <div>
+                                <span class="text-xs text-stone-400 block">Phone Order / Takeaway:</span>
+                                <a href="tel:09473045895" class="hover:text-warmGold transition font-bold text-stone-100 text-sm">094730 45895</a>
+                            </div>
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-warmGold">📍</span>
-                            <span>8F9V+66, Jamalpur, Bihar 811214</span>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-warmGold text-base">📍</span>
+                            <div>
+                                <span class="text-xs text-stone-400 block">Address & Plus Code:</span>
+                                <span class="text-stone-300 text-xs leading-relaxed">8F9V+66, Jamalpur, Bihar 811214</span>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-warmGold">⏰</span>
-                            <span>7:00 AM – 11:00 PM Everyday</span>
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-warmGold text-base">⏰</span>
+                            <div>
+                                <span class="text-xs text-stone-400 block">Opening Hours:</span>
+                                <span class="text-stone-300 text-xs">Open Daily: 7:00 AM – 11:00 PM</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
-                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved.</p>
-                <p>Designed as an Exclusive High-Performance Digital Demo</p>
+                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved. (जय दुर्गा स्वीट शॉप & रेस्टोरेंट)</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-stone-400 transition">Google Business Profile</a>
+                    <span>•</span>
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-stone-400 transition">Petpooja POS Menu</a>
+                </div>
             </div>
         </div>
     </footer>
+    
+    <script>
+        let cart = JSON.parse(localStorage.getItem('jd_cart') || '[]');
 
-</body>
-</html>
+        function saveCart() {
+            localStorage.setItem('jd_cart', JSON.stringify(cart));
+            updateCartUI();
+        }
+
+        function addToCart(name, price, category) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ name, price, category, qty: 1 });
+            }
+            saveCart();
+            showToast(`Added "${name}" to basket! 🛒`);
+        }
+
+        function updateQty(name, delta) {
+            const item = cart.find(i => i.name === name);
+            if (item) {
+                item.qty += delta;
+                if (item.qty <= 0) {
+                    cart = cart.filter(i => i.name !== name);
+                }
+                saveCart();
+            }
+        }
+
+        function clearCart() {
+            cart = [];
+            saveCart();
+            showToast('Basket cleared.');
+        }
+
+        function updateCartUI() {
+            const count = cart.reduce((acc, item) => acc + item.qty, 0);
+            const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+
+            const bD = document.getElementById('cartCountBadge');
+            const bM = document.getElementById('cartCountBadgeMobile');
+            const bF = document.getElementById('cartCountBadgeFloating');
+            if (bD) bD.innerText = count;
+            if (bM) bM.innerText = count;
+            if (bF) bF.innerText = count;
+
+            const subtotalEl = document.getElementById('cartSubtotal');
+            if (subtotalEl) subtotalEl.innerText = `₹${total}`;
+
+            const listEl = document.getElementById('cartItemsList');
+            if (listEl) {
+                if (cart.length === 0) {
+                    listEl.innerHTML = `
+                        <div id="emptyCartMessage" class="text-center py-16 text-stone-400">
+                            <div class="text-5xl mb-3">🍽️</div>
+                            <p class="text-sm font-semibold">Your basket is currently empty.</p>
+                            <p class="text-xs text-stone-500 mt-1">Browse our delicious sweets, dosas, noodles & biryanis to add items.</p>
+                            <a href="menu.html" class="inline-block mt-4 text-xs font-bold text-warmGold border border-warmGold/40 px-4 py-2 rounded-full hover:bg-warmGold hover:text-deepBrown transition">
+                                Explore Menu
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    let html = '';
+                    cart.forEach(item => {
+                        html += `
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-cardDark border border-stone-800">
+                                <div class="flex-1 pr-2">
+                                    <h4 class="text-xs font-bold text-stone-100">${item.name}</h4>
+                                    <div class="text-[11px] text-warmGold font-semibold">₹${item.price} each • Total: ₹${item.price * item.qty}</div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="updateQty('${item.name}', -1)" class="w-6 h-6 rounded bg-surfaceDark border border-stone-700 text-stone-300 hover:text-white flex items-center justify-center font-bold text-xs">-</button>
+                                    <span class="text-xs font-bold text-stone-100 min-w-[16px] text-center">${item.qty}</span>
+                                    <button onclick="updateQty('${item.name}', 1)" class="w-6 h-6 rounded bg-warmGold text-deepBrown flex items-center justify-center font-bold text-xs">+</button>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    listEl.innerHTML = html;
+                }
+            }
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cartDrawer');
+            const overlay = document.getElementById('cartOverlay');
+            if (drawer && overlay) {
+                if (drawer.classList.contains('translate-x-full')) {
+                    drawer.classList.remove('translate-x-full');
+                    overlay.classList.remove('hidden');
+                } else {
+                    drawer.classList.add('translate-x-full');
+                    overlay.classList.add('hidden');
+                }
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        function sendOrderViaWhatsApp() {
+            if (cart.length === 0) {
+                alert("Your basket is empty! Please add items from our menu first.");
+                return;
+            }
+            const name = document.getElementById('cartCustomerName')?.value.trim() || 'Valued Guest';
+            const phone = document.getElementById('cartCustomerPhone')?.value.trim() || 'Not specified';
+            const notes = document.getElementById('cartCustomerNotes')?.value.trim() || 'None';
+            const orderType = document.querySelector('input[name="orderType"]:checked')?.value || 'Dine-in';
+            const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+
+            let msg = `*NEW ORDER - JAI DURGA RESTAURANT (JAMALPUR)*%0A`;
+            msg += `=================================%0A`;
+            msg += `*Service:* ${orderType}%0A`;
+            msg += `*Name:* ${name}%0A`;
+            msg += `*Phone:* ${phone}%0A`;
+            if (notes !== 'None') {
+                msg += `*Note/Address/Table:* ${notes}%0A`;
+            }
+            msg += `=================================%0A`;
+            msg += `*ITEMS ORDERED:*%0A`;
+            cart.forEach(item => {
+                msg += `• ${item.name} [x${item.qty}] = ₹${item.price * item.qty}%0A`;
+            });
+            msg += `=================================%0A`;
+            msg += `*TOTAL BILL AMOUNT:* ₹${total}%0A%0A`;
+            msg += `_Please confirm my order. Thank you!_`;
+
+            window.open(`https://api.whatsapp.com/send?phone=919473045895&text=${msg}`, '_blank');
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-20 right-6 bg-warmGold text-deepBrown font-bold text-xs px-4 py-2.5 rounded-xl shadow-2xl z-50 transition transform duration-300 flex items-center gap-2 border border-amber-300';
+            toast.innerHTML = `<span>✓</span><span>${message}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+
+        function handleReservation(e) {
+            e.preventDefault();
+            const name = document.getElementById('resName')?.value;
+            const phone = document.getElementById('resPhone')?.value;
+            const date = document.getElementById('resDate')?.value;
+            const time = document.getElementById('resTime')?.value;
+            const guests = document.getElementById('resGuests')?.value;
+            const notes = document.getElementById('resNotes')?.value || 'None';
+
+            let msg = `*TABLE RESERVATION / PARTY INQUIRY*%0A`;
+            msg += `*Jai Durga Restaurant Jamalpur*%0A`;
+            msg += `-----------------------------------%0A`;
+            msg += `*Name:* ${name}%0A`;
+            msg += `*Phone:* ${phone}%0A`;
+            msg += `*Date:* ${date}%0A`;
+            msg += `*Time:* ${time}%0A`;
+            msg += `*Guests:* ${guests} Persons%0A`;
+            msg += `*Special Request:* ${notes}%0A`;
+            msg += `-----------------------------------%0A`;
+            msg += `_Kindly confirm table availability._`;
+
+            window.open(`https://api.whatsapp.com/send?phone=919473045895&text=${msg}`, '_blank');
+            showToast('Reservation request generated!');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartUI();
+        });
+    </script>
+    </body></html>
