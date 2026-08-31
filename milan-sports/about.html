@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Milan Sports | Banka, Bihar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { neon: '#39FF14', dark: '#0a0a0a', darker: '#050505', accent: '#FF6B2B' },
+                    fontFamily: { display: ['Bebas Neue', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(135deg, #39FF14, #FF6B2B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-dark text-white font-body">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-display text-3xl tracking-wider">MILAN <span class="text-neon">SPORTS</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">HOME</a>
+                <a href="about.html" class="text-neon font-medium text-sm tracking-wide">ABOUT</a>
+                <a href="shop.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">SHOP</a>
+                <a href="contact.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">CONTACT</a>
+            </div>
+            <a href="contact.html" class="hidden md:block bg-neon text-dark font-bold text-sm px-6 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all">VISIT STORE</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-neon text-sm tracking-[0.3em] mb-4 uppercase">Our Story</p>
+            <h1 class="font-display text-6xl md:text-8xl leading-none mb-6">MORE THAN <br>A <span class="gradient-text">STORE</span></h1>
+            <p class="text-gray-400 text-xl max-w-2xl">We are Banka's heartbeat for sports — fueling dreams of young athletes and seasoned players alike since day one.</p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-24 bg-darker">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?w=600&q=80" alt="Sports passion" class="rounded-2xl w-full shadow-2xl">
+            </div>
+            <div>
+                <p class="text-accent text-sm tracking-[0.3em] mb-3 uppercase">Our Mission</p>
+                <h2 class="font-display text-4xl md:text-5xl mb-6">EMPOWERING <span class="gradient-text">ATHLETES</span> IN EVERY GAME</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Milan Sports was born from a simple belief: every athlete in Banka deserves access to quality sports gear without having to travel to big cities. From our humble beginnings near Pratigya Indane Gas Agency on the Katoriya Road, we've grown into the most trusted sports store in the region.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    We carefully curate our collection from top brands to ensure our customers receive only authentic, high-performance products. Whether you're a school cricket team needing bulk gear or a fitness enthusiast looking for the perfect running shoes, Milan Sports is your one-stop destination.
+                </p>
+                <div class="flex gap-4">
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center flex-1">
+                        <p class="font-display text-4xl text-neon">68+</p>
+                        <p class="text-gray-500 text-sm mt-1">Google Reviews</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center flex-1">
+                        <p class="font-display text-4xl text-accent">4.9★</p>
+                        <p class="text-gray-500 text-sm mt-1">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-neon text-sm tracking-[0.3em] mb-3 uppercase">What Drives Us</p>
+                <h2 class="font-display text-5xl">OUR CORE VALUES</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-darker border border-white/5 rounded-2xl p-10 hover:border-neon/30 transition text-center">
+                    <div class="w-16 h-16 bg-neon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🏆</span>
+                    </div>
+                    <h3 class="font-display text-2xl mb-3">QUALITY FIRST</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Every product in our store meets strict quality standards. We never compromise on authenticity or durability.</p>
+                </div>
+                <div class="bg-darker border border-white/5 rounded-2xl p-10 hover:border-accent/30 transition text-center">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🤝</span>
+                    </div>
+                    <h3 class="font-display text-2xl mb-3">TRUST & SERVICE</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Our relationship with customers extends beyond a single sale. We provide honest advice and lasting support.</p>
+                </div>
+                <div class="bg-darker border border-white/5 rounded-2xl p-10 hover:border-neon/30 transition text-center">
+                    <div class="w-16 h-16 bg-neon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">💪</span>
+                    </div>
+                    <h3 class="font-display text-2xl mb-3">COMMUNITY IMPACT</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">We actively support local sports events, school tournaments, and emerging athletes throughout Banka district.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-24 bg-darker">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-accent text-sm tracking-[0.3em] mb-3 uppercase">The Team</p>
+                    <h2 class="font-display text-4xl md:text-5xl mb-6">PASSIONATE <span class="gradient-text">SPORTS LOVERS</span></h2>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Our team isn't just salespeople — they are athletes, coaches, and sports enthusiasts who understand what you need. Whether you're buying your first cricket bat or upgrading to professional-grade equipment, our staff guides you with genuine expertise.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed mb-8">
+                        We pride ourselves on creating a store experience where you can try, test, and truly understand each product before making a decision.
+                    </p>
+                    <a href="contact.html" class="bg-neon text-dark font-bold px-8 py-4 rounded-full text-sm tracking-wide hover:bg-white transition-all inline-block">COME MEET US →</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&q=80" alt="Team" class="rounded-2xl w-full shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div>
+                    <p class="font-display text-2xl">MILAN <span class="text-neon">SPORTS</span></p>
+                    <p class="text-gray-500 text-sm mt-2">Banka's trusted sports store since years.</p>
+                </div>
+                <div class="flex gap-6 md:justify-center">
+                    <a href="index.html" class="text-gray-400 hover:text-neon transition text-sm">Home</a>
+                    <a href="about.html" class="text-gray-400 hover:text-neon transition text-sm">About</a>
+                    <a href="shop.html" class="text-gray-400 hover:text-neon transition text-sm">Shop</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-neon transition text-sm">Contact</a>
+                </div>
+                <p class="text-gray-600 text-xs md:text-right">© 2026 Milan Sports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

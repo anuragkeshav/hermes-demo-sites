@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Naksha Kendra Banka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; color: #111; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl tracking-tighter font-semibold uppercase">Naksha Kendra <span class="font-light text-gray-500">Banka</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-medium tracking-widest text-black uppercase hover:text-gray-500 transition">Home</a>
+                    <a href="about.html" class="text-sm font-medium tracking-widest text-black uppercase hover:text-gray-500 transition">About</a>
+                    <a href="projects.html" class="text-sm font-medium tracking-widest text-black uppercase hover:text-gray-500 transition">Projects</a>
+                    <a href="contact.html" class="text-sm font-medium tracking-widest text-black uppercase hover:text-gray-500 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-light tracking-tight mb-12 uppercase text-center">Philosophy & <span class="font-semibold">Vision</span></h1>
+            
+            <img src="https://loremflickr.com/1200/600/architecture,interior" alt="Studio" class="w-full h-96 object-cover mb-16 grayscale">
+
+            <div class="prose prose-lg prose-gray max-w-none font-light leading-relaxed">
+                <p class="text-xl text-gray-700 mb-8 font-normal">Based in the heart of Banka, Naksha Kendra was founded on a singular principle: design should resonate with its environment while pushing the boundaries of modern aesthetics.</p>
+                <p class="mb-6 text-gray-600">Our approach is deeply rooted in minimalism and functionality. We strip away the unnecessary to reveal the essential core of every structure. Whether it's a private residence, a commercial complex, or an institutional masterplan, our dedicated team brings precision and passion to every line drawn.</p>
+                <p class="mb-6 text-gray-600">We collaborate closely with our clients, turning their visions into tangible, breathable spaces. By integrating sustainable practices and innovative materials, we ensure that our buildings don't just stand the test of time, but actively contribute to a better future.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl tracking-tighter font-semibold uppercase mb-4">Naksha Kendra</h3>
+                <p class="text-gray-400 font-light text-sm">Banka, Bihar</p>
+            </div>
+            <div>
+                <h4 class="text-sm tracking-widest uppercase mb-4 text-gray-400">Contact</h4>
+                <p class="font-light text-sm">+91 82712 85761</p>
+                <p class="font-light text-sm mt-2">info@nakshakendra.com</p>
+            </div>
+            <div>
+                <h4 class="text-sm tracking-widest uppercase mb-4 text-gray-400">Social</h4>
+                <a href="#" class="block font-light text-sm hover:text-gray-300 mb-2 transition">Instagram</a>
+                <a href="#" class="block font-light text-sm hover:text-gray-300 transition">LinkedIn</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 border-t border-gray-800 pt-8 text-center text-xs text-gray-500 font-light tracking-widest uppercase">
+            &copy; 2026 Naksha Kendra Banka. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

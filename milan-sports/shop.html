@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Milan Sports | Banka, Bihar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { neon: '#39FF14', dark: '#0a0a0a', darker: '#050505', accent: '#FF6B2B' },
+                    fontFamily: { display: ['Bebas Neue', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(135deg, #39FF14, #FF6B2B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-glow:hover { box-shadow: 0 0 25px rgba(57,255,20,0.12); }
+    </style>
+</head>
+<body class="bg-dark text-white font-body">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-display text-3xl tracking-wider">MILAN <span class="text-neon">SPORTS</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">HOME</a>
+                <a href="about.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">ABOUT</a>
+                <a href="shop.html" class="text-neon font-medium text-sm tracking-wide">SHOP</a>
+                <a href="contact.html" class="text-gray-400 hover:text-white transition text-sm tracking-wide">CONTACT</a>
+            </div>
+            <a href="contact.html" class="hidden md:block bg-neon text-dark font-bold text-sm px-6 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all">VISIT STORE</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 bg-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-neon text-sm tracking-[0.3em] mb-4 uppercase">Our Collection</p>
+            <h1 class="font-display text-6xl md:text-8xl leading-none mb-6">SHOP <span class="gradient-text">THE BEST</span></h1>
+            <p class="text-gray-400 text-xl max-w-2xl">Browse our curated selection of sports equipment, apparel, and accessories. Visit in-store for the full experience.</p>
+        </div>
+    </section>
+
+    <!-- Filter Tags -->
+    <section class="bg-dark pb-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-3">
+            <span class="bg-neon text-dark text-xs font-bold px-4 py-2 rounded-full">ALL</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">CRICKET</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">FOOTBALL</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">BADMINTON</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">FOOTWEAR</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">APPAREL</span>
+            <span class="bg-white/5 text-gray-400 text-xs font-medium px-4 py-2 rounded-full border border-white/10 hover:border-neon/50 hover:text-white transition cursor-pointer">FITNESS</span>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- Product 1 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&q=80" alt="Cricket Bat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-neon text-dark text-[10px] font-bold px-3 py-1 rounded-full">CRICKET</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Kashmir Willow Cricket Bat</h3>
+                    <p class="text-gray-500 text-xs mb-3">Premium quality, match-ready</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹1,499</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Running Shoes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-3 py-1 rounded-full">FOOTWEAR</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Pro Runner Training Shoes</h3>
+                    <p class="text-gray-500 text-xs mb-3">Lightweight, breathable mesh</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹2,199</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=400&q=80" alt="Track Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-neon text-dark text-[10px] font-bold px-3 py-1 rounded-full">APPAREL</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Athletic Track Suit</h3>
+                    <p class="text-gray-500 text-xs mb-3">Dry-fit fabric, all sizes</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹999</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1614632537190-23e4146777db?w=400&q=80" alt="Football" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-3 py-1 rounded-full">FOOTBALL</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Match Grade Football</h3>
+                    <p class="text-gray-500 text-xs mb-3">FIFA-approved size & weight</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹899</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1617083934555-ac7d4e4a7e98?w=400&q=80" alt="Badminton" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-neon text-dark text-[10px] font-bold px-3 py-1 rounded-full">BADMINTON</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Carbon Fiber Racket Set</h3>
+                    <p class="text-gray-500 text-xs mb-3">2 rackets + shuttlecocks</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹1,299</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="Gym Equipment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-3 py-1 rounded-full">FITNESS</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Resistance Band Set</h3>
+                    <p class="text-gray-500 text-xs mb-3">5 levels, portable gym</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹599</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1580087256394-dc596e1c8f4f?w=400&q=80" alt="Cricket Pads" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-neon text-dark text-[10px] font-bold px-3 py-1 rounded-full">CRICKET</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Batting Pads & Gloves Combo</h3>
+                    <p class="text-gray-500 text-xs mb-3">Lightweight protection</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹1,799</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-darker rounded-2xl overflow-hidden border border-white/5 card-glow transition-all group">
+                <div class="relative overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=400&q=80" alt="Sports Bag" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-3 py-1 rounded-full">ACCESSORIES</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-sm mb-1">Pro Sports Duffle Bag</h3>
+                    <p class="text-gray-500 text-xs mb-3">Waterproof, shoe compartment</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-neon font-display text-xl">₹749</span>
+                        <a href="contact.html" class="text-gray-500 text-xs hover:text-neon transition">Enquire →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bulk CTA -->
+    <section class="py-20 bg-darker">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl md:text-6xl mb-4">NEED <span class="gradient-text">BULK ORDERS?</span></h2>
+            <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Schools, colleges, teams, and event organizers — contact us for special wholesale pricing on all products.</p>
+            <a href="tel:+919709995394" class="bg-neon text-dark font-bold px-10 py-4 rounded-full text-sm tracking-wide hover:bg-white transition-all inline-block">CALL FOR BULK PRICING: +91 97099 95394</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div>
+                    <p class="font-display text-2xl">MILAN <span class="text-neon">SPORTS</span></p>
+                    <p class="text-gray-500 text-sm mt-2">Banka's trusted sports store since years.</p>
+                </div>
+                <div class="flex gap-6 md:justify-center">
+                    <a href="index.html" class="text-gray-400 hover:text-neon transition text-sm">Home</a>
+                    <a href="about.html" class="text-gray-400 hover:text-neon transition text-sm">About</a>
+                    <a href="shop.html" class="text-gray-400 hover:text-neon transition text-sm">Shop</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-neon transition text-sm">Contact</a>
+                </div>
+                <p class="text-gray-600 text-xs md:text-right">© 2026 Milan Sports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
