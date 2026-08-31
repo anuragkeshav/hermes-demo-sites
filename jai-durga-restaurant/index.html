@@ -3,50 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jai Durga Sweet Shop & Restaurant | Authentic Sweets & Dining in Jamalpur</title>
-    <meta name="description" content="Jai Durga Sweet Shop & Restaurant - Authentic Pure Desi Ghee Sweets, South Indian, Mughlai & Chinese in Jamalpur, Bihar. Rating 4.0 (1,027+ reviews).">
+    <title>Jai Durga Sweet Shop & Restaurant | Authentic Dining & Sweets in Jamalpur</title>
+    <meta name="description" content="Jai Durga Sweet Shop & Restaurant - Handcrafted Pure Desi Ghee Sweets & Fine Indian Dining in Jamalpur, Bihar. Rating 4.0 (1,027+ reviews).">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans & Rozha One -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        saffron: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
+                        ivory: {
+                            DEFAULT: '#FBFBF9',
+                            50: '#FFFFFF',
+                            100: '#FAF9F5',
+                            200: '#F4F1EA',
+                            300: '#E8E3D7',
+                            400: '#D5CDBF',
                         },
-                        warmGold: {
-                            DEFAULT: '#F59E0B',
-                            light: '#FBBF24',
-                            dark: '#D97706',
-                            glow: '#FDE68A'
+                        forest: {
+                            DEFAULT: '#0F2F24',
+                            50: '#F2F8F5',
+                            100: '#E1EFE9',
+                            600: '#1B5E45',
+                            700: '#144633',
+                            800: '#0F2F24',
+                            900: '#0A1E17',
+                            950: '#05110D',
                         },
-                        royalMaroon: {
-                            DEFAULT: '#881337',
-                            dark: '#4C0519',
-                            light: '#9F1239'
+                        gold: {
+                            DEFAULT: '#C59B27',
+                            light: '#DFB743',
+                            dark: '#9A7718',
+                            muted: '#E6D7B3',
+                            cream: '#FDF9EE',
                         },
-                        deepBrown: '#12100E',
-                        surfaceDark: '#1C1815',
-                        cardDark: '#26211C',
-                        borderGold: '#854D0E',
+                        charcoal: {
+                            DEFAULT: '#1F2421',
+                            muted: '#4A5550',
+                            light: '#718079',
+                        },
                     },
                     fontFamily: {
-                        cinzel: ['Cinzel', 'serif'],
-                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
                         hindi: ['Rozha One', 'serif']
                     }
                 }
@@ -54,197 +60,204 @@
         }
     </script>
     <style>
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 45%, #EA580C 100%);
+        .gold-gradient {
+            background: linear-gradient(135deg, #DFB743 0%, #C59B27 50%, #9A7718 100%);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #DFB743 0%, #C59B27 60%, #9A7718 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .hero-pattern {
-            background: linear-gradient(to bottom, rgba(18, 16, 14, 0.88), rgba(18, 16, 14, 0.98)), 
+        .hero-banner {
+            background: linear-gradient(to bottom, rgba(10, 30, 23, 0.88), rgba(10, 30, 23, 0.96)), 
                         url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
         }
         .nav-blur {
-            background: rgba(18, 16, 14, 0.94);
-            backdrop-filter: blur(14px);
+            background: rgba(10, 30, 23, 0.96);
+            backdrop-filter: blur(16px);
         }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        .luxury-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 30px -10px rgba(234, 88, 12, 0.22);
-            border-color: rgba(245, 158, 11, 0.4);
+        .luxury-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -10px rgba(15, 47, 36, 0.12);
+            border-color: #C59B27;
         }
         .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
+            width: 5px;
+            height: 5px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #1C1815;
+            background: #F4F1EA;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #F59E0B;
-            border-radius: 4px;
+            background: #C59B27;
+            border-radius: 3px;
         }
     </style>
 </head>
-<body class="bg-deepBrown text-stone-100 font-body antialiased selection:bg-warmGold selection:text-deepBrown pb-16 md:pb-0 custom-scrollbar">
+<body class="bg-ivory text-charcoal font-sans antialiased selection:bg-gold-light selection:text-forest-950 pb-16 md:pb-0 custom-scrollbar">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-royalMaroon text-amber-200 text-xs py-2 px-4 border-b border-amber-900/40">
+    <div class="bg-forest-950 text-gold-muted text-[11px] sm:text-xs py-2 px-4 border-b border-forest-900 tracking-wider">
         <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
-            <div class="flex items-center space-x-3 text-xs sm:text-sm">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-warmGold text-deepBrown">
-                    Dine-In • Takeaway • Delivery • Drive-Through
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-medium uppercase tracking-widest bg-forest-800 text-gold-light border border-forest-700">
+                    Dine-in • Takeaway • Delivery
                 </span>
-                <span class="hidden md:inline text-amber-300/90">📍 8F9V+66 Jamalpur, Bihar 811214</span>
+                <span class="hidden sm:inline text-stone-300 flex items-center gap-1">
+                    <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> 8F9V+66, Jamalpur, Bihar 811214
+                </span>
             </div>
-            <div class="flex items-center space-x-4 text-xs sm:text-sm">
-                <span class="flex items-center gap-1.5 text-amber-100">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Open Daily: 7:00 AM – 11:00 PM
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5 text-stone-300">
+                    <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Open Daily: 7:00 AM – 11:00 PM
                 </span>
-                <a href="tel:09473045895" class="font-bold text-white hover:text-warmGold transition flex items-center gap-1 bg-royalMaroon-dark px-2.5 py-0.5 rounded border border-amber-500/30">
-                    📞 094730 45895
+                <a href="tel:09473045895" class="font-medium text-gold-light hover:text-white transition flex items-center gap-1 bg-forest-900 px-2.5 py-0.5 rounded border border-forest-700">
+                    <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> 094730 45895
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 nav-blur border-b border-stone-800/80">
+    <!-- Main Navigation Bar -->
+    <nav class="sticky top-0 z-50 nav-blur border-b border-forest-900/60 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo & Brand -->
+                <!-- Brand Title -->
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-600 via-warmGold to-royalMaroon p-0.5 flex items-center justify-center shadow-lg group-hover:scale-105 transition">
-                        <div class="w-full h-full bg-deepBrown rounded-full flex items-center justify-center text-warmGold font-cinzel text-xl font-black">
-                            JD
-                        </div>
+                    <div class="w-11 h-11 rounded-full bg-forest-900 border border-gold/40 p-0.5 flex items-center justify-center shadow group-hover:border-gold transition">
+                        <span class="font-serif text-xl font-bold text-gold">JD</span>
                     </div>
                     <div>
-                        <div class="font-cinzel text-lg sm:text-xl font-bold tracking-wider text-amber-50 group-hover:text-warmGold transition flex items-center gap-2">
-                            <span>JAI DURGA</span>
-                            <span class="text-[10px] uppercase font-normal px-2 py-0.5 rounded bg-amber-950/80 text-amber-400 border border-amber-800/50">Jamalpur</span>
+                        <div class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-white group-hover:text-gold transition">
+                            Jai Durga
                         </div>
-                        <div class="text-xs text-amber-400/90 font-medium tracking-wide flex items-center gap-1">
-                            <span class="font-hindi text-sm">जय दुर्गा स्वीट शॉप & रेस्टोरेंट</span>
+                        <div class="text-[10px] uppercase tracking-[0.2em] text-gold-light/90 font-medium">
+                            Sweet Shop & Restaurant • Jamalpur
                         </div>
                     </div>
                 </a>
 
-                <!-- Desktop Nav Links -->
-                <div class="hidden md:flex items-center space-x-7 text-sm font-semibold tracking-wide">
-                    <a href="index.html" class="text-warmGold border-b-2 border-warmGold pb-1 font-bold">HOME</a>
-                    <a href="menu.html" class="text-stone-300 hover:text-warmGold transition">OUR MENU</a>
-                    <a href="about.html" class="text-stone-300 hover:text-warmGold transition">ABOUT US</a>
-                    <a href="contact.html" class="text-stone-300 hover:text-warmGold transition">CONTACT & LOCATION</a>
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-xs font-medium uppercase tracking-[0.15em]">
+                    <a href="index.html" class="text-gold font-semibold border-b border-gold pb-0.5">Home</a>
+                    <a href="menu.html" class="text-stone-300 hover:text-gold transition duration-200">Menu & Prices</a>
+                    <a href="about.html" class="text-stone-300 hover:text-gold transition duration-200">Our Heritage</a>
+                    <a href="contact.html" class="text-stone-300 hover:text-gold transition duration-200">Contact & Tables</a>
                 </div>
 
-                <!-- Desktop CTA Buttons -->
+                <!-- CTA Actions -->
                 <div class="hidden sm:flex items-center gap-3">
-                    <button onclick="toggleCartDrawer()" class="relative bg-surfaceDark hover:bg-stone-800 border border-amber-600/40 text-warmGold px-3.5 py-2 rounded-full text-xs font-bold transition flex items-center gap-2">
-                        <span>🛒 BASKET</span>
-                        <span id="cartCountBadge" class="bg-saffron-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] font-bold">0</span>
+                    <button onclick="toggleCartDrawer()" class="relative bg-forest-900/80 hover:bg-forest-800 border border-forest-700 text-stone-200 hover:text-white px-4 py-2 rounded-full text-xs font-medium tracking-wider transition flex items-center gap-2">
+                        <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+                        <span>Basket</span>
+                        <span id="cartCountBadge" class="bg-gold text-forest-950 rounded-full w-4 h-4 flex items-center justify-center text-[10px] font-bold">0</span>
                     </button>
-                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="bg-gradient-to-r from-warmGold to-saffron-600 text-stone-950 font-bold px-4 py-2 rounded-full hover:brightness-110 shadow-lg shadow-amber-900/30 text-xs tracking-wider transition transform hover:scale-105 flex items-center gap-1.5">
-                        <span>⚡ ORDER ONLINE</span>
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="gold-gradient text-forest-950 font-semibold px-5 py-2 rounded-full hover:brightness-110 shadow text-xs tracking-wider uppercase transition">
+                        Order Online
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button & Cart -->
                 <div class="flex items-center gap-2 sm:hidden">
-                    <button onclick="toggleCartDrawer()" class="relative p-2 text-warmGold bg-surfaceDark rounded-lg border border-stone-800">
-                        <span class="text-lg">🛒</span>
-                        <span id="cartCountBadgeMobile" class="absolute -top-1 -right-1 bg-saffron-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
+                    <button onclick="toggleCartDrawer()" class="relative p-2 text-stone-300 hover:text-white bg-forest-900 rounded-lg border border-forest-700">
+                        <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+                        <span id="cartCountBadgeMobile" class="absolute -top-1 -right-1 bg-gold text-forest-950 rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
                     </button>
-                    <button onclick="toggleMobileMenu()" class="p-2 text-stone-300 hover:text-white bg-surfaceDark rounded-lg border border-stone-800">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <button onclick="toggleMobileMenu()" class="p-2 text-stone-300 hover:text-white bg-forest-900 rounded-lg border border-forest-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobileMenu" class="hidden sm:hidden bg-surfaceDark border-b border-stone-800 px-4 pt-3 pb-5 space-y-3">
-            <a href="index.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">🏠 Home Overview</a>
-            <a href="menu.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📜 Full Menu & Prices</a>
-            <a href="about.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📖 About Heritage</a>
-            <a href="contact.html" class="block py-2 text-sm font-semibold text-stone-200 hover:text-warmGold">📍 Contact & Location</a>
-            <div class="pt-3 border-t border-stone-800 flex gap-2">
-                <a href="tel:09473045895" class="flex-1 text-center bg-stone-800 text-warmGold py-2 rounded-lg text-xs font-bold">📞 Call 094730 45895</a>
-                <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 text-center bg-warmGold text-deepBrown py-2 rounded-lg text-xs font-bold">⚡ Petpooja Menu</a>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden sm:hidden bg-forest-950 border-b border-forest-900 px-5 pt-3 pb-5 space-y-3">
+            <a href="index.html" class="block py-2 text-xs uppercase tracking-widest font-medium text-stone-200 hover:text-gold">Home Overview</a>
+            <a href="menu.html" class="block py-2 text-xs uppercase tracking-widest font-medium text-stone-200 hover:text-gold">Full Menu & Pricing</a>
+            <a href="about.html" class="block py-2 text-xs uppercase tracking-widest font-medium text-stone-200 hover:text-gold">About Our Heritage</a>
+            <a href="contact.html" class="block py-2 text-xs uppercase tracking-widest font-medium text-stone-200 hover:text-gold">Contact & Location</a>
+            <div class="pt-3 border-t border-forest-900 flex gap-2">
+                <a href="tel:09473045895" class="flex-1 text-center bg-forest-900 text-gold-light py-2 rounded-lg text-xs font-medium border border-forest-700">Call: 094730 45895</a>
+                <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 text-center gold-gradient text-forest-950 py-2 rounded-lg text-xs font-semibold">Petpooja Menu</a>
             </div>
         </div>
     </nav>
     
-    <!-- Shopping Cart Drawer Overlay -->
-    <div id="cartOverlay" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden transition-opacity" onclick="toggleCartDrawer()"></div>
+    <!-- Cart Drawer Overlay -->
+    <div id="cartOverlay" class="fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 hidden transition-opacity" onclick="toggleCartDrawer()"></div>
 
-    <!-- Shopping Cart Drawer Panel -->
-    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-surfaceDark border-l border-amber-900/40 z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <!-- Cart Drawer Panel -->
+    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-white border-l border-stone-200 z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
         <!-- Header -->
-        <div class="p-5 bg-cardDark border-b border-stone-800 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl">🛍️</span>
+        <div class="p-5 bg-forest-900 text-white flex items-center justify-between border-b border-forest-800">
+            <div class="flex items-center gap-2.5">
+                <span class="text-gold"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></span>
                 <div>
-                    <h3 class="font-cinzel text-lg font-bold text-stone-100">Your Order Basket</h3>
-                    <p class="text-xs text-stone-400">Jai Durga Restaurant • Jamalpur</p>
+                    <h3 class="font-serif text-lg font-bold text-white tracking-wide">Your Order Basket</h3>
+                    <p class="text-[11px] text-gold-muted">Jai Durga Sweet Shop & Restaurant</p>
                 </div>
             </div>
-            <button onclick="toggleCartDrawer()" class="text-stone-400 hover:text-white p-2 text-lg">✕</button>
+            <button onclick="toggleCartDrawer()" class="text-stone-400 hover:text-white p-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
         </div>
 
-        <!-- Items List -->
-        <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-4 custom-scrollbar">
+        <!-- Items Container -->
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-3 custom-scrollbar bg-ivory-50">
             <div id="emptyCartMessage" class="text-center py-16 text-stone-400">
-                <div class="text-5xl mb-3">🍽️</div>
-                <p class="text-sm font-semibold">Your basket is currently empty.</p>
-                <p class="text-xs text-stone-500 mt-1">Browse our delicious sweets, dosas, noodles & biryanis to add items.</p>
-                <a href="menu.html" class="inline-block mt-4 text-xs font-bold text-warmGold border border-warmGold/40 px-4 py-2 rounded-full hover:bg-warmGold hover:text-deepBrown transition">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-ivory-200 flex items-center justify-center text-stone-400">
+                    <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v10.5m-6-10.5v10.5M3 3l18 18"/></svg>
+                </div>
+                <p class="text-sm font-medium text-stone-600">Your basket is empty</p>
+                <p class="text-xs text-stone-400 mt-1">Select sweets, dosas, biryanis or snacks to get started.</p>
+                <a href="menu.html" class="inline-block mt-4 text-xs font-semibold text-forest-700 border border-forest-300 px-4 py-2 rounded-full hover:bg-forest-50 transition">
                     Explore Menu
                 </a>
             </div>
         </div>
 
-        <!-- Order Type & Customer Details Form -->
-        <div id="cartCheckoutForm" class="p-5 bg-cardDark border-t border-stone-800 space-y-3">
-            <div class="flex justify-between items-center text-sm font-semibold text-stone-300">
+        <!-- Checkout Form -->
+        <div id="cartCheckoutForm" class="p-5 bg-white border-t border-stone-200 space-y-3 shadow-inner">
+            <div class="flex justify-between items-center text-xs font-semibold text-stone-600">
                 <span>Subtotal Amount</span>
-                <span id="cartSubtotal" class="text-warmGold font-bold text-lg">₹0</span>
+                <span id="cartSubtotal" class="text-forest-900 font-serif text-lg font-bold">₹0</span>
             </div>
             
             <div class="space-y-1.5">
-                <label class="text-xs text-stone-400 font-semibold block">Select Service Type:</label>
+                <label class="text-[11px] text-stone-500 font-semibold uppercase tracking-wider block">Service Preference:</label>
                 <div class="grid grid-cols-3 gap-2 text-xs">
-                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-ivory-100 border border-stone-200 cursor-pointer text-stone-700 font-medium text-[11px] text-center has-[:checked]:border-gold has-[:checked]:text-forest-900 has-[:checked]:bg-gold-cream">
                         <input type="radio" name="orderType" value="Dine-in (Table)" class="hidden" checked> Dine-in
                     </label>
-                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-ivory-100 border border-stone-200 cursor-pointer text-stone-700 font-medium text-[11px] text-center has-[:checked]:border-gold has-[:checked]:text-forest-900 has-[:checked]:bg-gold-cream">
                         <input type="radio" name="orderType" value="Takeaway / Parcel" class="hidden"> Takeaway
                     </label>
-                    <label class="flex items-center justify-center p-2 rounded-lg bg-surfaceDark border border-stone-700 cursor-pointer text-stone-200 font-medium text-[11px] text-center has-[:checked]:border-warmGold has-[:checked]:text-warmGold has-[:checked]:bg-warmGold/10">
+                    <label class="flex items-center justify-center p-2 rounded-lg bg-ivory-100 border border-stone-200 cursor-pointer text-stone-700 font-medium text-[11px] text-center has-[:checked]:border-gold has-[:checked]:text-forest-900 has-[:checked]:bg-gold-cream">
                         <input type="radio" name="orderType" value="Home Delivery" class="hidden"> Delivery
                     </label>
                 </div>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-                <input id="cartCustomerName" type="text" placeholder="Your Name" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
-                <input id="cartCustomerPhone" type="tel" placeholder="Mobile Number" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
+                <input id="cartCustomerName" type="text" placeholder="Full Name" class="w-full bg-ivory-50 border border-stone-200 rounded-lg px-3 py-2 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-gold">
+                <input id="cartCustomerPhone" type="tel" placeholder="Mobile Number" class="w-full bg-ivory-50 border border-stone-200 rounded-lg px-3 py-2 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-gold">
             </div>
-            <input id="cartCustomerNotes" type="text" placeholder="Table No. / Delivery Address / Instructions" class="w-full bg-surfaceDark border border-stone-700 rounded-lg px-3 py-2 text-xs text-stone-100 placeholder-stone-500 focus:outline-none focus:border-warmGold">
+            <input id="cartCustomerNotes" type="text" placeholder="Table No. / Delivery Address / Special Notes" class="w-full bg-ivory-50 border border-stone-200 rounded-lg px-3 py-2 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-gold">
 
-            <!-- Checkout Action Buttons -->
+            <!-- Checkout Buttons -->
             <div class="space-y-2 pt-2">
-                <button onclick="sendOrderViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs tracking-wider transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950">
-                    <span>📲 SEND ORDER TO WHATSAPP (+91 94730 45895)</span>
+                <button onclick="sendOrderViaWhatsApp()" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-medium py-3 rounded-xl text-xs tracking-wider uppercase transition flex items-center justify-center gap-2 shadow">
+                    <span><svg class="w-4 h-4 inline-block fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.664.08-2.128-.528-1.748-.727-2.883-2.508-2.97-2.624-.088-.117-.716-.953-.716-1.819 0-.866.452-1.292.613-1.468.161-.176.353-.22.47-.22.118 0 .235.001.338.006.107.005.251-.041.393.299.144.348.491 1.2.535 1.288.044.088.073.191.015.308-.059.117-.088.191-.176.293-.088.103-.186.229-.265.308-.088.088-.18.184-.077.36.103.176.458.756.984 1.224.678.604 1.25.791 1.426.879.176.088.279.073.382-.044.103-.118.441-.514.558-.69.117-.176.235-.147.397-.088.161.059 1.028.485 1.205.573.176.088.293.132.338.206.044.074.044.425-.1 1.042zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.662 1.438 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.162c-1.637 0-3.167-.47-4.463-1.28l-.32-.201-2.955.775.789-2.88-.221-.351A8.13 8.13 0 013.84 12c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.162-8.16 8.162z"/></svg></span>
+                    <span>Send Order to WhatsApp</span>
                 </button>
                 <div class="flex gap-2">
-                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 bg-stone-800 hover:bg-stone-700 text-warmGold border border-warmGold/30 font-semibold py-2 rounded-lg text-[11px] text-center transition">
-                        ⚡ Petpooja Order
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="flex-1 bg-ivory-100 hover:bg-ivory-200 text-forest-800 border border-stone-300 font-medium py-2 rounded-lg text-[11px] text-center transition">
+                        Order on Petpooja
                     </a>
-                    <button onclick="clearCart()" class="px-3 bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-800/40 rounded-lg text-[11px] transition">
+                    <button onclick="clearCart()" class="px-3 bg-stone-100 hover:bg-stone-200 text-stone-500 border border-stone-300 rounded-lg text-[11px] transition">
                         Clear
                     </button>
                 </div>
@@ -252,88 +265,81 @@
         </div>
     </div>
     
-    <!-- Hero Section -->
-    <header class="relative hero-pattern pt-16 pb-28 border-b border-stone-800 overflow-hidden">
+    <!-- Hero Banner -->
+    <header class="relative hero-banner pt-20 pb-28 border-b border-forest-900 text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <!-- Left Hero Content -->
+                <!-- Left Content -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-royalMaroon/80 border border-amber-500/30 text-amber-200 text-xs font-semibold tracking-wider uppercase shadow-md">
-                        <span class="w-2 h-2 rounded-full bg-warmGold animate-pulse"></span>
-                        Jamalpur's Beloved Food Landmark
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-forest-900/90 border border-gold/30 text-gold-light text-xs font-medium tracking-widest uppercase shadow">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+                        Jamalpur's Culinary Heritage
                     </div>
                     
-                    <h1 class="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-black leading-tight text-stone-50">
-                        Where Pure <span class="gold-gradient-text">Tradition</span> Meets Unmatched <span class="text-warmGold">Flavour</span>.
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-tight">
+                        Purity, Heritage & <span class="gold-text italic">Unmatched Flavour</span>.
                     </h1>
                     
-                    <p class="font-hindi text-amber-300/90 text-lg sm:text-xl font-normal">
-                        जय दुर्गा स्वीट शॉप & रेस्टोरेंट — शुद्ध देशी घी की मिठाइयाँ एवं लज़ीज़ भोजन
+                    <p class="font-hindi text-gold-muted text-lg sm:text-xl font-normal">
+                        जय दुर्गा स्वीट शॉप & रेस्टोरेंट — शुद्ध देशी घी की मिठाइयाँ एवं लज़ीज़ व्यंजन
                     </p>
 
-                    <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Indulge in handcrafted pure desi ghee sweets, melt-in-mouth Rasmalai, crispy South Indian Dosas, aromatic Mughlai Biryani, and sizzling Chinese noodles right in Jamalpur.
+                    <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Indulge in artisanal pure desi ghee sweets, fresh saffron Rasmalai, golden crisp South Indian dosas, fragrant Mughlai biryanis, and sizzling wok noodles.
                     </p>
 
                     <!-- Google Reviews & Cost Badges -->
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1">
-                        <div class="inline-flex items-center gap-3 bg-surfaceDark/90 border border-amber-700/50 px-4 py-2.5 rounded-2xl backdrop-blur-md shadow-lg">
-                            <div class="flex text-amber-400 text-lg">★★★★☆</div>
-                            <div class="text-left border-l border-stone-700 pl-3">
-                                <div class="text-xs font-bold text-stone-100">4.0 / 5.0 Rating</div>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <div class="inline-flex items-center gap-3 bg-forest-950/80 border border-forest-700/80 px-4 py-2.5 rounded-xl backdrop-blur-md">
+                            <div class="flex text-amber-400 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <div class="text-left border-l border-forest-800 pl-3">
+                                <div class="text-xs font-semibold text-white">4.0 / 5.0 Rating</div>
                                 <div class="text-[11px] text-stone-400">1,027+ Google Reviews</div>
                             </div>
                         </div>
 
-                        <div class="inline-flex items-center gap-3 bg-surfaceDark/90 border border-stone-700 px-4 py-2.5 rounded-2xl backdrop-blur-md shadow-lg">
-                            <span class="text-lg">💰</span>
+                        <div class="inline-flex items-center gap-2.5 bg-forest-950/80 border border-forest-700/80 px-4 py-2.5 rounded-xl backdrop-blur-md">
                             <div class="text-left">
-                                <div class="text-xs font-bold text-amber-300">₹1–200 Per Person</div>
-                                <div class="text-[11px] text-stone-400">Reported by 79+ Patrons</div>
+                                <div class="text-xs font-semibold text-gold-light">₹1–200 per person</div>
+                                <div class="text-[11px] text-stone-400">Average Meal Cost</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Service Badges -->
-                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start text-[11px] text-stone-300 pt-1">
-                        <span class="px-2.5 py-1 rounded-md bg-stone-900 border border-stone-800">✓ Dine-in</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-900 border border-stone-800">✓ Drive-through</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-900 border border-stone-800">✓ Takeaway / Parcel</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-900 border border-stone-800">✓ No-contact delivery</span>
-                    </div>
-
                     <!-- Hero Actions -->
-                    <div class="pt-3 flex flex-wrap gap-3 justify-center lg:justify-start">
-                        <a href="menu.html" class="bg-gradient-to-r from-warmGold to-saffron-600 text-stone-950 px-7 py-3.5 rounded-full font-bold text-xs sm:text-sm tracking-wider shadow-xl shadow-amber-900/40 hover:brightness-110 transition transform hover:scale-105 flex items-center gap-2">
-                            <span>EXPLORE FULL MENU</span>
-                            <span>➔</span>
+                    <div class="pt-4 flex flex-wrap gap-3.5 justify-center lg:justify-start">
+                        <a href="menu.html" class="gold-gradient text-forest-950 px-7 py-3.5 rounded-full font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:brightness-110 transition flex items-center gap-2">
+                            <span>Explore Menu</span>
+                            <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="bg-royalMaroon hover:bg-royalMaroon-light text-amber-100 border border-amber-500/40 px-6 py-3.5 rounded-full font-bold text-xs sm:text-sm transition flex items-center gap-2 shadow-lg">
-                            <span>⚡ ORDER VIA PETPOOJA</span>
+                        <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="bg-forest-900 hover:bg-forest-800 text-gold-light border border-gold/40 px-6 py-3.5 rounded-full font-medium text-xs sm:text-sm tracking-wider uppercase transition">
+                            Order on Petpooja
                         </a>
-                        <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="bg-stone-800/90 hover:bg-stone-700 text-stone-200 border border-stone-700 px-5 py-3.5 rounded-full font-semibold text-xs sm:text-sm transition flex items-center gap-1.5">
-                            <span>📍 GET DIRECTIONS</span>
+                        <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="bg-forest-950/80 hover:bg-forest-900 text-stone-200 border border-forest-700 px-5 py-3.5 rounded-full font-medium text-xs sm:text-sm tracking-wider uppercase transition flex items-center gap-1.5">
+                            <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                            <span>Directions</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Right Hero Image Showcase -->
+                <!-- Right Feature Card -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-md">
-                        <div class="absolute -inset-2 bg-gradient-to-tr from-warmGold via-saffron-600 to-royalMaroon rounded-3xl blur-xl opacity-30 animate-pulse"></div>
-                        <div class="relative bg-cardDark rounded-3xl overflow-hidden border border-amber-900/50 shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&q=80" alt="Authentic Sweets & Delicacies" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
-                            <div class="p-6 bg-gradient-to-t from-deepBrown to-cardDark">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-xs font-bold uppercase tracking-wider text-warmGold">Fresh Daily Batch</span>
-                                    <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-royalMaroon text-amber-200 font-semibold">100% Pure Milk</span>
+                        <div class="bg-forest-900/90 rounded-2xl overflow-hidden border border-gold/30 shadow-2xl p-2">
+                            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&q=80" alt="Authentic Sweets & Dining" class="w-full h-72 object-cover rounded-xl">
+                            <div class="p-5 text-left">
+                                <div class="flex justify-between items-center mb-1.5">
+                                    <span class="text-[11px] uppercase tracking-widest text-gold font-medium">Fresh Morning Batch</span>
+                                    <span class="text-[10px] px-2 py-0.5 rounded bg-forest-800 text-stone-200 border border-forest-700">100% Pure Milk</span>
                                 </div>
-                                <h3 class="font-cinzel text-xl font-bold text-white">Famous Rasmalai & Desi Ghee Mithai</h3>
-                                <p class="text-xs text-stone-400 mt-1">Prepared fresh every morning with pure chhena, saffron, and rich dry fruits.</p>
-                                <div class="mt-4 pt-3 border-t border-stone-800 flex items-center justify-between">
-                                    <span class="text-xs text-warmGold font-bold">₹60 / 2 Pieces</span>
-                                    <button onclick="addToCart('Rasmalai (2 Pieces)', 60, 'Sweets')" class="text-xs bg-warmGold text-deepBrown font-bold px-3 py-1.5 rounded-lg hover:bg-warmGold-light transition">
-                                        + Add to Basket
+                                <h3 class="font-serif text-xl font-bold text-white">Famous Kesar Rasmalai & Sweets</h3>
+                                <p class="text-xs text-stone-300 mt-1 font-light">Prepared fresh daily with farm milk, pure saffron, and rich dry fruits.</p>
+                                <div class="mt-4 pt-3 border-t border-forest-800 flex items-center justify-between">
+                                    <span class="text-sm text-gold-light font-serif font-bold">₹60 <span class="text-xs text-stone-400 font-sans font-normal">/ 2 pieces</span></span>
+                                    <button onclick="addToCart('Rasmalai (2 Pieces)', 60, 'Sweets')" class="text-xs bg-gold text-forest-950 font-semibold px-4 py-1.5 rounded-lg hover:bg-gold-light transition">
+                                        Add to Basket
                                     </button>
                                 </div>
                             </div>
@@ -344,203 +350,202 @@
         </div>
     </header>
 
-    <!-- Quick Category Highlights -->
-    <section class="py-8 bg-royalMaroon/20 border-b border-stone-800">
+    <!-- Highlights Section -->
+    <section class="py-8 bg-ivory-200 border-b border-ivory-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <div class="p-4 rounded-2xl bg-surfaceDark/70 border border-stone-800 hover:border-amber-700/50 transition">
-                    <div class="text-3xl mb-1.5">🍨</div>
-                    <div class="font-cinzel font-bold text-stone-100 text-sm sm:text-base">Mithai & Sweets</div>
-                    <div class="text-xs text-amber-400/80 mt-0.5">Rasmalai, Rosogulla, Ladoo</div>
+                <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+                    <div class="font-serif font-bold text-forest-900 text-base">Pure Desi Ghee Mithai</div>
+                    <div class="text-xs text-stone-500 mt-0.5">Rasmalai, Rosogulla, Ladoo</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-surfaceDark/70 border border-stone-800 hover:border-amber-700/50 transition">
-                    <div class="text-3xl mb-1.5">🥘</div>
-                    <div class="font-cinzel font-bold text-stone-100 text-sm sm:text-base">Mughlai & Biryani</div>
-                    <div class="text-xs text-amber-400/80 mt-0.5">Mughlai Paratha, Chicken Biryani</div>
+                <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+                    <div class="font-serif font-bold text-forest-900 text-base">Mughlai & Biryani</div>
+                    <div class="text-xs text-stone-500 mt-0.5">Mughlai Paratha, Chicken Biryani</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-surfaceDark/70 border border-stone-800 hover:border-amber-700/50 transition">
-                    <div class="text-3xl mb-1.5">🥟</div>
-                    <div class="font-cinzel font-bold text-stone-100 text-sm sm:text-base">South Indian & Chinese</div>
-                    <div class="text-xs text-amber-400/80 mt-0.5">Masala Dosa, Hakka Noodles</div>
+                <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+                    <div class="font-serif font-bold text-forest-900 text-base">South Indian & Chinese</div>
+                    <div class="text-xs text-stone-500 mt-0.5">Butter Masala Dosa, Hakka Noodles</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-surfaceDark/70 border border-stone-800 hover:border-amber-700/50 transition">
-                    <div class="text-3xl mb-1.5">🎉</div>
-                    <div class="font-cinzel font-bold text-stone-100 text-sm sm:text-base">Bulk & Festive Orders</div>
-                    <div class="text-xs text-amber-400/80 mt-0.5">Weddings, Birthdays & Chhath</div>
+                <div class="p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+                    <div class="font-serif font-bold text-forest-900 text-base">Bulk Festive Gifting</div>
+                    <div class="text-xs text-stone-500 mt-0.5">Weddings, Chhath & Diwali Boxes</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Popular Highlights Section -->
-    <section class="py-20 bg-deepBrown">
+    <!-- Top Highlights Grid -->
+    <section class="py-20 bg-ivory">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <p class="text-warmGold text-xs font-bold tracking-[0.25em] uppercase">Most Popular on Google</p>
-                <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold mt-2 text-stone-100">
-                    Jamalpur's Top Favorites
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-forest-700 text-xs font-semibold uppercase tracking-[0.25em]">Curated Specialties</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-1">
+                    Signature Delicacies
                 </h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-warmGold to-saffron-600 mx-auto mt-3 rounded-full"></div>
+                <div class="w-12 h-0.5 bg-gold mx-auto mt-3"></div>
+                <p class="text-stone-500 text-xs sm:text-sm mt-3 font-light">
+                    The most celebrated preparations loved by patrons across Jamalpur and Munger.
+                </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1: Rasmalai -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=600&q=80" alt="Rasmalai" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-3 right-3 bg-royalMaroon text-amber-200 text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                            ⭐ Most Popular
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=600&q=80" alt="Rasmalai" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-forest-900/90 text-gold-light text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full border border-forest-700">
+                            Most Popular
                         </div>
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Rasmalai (2 Pieces)</h3>
-                                <span class="text-xs text-emerald-400 font-medium">Pure Milk & Kesar</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-emerald-600 rounded-sm p-0.5 bg-emerald-50"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Royal Kesar Rasmalai</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹60</span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹60</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Soft cottage cheese patties soaked in thickened saffron-cardamom milk, garnished with sliced pistachios.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Soft cottage cheese patties steeped in saffron-cardamom thickened milk with sliced pistachios.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
-                            <span class="text-[11px] text-stone-400">Dessert / Mithai</span>
-                            <button onclick="addToCart('Rasmalai (2 Pieces)', 60, 'Sweets')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
+                            <span class="text-[11px] text-stone-400">Dessert / 2 Pcs</span>
+                            <button onclick="addToCart('Rasmalai (2 Pieces)', 60, 'Sweets')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2: Veg Hakka Noodles -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80" alt="Veg Hakka Noodles" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-3 right-3 bg-saffron-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                            🔥 Hot Favorite
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80" alt="Veg Hakka Noodles" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-forest-900/90 text-gold-light text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full border border-forest-700">
+                            Chef Special
                         </div>
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Veg Hakka Noodles</h3>
-                                <span class="text-xs text-emerald-400 font-medium">Crisp Veggies & Szechuan Touch</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-emerald-600 rounded-sm p-0.5 bg-emerald-50"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Veg Hakka Noodles</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹90</span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹90</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Wok-tossed noodles with crisp seasonal vegetables, garlic, scallions, and signature Indo-Chinese spices.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Wok-tossed noodles with crisp seasonal vegetables, garlic, scallions, and savory Indo-Chinese sauces.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
-                            <span class="text-[11px] text-stone-400">Chinese Fast Food</span>
-                            <button onclick="addToCart('Veg Hakka Noodles', 90, 'Chinese')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
+                            <span class="text-[11px] text-stone-400">Chinese Main</span>
+                            <button onclick="addToCart('Veg Hakka Noodles', 90, 'Chinese')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3: Masala Dosa -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&q=80" alt="Special Masala Dosa" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-3 right-3 bg-warmGold text-deepBrown text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                            🌟 Crispy Special
+                <!-- Card 3: Butter Masala Dosa -->
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&q=80" alt="Special Butter Masala Dosa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-forest-900/90 text-gold-light text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full border border-forest-700">
+                            Crispy & Hot
                         </div>
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Special Butter Masala Dosa</h3>
-                                <span class="text-xs text-emerald-400 font-medium">Served with Hot Sambhar & Chutney</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-emerald-600 rounded-sm p-0.5 bg-emerald-50"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Butter Masala Dosa</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹80</span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹80</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Golden crispy roasted crepe stuffed with spiced potato masala, served with piping hot sambhar and fresh coconut chutney.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Golden thin crepe roasted in butter, stuffed with spiced potato mash, served with hot sambhar & chutneys.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
                             <span class="text-[11px] text-stone-400">South Indian</span>
-                            <button onclick="addToCart('Butter Masala Dosa', 80, 'South Indian')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                            <button onclick="addToCart('Butter Masala Dosa', 80, 'South Indian')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4: Bengali Rosogulla -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&q=80" alt="Bengali Rosogulla" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&q=80" alt="Bengali Rosogulla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Spongy Bengali Rosogulla</h3>
-                                <span class="text-xs text-emerald-400 font-medium">Fresh Chhena Daily</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-emerald-600 rounded-sm p-0.5 bg-emerald-50"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Spongy Bengali Rosogulla</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹30 <span class="text-[10px] text-stone-400 font-normal">/ 2 pcs</span></span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹30</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Melt-in-mouth spongy sweet chhena spheres boiled in light aromatic sugar syrup.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Pure chhena spheres simmered in delicate sugar syrup. Light, airy, and freshly prepared every morning.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
-                            <span class="text-[11px] text-stone-400">Sweets</span>
-                            <button onclick="addToCart('Bengali Rosogulla (2 Pcs)', 30, 'Sweets')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
+                            <span class="text-[11px] text-stone-400">Sweets / 2 Pcs</span>
+                            <button onclick="addToCart('Bengali Rosogulla (2 Pcs)', 30, 'Sweets')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 5: Mughlai Paratha -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600&q=80" alt="Mughlai Paratha" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600&q=80" alt="Mughlai Paratha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Crispy Mughlai Paratha</h3>
-                                <span class="text-xs text-amber-400 font-medium">Flaky & Savory</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-emerald-600 rounded-sm p-0.5 bg-emerald-50"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Crispy Mughlai Paratha</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹70</span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹70</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Layered, deep-fried flaky paratha stuffed with savory spices, served with zesty aloo dum and tangy salad.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Layered, flaky paratha stuffed with savory stuffing, served with rich spicy gravy and fresh salad.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
                             <span class="text-[11px] text-stone-400">Mughlai Special</span>
-                            <button onclick="addToCart('Mughlai Paratha', 70, 'Mughlai')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                            <button onclick="addToCart('Mughlai Paratha', 70, 'Mughlai')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 6: Hyderabadi Chicken Biryani -->
-                <div class="bg-cardDark rounded-2xl overflow-hidden border border-stone-800/90 shadow-xl card-hover group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Hyderabadi Biryani" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-3 right-3 bg-red-700 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                            🍗 Non-Veg Special
+                <div class="luxury-card bg-white rounded-2xl overflow-hidden border border-stone-200 p-3 shadow-sm group">
+                    <div class="relative h-48 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Hyderabadi Chicken Biryani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-red-800 text-white text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full">
+                            Non-Veg
                         </div>
                     </div>
-                    <div class="p-5">
-                        <div class="flex justify-between items-start mb-1.5">
-                            <div>
-                                <h3 class="font-cinzel text-lg font-bold text-stone-100">Hyderabadi Chicken Biryani</h3>
-                                <span class="text-xs text-red-400 font-medium">Slow Dum Cooked</span>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-3.5 h-3.5 border border-red-700 rounded-sm p-0.5 bg-red-50"><span class="w-0 h-0 border-x-[3px] border-x-transparent border-b-[5px] border-b-red-700"></span></span>
+                                <h3 class="font-serif text-lg font-bold text-forest-950">Hyderabadi Chicken Biryani</h3>
                             </div>
-                            <span class="text-warmGold font-bold text-base">₹140</span>
+                            <span class="font-serif font-bold text-forest-900 text-base">₹140</span>
                         </div>
-                        <p class="text-stone-400 text-xs line-clamp-2 mt-1">
-                            Long-grain aromatic basmati rice layered with tender marinated chicken pieces, whole spices, and caramelized onions.
+                        <p class="text-stone-500 text-xs line-clamp-2 mt-1 font-light">
+                            Long-grain fragrant basmati rice layered with tender marinated chicken, saffron, and fried onions.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-stone-800 flex justify-between items-center">
-                            <span class="text-[11px] text-stone-400">Biryani & Rice</span>
-                            <button onclick="addToCart('Hyderabadi Chicken Biryani', 140, 'Biryani')" class="text-xs bg-warmGold hover:bg-warmGold-light text-deepBrown font-bold px-3 py-1.5 rounded-lg transition">
-                                + Add to Basket
+                        <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center">
+                            <span class="text-[11px] text-stone-400">Dum Biryani</span>
+                            <button onclick="addToCart('Hyderabadi Chicken Biryani', 140, 'Biryani')" class="text-xs bg-forest-800 hover:bg-forest-900 text-white font-medium px-3.5 py-1.5 rounded-lg transition">
+                                Add to Basket
                             </button>
                         </div>
                     </div>
@@ -548,116 +553,112 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="menu.html" class="inline-flex items-center gap-2 border border-warmGold text-warmGold hover:bg-warmGold hover:text-deepBrown px-8 py-3 rounded-full font-bold text-xs sm:text-sm tracking-wider transition">
-                    VIEW COMPLETE 80+ ITEM MENU & PRICES ➔
+                <a href="menu.html" class="inline-flex items-center gap-2 border border-forest-800 text-forest-900 hover:bg-forest-900 hover:text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-widest transition">
+                    <span>View Complete 80+ Item Menu & Prices</span>
+                    <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Popular Times & Store Timings Section -->
-    <section class="py-16 bg-surfaceDark border-y border-stone-800">
+    <!-- Popular Times Section -->
+    <section class="py-16 bg-ivory-100 border-y border-stone-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-10 items-center">
-                <!-- Left Details -->
-                <div class="lg:col-span-5 space-y-5">
-                    <div class="inline-block px-3 py-1 rounded bg-amber-950/80 text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-800/40">
-                        Visitor Trends & Rush Hours
-                    </div>
-                    <h2 class="font-cinzel text-3xl font-bold text-stone-100">
-                        Popular Times in Jamalpur
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-forest-700 text-xs font-semibold uppercase tracking-[0.2em]">Footfall Patterns</span>
+                    <h2 class="font-serif text-3xl font-bold text-forest-950">
+                        Popular Times & Rush Hours
                     </h2>
-                    <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
-                        Planning to visit with family or grab fresh hot sweets? Check our daily footfall pattern to plan your visit or takeaway conveniently.
+                    <p class="text-stone-500 text-xs sm:text-sm leading-relaxed font-light">
+                        Check our daily traffic pattern based on Google Maps visitor activity to plan your family visit or takeaway without waiting.
                     </p>
                     
-                    <div class="space-y-3 pt-2">
-                        <div class="flex items-center justify-between p-3 rounded-xl bg-cardDark border border-stone-800 text-xs">
-                            <span class="text-stone-300 font-semibold">Morning Breakfast Rush:</span>
-                            <span class="text-warmGold font-bold">8:00 AM – 11:00 AM</span>
+                    <div class="space-y-2.5 pt-2">
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-white border border-stone-200 text-xs">
+                            <span class="text-stone-700 font-medium">Morning Breakfast & Fresh Sweets:</span>
+                            <span class="text-forest-800 font-semibold">8:00 AM – 11:00 AM</span>
                         </div>
-                        <div class="flex items-center justify-between p-3 rounded-xl bg-cardDark border border-stone-800 text-xs">
-                            <span class="text-stone-300 font-semibold">Lunch & Afternoon Meals:</span>
-                            <span class="text-warmGold font-bold">12:30 PM – 3:30 PM</span>
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-white border border-stone-200 text-xs">
+                            <span class="text-stone-700 font-medium">Lunch Meals & Thalis:</span>
+                            <span class="text-forest-800 font-semibold">12:30 PM – 3:30 PM</span>
                         </div>
-                        <div class="flex items-center justify-between p-3 rounded-xl bg-cardDark border border-stone-800 text-xs">
-                            <span class="text-stone-300 font-semibold">Evening Sweets & Dinner Peak:</span>
-                            <span class="text-warmGold font-bold">6:30 PM – 9:30 PM (Busy)</span>
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-white border border-stone-200 text-xs">
+                            <span class="text-stone-700 font-medium">Evening Dining & Sweet Boxes:</span>
+                            <span class="text-forest-800 font-semibold">6:30 PM – 9:30 PM (Peak)</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Visual Chart -->
-                <div class="lg:col-span-7 bg-cardDark p-6 sm:p-8 rounded-3xl border border-stone-800 shadow-2xl">
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm">
                     <div class="flex justify-between items-center mb-6">
                         <div>
-                            <h3 class="font-cinzel text-lg font-bold text-stone-100">Daily Footfall Pattern</h3>
-                            <p class="text-[11px] text-stone-400">Based on Google Maps Popular Times (Mondays – Sundays)</p>
+                            <h3 class="font-serif text-lg font-bold text-forest-950">Daily Activity Trend</h3>
+                            <p class="text-[11px] text-stone-400">Google Maps Verified Pattern (Mon – Sun)</p>
                         </div>
-                        <span class="px-2.5 py-1 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 text-xs font-bold">
-                            🟢 Open Today 7am – 11pm
+                        <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-medium">
+                            Open Today 7am – 11pm
                         </span>
                     </div>
 
-                    <!-- Bars for Hours -->
                     <div class="space-y-4">
                         <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
-                                <span>6:00 AM – 9:00 AM (Fresh Sweets Prep & Tea)</span>
-                                <span class="text-stone-400">Moderate (35%)</span>
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
+                                <span>6:00 AM – 9:00 AM (Morning Sweets Prep & Tea)</span>
+                                <span class="text-stone-400">35%</span>
                             </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-amber-600/70 h-3 rounded-full" style="width: 35%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
-                                <span>9:00 AM – 12:00 PM (Dosas, Snacks & Parcel Orders)</span>
-                                <span class="text-stone-400">Active (55%)</span>
-                            </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-amber-500 h-3 rounded-full" style="width: 55%"></div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-stone-400 h-2 rounded-full" style="width: 35%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
+                                <span>9:00 AM – 12:00 PM (Dosas, Snacks & Takeaway)</span>
+                                <span class="text-stone-500">55%</span>
+                            </div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-forest-600 h-2 rounded-full" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
                                 <span>12:00 PM – 3:00 PM (Lunch, Thalis & Biryani Rush)</span>
-                                <span class="text-warmGold font-bold">Busy (80%)</span>
+                                <span class="text-forest-800 font-semibold">80%</span>
                             </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-warmGold h-3 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
-                                <span>3:00 PM – 6:00 PM (Afternoon Chaat & Sweet Box Deliveries)</span>
-                                <span class="text-stone-400">Moderate (45%)</span>
-                            </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-amber-600/70 h-3 rounded-full" style="width: 45%"></div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-forest-700 h-2 rounded-full" style="width: 80%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
+                                <span>3:00 PM – 6:00 PM (Afternoon Chaat & Sweet Orders)</span>
+                                <span class="text-stone-400">45%</span>
+                            </div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-stone-400 h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
                                 <span>6:00 PM – 9:00 PM (Dinner & Family Dining Peak)</span>
-                                <span class="text-saffron-400 font-bold">Peak Rush (95%)</span>
+                                <span class="text-gold-dark font-bold">95% Peak</span>
                             </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-gradient-to-r from-warmGold to-saffron-600 h-3 rounded-full" style="width: 95%"></div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-gold h-2 rounded-full" style="width: 95%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-xs text-stone-300 mb-1">
+                            <div class="flex justify-between text-xs text-stone-600 mb-1">
                                 <span>9:00 PM – 11:00 PM (Late Dinner & Takeaway Orders)</span>
-                                <span class="text-stone-400">Active (60%)</span>
+                                <span class="text-stone-500">60%</span>
                             </div>
-                            <div class="w-full bg-surfaceDark rounded-full h-3">
-                                <div class="bg-amber-500/80 h-3 rounded-full" style="width: 60%"></div>
+                            <div class="w-full bg-stone-100 rounded-full h-2">
+                                <div class="bg-forest-600 h-2 rounded-full" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
@@ -666,41 +667,42 @@
         </div>
     </section>
 
-    <!-- Google Reviews Section -->
-    <section class="py-20 bg-deepBrown">
+    <!-- Reviews Section -->
+    <section class="py-20 bg-ivory">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <p class="text-warmGold text-xs font-bold tracking-widest uppercase">Verified Google Reviews</p>
-                <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold mt-2 text-stone-100">
-                    Trusted by Over 1,027+ Guests
+                <span class="text-forest-700 text-xs font-semibold uppercase tracking-[0.2em]">Verified Reviews</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-1">
+                    Patron Testimonials
                 </h2>
-                <div class="flex items-center justify-center gap-3 mt-3">
-                    <span class="text-2xl text-amber-400">★★★★☆</span>
-                    <span class="text-stone-300 font-bold text-sm">4.0 / 5.0 Rating</span>
+                <div class="w-12 h-0.5 bg-gold mx-auto mt-3"></div>
+                <div class="flex items-center justify-center gap-2 mt-3 text-sm">
+                    <span class="font-serif font-bold text-forest-950 text-base">4.0 / 5.0</span>
+                    <span class="text-stone-400 font-light">• Based on 1,027+ Google Reviews</span>
                 </div>
             </div>
 
-            <!-- Review Keyword Filter Pills -->
+            <!-- Review Keyword Filter -->
             <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                <button onclick="filterReviews('all')" class="review-filter-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-warmGold text-deepBrown border border-warmGold transition">
+                <button onclick="filterReviews('all')" class="review-filter-btn active px-4 py-1.5 rounded-full text-xs font-medium bg-forest-900 text-white border border-forest-900 transition">
                     All Reviews (1,027)
                 </button>
-                <button onclick="filterReviews('sweets')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
+                <button onclick="filterReviews('sweets')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
                     Sweets (77)
                 </button>
-                <button onclick="filterReviews('south-indian')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
+                <button onclick="filterReviews('south-indian')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
                     South Indian (42)
                 </button>
-                <button onclick="filterReviews('biryani')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
+                <button onclick="filterReviews('biryani')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
                     Biryani (28)
                 </button>
-                <button onclick="filterReviews('mughlai')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
-                    Mughlai Food (17)
+                <button onclick="filterReviews('mughlai')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
+                    Mughlai (17)
                 </button>
-                <button onclick="filterReviews('paratha')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
+                <button onclick="filterReviews('paratha')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
                     Mughlai Paratha (5)
                 </button>
-                <button onclick="filterReviews('rosogulla')" class="review-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-surfaceDark text-stone-300 hover:text-white border border-stone-800 transition">
+                <button onclick="filterReviews('rosogulla')" class="review-filter-btn px-4 py-1.5 rounded-full text-xs font-medium bg-white text-stone-600 hover:text-forest-900 border border-stone-200 transition">
                     Rosogulla (3)
                 </button>
             </div>
@@ -708,133 +710,143 @@
             <!-- Review Cards Grid -->
             <div id="reviewsGrid" class="grid md:grid-cols-3 gap-6">
                 <!-- Review 1 -->
-                <div class="review-card bg-cardDark p-6 rounded-2xl border border-stone-800 flex flex-col justify-between" data-category="sweets south-indian">
+                <div class="review-card bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between" data-category="sweets south-indian">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <div class="text-amber-400 text-sm">★★★★★</div>
-                            <span class="text-[11px] text-stone-500">Google Review</span>
+                            <div class="flex text-amber-500 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-[10px] text-stone-400 uppercase tracking-wider">Google Review</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-                            "Best Sweets And South Indian Foods Are Available At Cheap Price. The Rasmalai is legendary and the Masala Dosa is crispy and delicious!"
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic font-light">
+                            "Best Sweets And South Indian Foods Are Available At Cheap Price. The Rasmalai is legendary and the Masala Dosa is crispy and fresh!"
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-warmGold/20 text-warmGold font-bold flex items-center justify-center text-xs">SK</div>
+                    <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-forest-50 text-forest-800 font-serif font-bold flex items-center justify-center text-xs border border-forest-200">SK</div>
                         <div>
-                            <div class="font-bold text-stone-200 text-xs">Suresh Kumar</div>
-                            <div class="text-[10px] text-stone-500">Local Guide • Jamalpur</div>
+                            <div class="font-semibold text-forest-950 text-xs">Suresh Kumar</div>
+                            <div class="text-[10px] text-stone-400">Local Guide • Jamalpur</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 2 -->
-                <div class="review-card bg-cardDark p-6 rounded-2xl border border-stone-800 flex flex-col justify-between" data-category="mughlai">
+                <div class="review-card bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between" data-category="mughlai">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <div class="text-amber-400 text-sm">★★★★★</div>
-                            <span class="text-[11px] text-stone-500">Google Review</span>
+                            <div class="flex text-amber-500 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-[10px] text-stone-400 uppercase tracking-wider">Google Review</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic font-light">
                             "Nice service, food quality outstanding and Good Atmosphere. Good place to 'sit n eat' for the town with family."
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-saffron-600/20 text-saffron-400 font-bold flex items-center justify-center text-xs">RD</div>
+                    <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-forest-50 text-forest-800 font-serif font-bold flex items-center justify-center text-xs border border-forest-200">RD</div>
                         <div>
-                            <div class="font-bold text-stone-200 text-xs">Rakesh Das</div>
-                            <div class="text-[10px] text-stone-500">Verified Customer</div>
+                            <div class="font-semibold text-forest-950 text-xs">Rakesh Das</div>
+                            <div class="text-[10px] text-stone-400">Verified Customer</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 3 -->
-                <div class="review-card bg-cardDark p-6 rounded-2xl border border-stone-800 flex flex-col justify-between" data-category="biryani">
+                <div class="review-card bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between" data-category="biryani">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <div class="text-amber-400 text-sm">★★★★☆</div>
-                            <span class="text-[11px] text-stone-500">Local Guide • 48 reviews</span>
+                            <div class="flex text-amber-500 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-[10px] text-stone-400 uppercase tracking-wider">48 Reviews • 85 Photos</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic font-light">
                             "Ordered two different biryani: 1) Chicken biryani from Zomato, 2) Hyderabadi chicken biryani visited restaurant and taken as parcel. Taste was flavorful and aromatic."
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-red-900/30 text-red-400 font-bold flex items-center justify-center text-xs">SK</div>
+                    <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-forest-50 text-forest-800 font-serif font-bold flex items-center justify-center text-xs border border-forest-200">SK</div>
                         <div>
-                            <div class="font-bold text-stone-200 text-xs">Sunny Kumar</div>
-                            <div class="text-[10px] text-stone-500">Local Guide • 85 Photos</div>
+                            <div class="font-semibold text-forest-950 text-xs">Sunny Kumar</div>
+                            <div class="text-[10px] text-stone-400">Local Guide</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 4 -->
-                <div class="review-card bg-cardDark p-6 rounded-2xl border border-stone-800 flex flex-col justify-between" data-category="paratha mughlai">
+                <div class="review-card bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between" data-category="paratha mughlai">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <div class="text-amber-400 text-sm">★★★★★</div>
-                            <span class="text-[11px] text-stone-500">Google Review</span>
+                            <div class="flex text-amber-500 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-[10px] text-stone-400 uppercase tracking-wider">Google Review</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-                            "Their crispy Mughlai Paratha and spicy gravy is unmatched in this area. Perfect evening snack with friends!"
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic font-light">
+                            "Their crispy Mughlai Paratha and spicy gravy is unmatched in this area. Perfect evening meal with friends!"
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-amber-900/30 text-warmGold font-bold flex items-center justify-center text-xs">AM</div>
+                    <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-forest-50 text-forest-800 font-serif font-bold flex items-center justify-center text-xs border border-forest-200">AM</div>
                         <div>
-                            <div class="font-bold text-stone-200 text-xs">Amit Mishra</div>
-                            <div class="text-[10px] text-stone-500">Jamalpur</div>
+                            <div class="font-semibold text-forest-950 text-xs">Amit Mishra</div>
+                            <div class="text-[10px] text-stone-400">Jamalpur</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 5 -->
-                <div class="review-card bg-cardDark p-6 rounded-2xl border border-stone-800 flex flex-col justify-between" data-category="rosogulla sweets">
+                <div class="review-card bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between" data-category="rosogulla sweets">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <div class="text-amber-400 text-sm">★★★★★</div>
-                            <span class="text-[11px] text-stone-500">Google Review</span>
+                            <div class="flex text-amber-500 gap-0.5">
+                                <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-[10px] text-stone-400 uppercase tracking-wider">Google Review</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic font-light">
                             "Spongy Bengali Rosogulla and Kaju Katli were so fresh for our festival boxes. 100% pure taste."
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-emerald-900/30 text-emerald-400 font-bold flex items-center justify-center text-xs">AS</div>
+                    <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-forest-50 text-forest-800 font-serif font-bold flex items-center justify-center text-xs border border-forest-200">AS</div>
                         <div>
-                            <div class="font-bold text-stone-200 text-xs">Anjali Sharma</div>
-                            <div class="text-[10px] text-stone-500">Local Resident</div>
+                            <div class="font-semibold text-forest-950 text-xs">Anjali Sharma</div>
+                            <div class="text-[10px] text-stone-400">Local Resident</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 6 -->
-                <div class="review-card bg-gradient-to-br from-royalMaroon/40 to-cardDark p-6 rounded-2xl border border-amber-900/50 flex flex-col justify-between" data-category="all sweets south-indian biryani mughlai">
+                <div class="review-card bg-forest-900 text-white p-6 rounded-2xl border border-forest-800 shadow-sm flex flex-col justify-between" data-category="all sweets south-indian biryani mughlai">
                     <div>
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs font-bold text-warmGold uppercase tracking-wider">🌟 Our Commitment</span>
-                            <span class="text-[10px] bg-warmGold/20 text-warmGold px-2 py-0.5 rounded font-bold">100% Dedicated</span>
+                            <span class="text-xs font-semibold text-gold uppercase tracking-wider">Hospitality Standard</span>
+                            <span class="text-[10px] bg-forest-800 text-stone-200 px-2 py-0.5 rounded border border-forest-700">Dedicated</span>
                         </div>
-                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
-                            "We continuously upgrade our service and speed based on customer feedback. Every meal is cooked fresh and served with utmost hygiene."
+                        <p class="text-stone-200 text-xs sm:text-sm leading-relaxed font-light">
+                            "We take immense pride in listening to all our patrons. Every meal is cooked fresh and served with highest quality standards."
                         </p>
                     </div>
-                    <div class="mt-5 pt-3 border-t border-stone-800 flex items-center justify-between">
-                        <span class="text-[11px] text-amber-300 font-semibold">Management, Jai Durga</span>
-                        <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="text-xs text-warmGold underline font-bold">Read All 1,027 Reviews</a>
+                    <div class="mt-5 pt-3 border-t border-forest-800 flex items-center justify-between">
+                        <span class="text-xs text-gold font-medium">Management, Jai Durga</span>
+                        <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="text-xs text-white underline">1,027+ Google Reviews</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Review Filter JS Script -->
+            <!-- Review Filter Script -->
             <script>
                 function filterReviews(category) {
                     const buttons = document.querySelectorAll('.review-filter-btn');
                     buttons.forEach(btn => {
-                        btn.classList.remove('active', 'bg-warmGold', 'text-deepBrown');
-                        btn.classList.add('bg-surfaceDark', 'text-stone-300');
+                        btn.classList.remove('active', 'bg-forest-900', 'text-white', 'border-forest-900');
+                        btn.classList.add('bg-white', 'text-stone-600', 'border-stone-200');
                     });
-                    event.target.classList.add('active', 'bg-warmGold', 'text-deepBrown');
-                    event.target.classList.remove('bg-surfaceDark', 'text-stone-300');
+                    event.target.classList.add('active', 'bg-forest-900', 'text-white', 'border-forest-900');
+                    event.target.classList.remove('bg-white', 'text-stone-600', 'border-stone-200');
 
                     const cards = document.querySelectorAll('.review-card');
                     cards.forEach(card => {
@@ -850,79 +862,76 @@
         </div>
     </section>
 
-    <!-- Table Reservation & Bulk Order Form -->
-    <section class="py-20 bg-surfaceDark border-t border-stone-800">
+    <!-- Table Reservation & Bulk Inquiries -->
+    <section class="py-20 bg-ivory-100 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-block px-3 py-1 rounded bg-royalMaroon text-amber-200 text-xs font-bold uppercase tracking-wider">
-                        Book Your Spot or Bulk Box
-                    </div>
-                    <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-stone-100">
-                        Reserve a Table or Order Bulk Sweets
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-forest-700 text-xs font-semibold uppercase tracking-[0.2em]">Reservations & Inquiries</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950">
+                        Reserve a Table or Bulk Sweet Boxes
                     </h2>
-                    <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
-                        Planning a family celebration, birthday party, or need festival sweet gift boxes for weddings and events in Jamalpur? Submit details below or call us directly.
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light">
+                        Planning a family celebration, birthday dinner, or need festival sweet gift boxes for weddings and corporate gatherings in Jamalpur?
                     </p>
 
-                    <div class="space-y-3 pt-2">
-                        <div class="flex items-center gap-3 text-xs text-stone-300">
-                            <span class="w-7 h-7 rounded-full bg-warmGold/20 text-warmGold flex items-center justify-center font-bold">✓</span>
+                    <div class="space-y-2.5 pt-2 text-xs text-stone-600 font-light">
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 inline-block text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                             <span>Freshly prepared on demand with zero delay</span>
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-stone-300">
-                            <span class="w-7 h-7 rounded-full bg-warmGold/20 text-warmGold flex items-center justify-center font-bold">✓</span>
-                            <span>Special customized packaging for weddings & corporate gifting</span>
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 inline-block text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span>Special packaging for festivals, weddings & gifting</span>
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-stone-300">
-                            <span class="w-7 h-7 rounded-full bg-warmGold/20 text-warmGold flex items-center justify-center font-bold">✓</span>
-                            <span>Direct phone assistance: <a href="tel:09473045895" class="text-warmGold font-bold underline">094730 45895</a></span>
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 inline-block text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span>Direct phone assistance: <a href="tel:09473045895" class="text-forest-900 font-semibold underline">094730 45895</a></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form Card -->
-                <div class="lg:col-span-6 bg-cardDark p-6 sm:p-8 rounded-3xl border border-amber-900/40 shadow-2xl">
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-md">
                     <form onsubmit="handleReservation(event)" class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="text-xs text-stone-300 font-semibold block mb-1">Your Full Name *</label>
-                                <input id="resName" type="text" required placeholder="e.g. Ramesh Kumar" class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3.5 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold">
+                                <label class="text-xs text-stone-700 font-medium block mb-1">Full Name</label>
+                                <input id="resName" type="text" required placeholder="Your Name" class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700">
                             </div>
                             <div>
-                                <label class="text-xs text-stone-300 font-semibold block mb-1">Phone Number *</label>
-                                <input id="resPhone" type="tel" required placeholder="e.g. 094730 45895" class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3.5 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold">
+                                <label class="text-xs text-stone-700 font-medium block mb-1">Phone Number</label>
+                                <input id="resPhone" type="tel" required placeholder="094730 45895" class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div>
-                                <label class="text-xs text-stone-300 font-semibold block mb-1">Date</label>
-                                <input id="resDate" type="date" required class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold">
+                                <label class="text-xs text-stone-700 font-medium block mb-1">Date</label>
+                                <input id="resDate" type="date" required class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700">
                             </div>
                             <div>
-                                <label class="text-xs text-stone-300 font-semibold block mb-1">Time Slot</label>
-                                <input id="resTime" type="time" required class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold">
+                                <label class="text-xs text-stone-700 font-medium block mb-1">Time</label>
+                                <input id="resTime" type="time" required class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700">
                             </div>
                             <div>
-                                <label class="text-xs text-stone-300 font-semibold block mb-1">Guests / Qty</label>
-                                <select id="resGuests" class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold">
-                                    <option value="2">2 Persons</option>
-                                    <option value="4" selected>4 Persons</option>
-                                    <option value="6">6 Persons</option>
+                                <label class="text-xs text-stone-700 font-medium block mb-1">Guests / Qty</label>
+                                <select id="resGuests" class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700">
+                                    <option value="2">2 Guests</option>
+                                    <option value="4" selected>4 Guests</option>
+                                    <option value="6">6 Guests</option>
                                     <option value="8+">8+ Family Group</option>
-                                    <option value="Bulk Sweet Order">Bulk Sweet Box (5kg+)</option>
+                                    <option value="Bulk Sweet Order">Bulk Sweet Box</option>
                                 </select>
                             </div>
                         </div>
 
                         <div>
-                            <label class="text-xs text-stone-300 font-semibold block mb-1">Occasion / Special Requirements</label>
-                            <textarea id="resNotes" rows="2" placeholder="e.g. Birthday celebration / Need Kaju Katli boxes" class="w-full bg-surfaceDark border border-stone-700 rounded-xl px-3.5 py-2.5 text-xs text-stone-100 focus:outline-none focus:border-warmGold"></textarea>
+                            <label class="text-xs text-stone-700 font-medium block mb-1">Special Requirements</label>
+                            <textarea id="resNotes" rows="2" placeholder="Birthday occasion / Specific sweet requirement..." class="w-full bg-ivory-50 border border-stone-300 rounded-xl px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-forest-700"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-gradient-to-r from-warmGold to-saffron-600 text-stone-950 font-bold py-3.5 rounded-xl text-xs sm:text-sm tracking-wider shadow-xl hover:brightness-110 transition">
-                            CONFIRM BOOKING / INQUIRY ON WHATSAPP ➔
+                        <button type="submit" class="w-full bg-forest-900 hover:bg-forest-950 text-white font-medium py-3.5 rounded-xl text-xs sm:text-sm tracking-wider uppercase shadow transition">
+                            Submit Request via WhatsApp
                         </button>
                     </form>
                 </div>
@@ -930,53 +939,49 @@
         </div>
     </section>
 
-    <!-- Location & Directions Section -->
-    <section class="py-16 bg-deepBrown border-t border-stone-800">
+    <!-- Location & Directions -->
+    <section class="py-16 bg-ivory border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-cardDark rounded-3xl overflow-hidden border border-stone-800 shadow-2xl">
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-md">
                 <div class="grid lg:grid-cols-12">
-                    <div class="lg:col-span-5 p-8 sm:p-10 space-y-5">
-                        <div class="text-xs font-bold text-warmGold uppercase tracking-widest">Visit Us In Person</div>
-                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-100">
+                    <div class="lg:col-span-5 p-8 sm:p-10 space-y-4">
+                        <span class="text-forest-700 text-xs font-semibold uppercase tracking-[0.2em]">Visit in Person</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-forest-950">
                             Jai Durga Sweet Shop & Restaurant
                         </h2>
-                        <div class="font-hindi text-amber-300 text-sm">जय दुर्गा स्वीट शॉप & रेस्टोरेंट</div>
+                        <div class="font-hindi text-gold text-sm font-normal">जय दुर्गा स्वीट शॉप & रेस्टोरेंट</div>
                         
-                        <div class="space-y-3 text-xs text-stone-300 pt-2">
+                        <div class="space-y-3 text-xs text-stone-600 pt-2 font-light">
                             <div class="flex items-start gap-2.5">
-                                <span class="text-warmGold text-sm">📍</span>
+                                <span class="text-forest-800 mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></span>
                                 <span><strong>Address:</strong> Jamalpur, Bihar 811214</span>
                             </div>
                             <div class="flex items-start gap-2.5">
-                                <span class="text-warmGold text-sm">📌</span>
-                                <span><strong>Plus Code:</strong> 8F9V+66 Jamalpur, Bihar</span>
-                            </div>
-                            <div class="flex items-start gap-2.5">
-                                <span class="text-warmGold text-sm">📞</span>
-                                <span><strong>Phone:</strong> <a href="tel:09473045895" class="text-warmGold underline font-bold">094730 45895</a></span>
-                            </div>
-                            <div class="flex items-start gap-2.5">
-                                <span class="text-warmGold text-sm">⏰</span>
+                                <span class="text-forest-800 mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
                                 <span><strong>Hours:</strong> Open Daily 7:00 AM – 11:00 PM</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-forest-800 mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></span>
+                                <span><strong>Phone:</strong> <a href="tel:09473045895" class="text-forest-900 font-semibold underline">094730 45895</a></span>
                             </div>
                         </div>
 
                         <div class="pt-4 flex flex-wrap gap-3">
-                            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="bg-warmGold text-deepBrown font-bold px-5 py-2.5 rounded-full text-xs hover:bg-warmGold-light transition flex items-center gap-1.5 shadow-lg">
-                                <span>🗺️ Open in Google Maps</span>
+                            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="bg-forest-900 hover:bg-forest-950 text-white font-medium px-5 py-2.5 rounded-full text-xs transition">
+                                Open in Google Maps
                             </a>
-                            <a href="tel:09473045895" class="bg-surfaceDark hover:bg-stone-800 text-stone-200 border border-stone-700 font-semibold px-4 py-2.5 rounded-full text-xs transition">
-                                📞 Call Now
+                            <a href="tel:09473045895" class="bg-ivory-100 hover:bg-ivory-200 text-forest-900 border border-stone-300 font-medium px-4 py-2.5 rounded-full text-xs transition">
+                                Call Store
                             </a>
                         </div>
                     </div>
 
-                    <div class="lg:col-span-7 h-72 sm:h-96 lg:h-auto min-h-[300px] relative bg-stone-900">
+                    <div class="lg:col-span-7 h-72 sm:h-80 lg:h-auto min-h-[300px] relative bg-stone-100">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14455.578644485748!2d86.485!3d25.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1fe1c890787a7%3A0x6b13f101fb1cf8a6!2sJamalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                             width="100%" 
                             height="100%" 
-                            style="border:0; filter: contrast(1.1) brightness(0.9);" 
+                            style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
@@ -987,112 +992,114 @@
         </div>
     </section>
     
-    <!-- Mobile Sticky Floating Action Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-surfaceDark/95 backdrop-blur-md border-t border-stone-800 py-2 px-3 shadow-2xl">
+    <!-- Mobile Sticky Navigation Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-forest-950/95 backdrop-blur-md border-t border-forest-900 py-2 px-3 shadow-2xl">
         <div class="grid grid-cols-4 gap-2 text-center text-xs">
-            <a href="tel:09473045895" class="flex flex-col items-center justify-center p-1 rounded-lg bg-royalMaroon/90 text-amber-200 hover:bg-royalMaroon transition font-medium">
-                <span class="text-base">📞</span>
-                <span class="text-[10px] mt-0.5 font-bold">Call Now</span>
+            <a href="tel:09473045895" class="flex flex-col items-center justify-center p-1 rounded-lg text-gold-light hover:text-white transition font-medium">
+                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                <span class="text-[10px] mt-0.5">Call</span>
             </a>
-            <a href="menu.html" class="flex flex-col items-center justify-center p-1 rounded-lg bg-cardDark text-stone-200 hover:text-warmGold transition">
-                <span class="text-base">📜</span>
+            <a href="menu.html" class="flex flex-col items-center justify-center p-1 rounded-lg text-stone-300 hover:text-gold transition">
+                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v10.5m-6-10.5v10.5M3 3l18 18"/></svg>
                 <span class="text-[10px] mt-0.5">Menu</span>
             </a>
-            <button onclick="toggleCartDrawer()" class="flex flex-col items-center justify-center p-1 rounded-lg bg-cardDark text-warmGold relative">
-                <span class="text-base">🛒</span>
-                <span class="text-[10px] mt-0.5 font-bold">Basket</span>
-                <span id="cartCountBadgeFloating" class="absolute -top-1 right-2 bg-saffron-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
+            <button onclick="toggleCartDrawer()" class="flex flex-col items-center justify-center p-1 rounded-lg text-stone-300 hover:text-gold relative">
+                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+                <span class="text-[10px] mt-0.5">Basket</span>
+                <span id="cartCountBadgeFloating" class="absolute -top-1 right-3 bg-gold text-forest-950 rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-bold">0</span>
             </button>
-            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="flex flex-col items-center justify-center p-1 rounded-lg bg-amber-600/20 border border-amber-600/40 text-warmGold hover:bg-amber-600/30 transition">
-                <span class="text-base">📍</span>
-                <span class="text-[10px] mt-0.5 font-bold">Maps</span>
+            <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="flex flex-col items-center justify-center p-1 rounded-lg text-stone-300 hover:text-gold transition">
+                <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <span class="text-[10px] mt-0.5">Map</span>
             </a>
         </div>
     </div>
     
     <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-400 py-16 border-t border-stone-800/80">
+    <footer class="bg-forest-950 text-stone-400 py-16 border-t border-forest-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-                <!-- Brand & Heritage -->
+                <!-- Brand Info -->
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-warmGold to-saffron-600 flex items-center justify-center font-cinzel text-deepBrown font-extrabold text-lg">
+                        <div class="w-10 h-10 rounded-full bg-forest-900 border border-gold/40 flex items-center justify-center font-serif text-gold font-bold text-lg">
                             JD
                         </div>
                         <div>
-                            <span class="font-cinzel text-lg font-bold text-stone-100 block">JAI DURGA SWEET SHOP & RESTAURANT</span>
-                            <span class="font-hindi text-amber-400 text-xs">जय दुर्गा स्वीट शॉप & रेस्टोरेंट (जमालपुर, बिहार)</span>
+                            <span class="font-serif text-lg font-bold text-white tracking-wide block">Jai Durga Sweet Shop & Restaurant</span>
+                            <span class="font-hindi text-gold-muted text-xs">जय दुर्गा स्वीट शॉप & रेस्टोरेंट (जमालपुर, बिहार)</span>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm max-w-md leading-relaxed">
-                        Jamalpur's premier destination for pure desi ghee sweets, melt-in-mouth Rasmalai, crispy South Indian dosas, spicy Hakka noodles, and authentic Mughlai biryani. Serving generations with purity, taste, and affordability.
+                    <p class="text-stone-400 text-xs sm:text-sm max-w-md leading-relaxed">
+                        Jamalpur's culinary destination for pure desi ghee sweets, fresh milk Rasmalai, crispy South Indian dosas, spicy Hakka noodles, and authentic Mughlai biryani. Dedicated to exceptional taste, hygiene, and affordability.
                     </p>
                     <div class="flex flex-wrap items-center gap-2 pt-2">
-                        <span class="bg-amber-950/80 text-amber-300 border border-amber-800/60 text-xs px-2.5 py-1 rounded-md font-semibold">⭐ 4.0 (1,027 Google Reviews)</span>
-                        <span class="bg-stone-900 text-stone-300 text-xs px-2.5 py-1 rounded-md font-semibold">₹1–200 per person</span>
-                        <span class="bg-emerald-950/80 text-emerald-300 border border-emerald-800/60 text-xs px-2.5 py-1 rounded-md font-semibold">100% Pure & Fresh</span>
+                        <span class="bg-forest-900 text-gold-light border border-forest-700 text-xs px-2.5 py-1 rounded font-medium flex items-center gap-1">
+                            <svg class="w-4 h-4 text-amber-500 fill-current inline-block" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> 4.0 / 5.0 (1,027+ Google Reviews)
+                        </span>
+                        <span class="bg-forest-900 text-stone-300 border border-forest-700 text-xs px-2.5 py-1 rounded">₹1–200 per person</span>
+                        <span class="bg-forest-900 text-emerald-400 border border-forest-700 text-xs px-2.5 py-1 rounded">Pure & Fresh Quality</span>
                     </div>
                 </div>
 
-                <!-- Quick Navigation -->
+                <!-- Navigation -->
                 <div>
-                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4 border-l-2 border-warmGold pl-2">Quick Links</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="index.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Home Overview</a></li>
-                        <li><a href="menu.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Full Menu & Pricing</a></li>
-                        <li><a href="about.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Our Heritage & Quality</a></li>
-                        <li><a href="contact.html" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Table Reservation & Contact</a></li>
-                        <li><a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-warmGold transition flex items-center gap-1.5 text-warmGold font-semibold"><span>›</span> Petpooja Online Menu</a></li>
-                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-warmGold transition flex items-center gap-1.5"><span>›</span> Google Maps Location</a></li>
+                    <h4 class="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-4 text-gold-light">Explore</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-300">
+                        <li><a href="index.html" class="hover:text-gold transition">Home Overview</a></li>
+                        <li><a href="menu.html" class="hover:text-gold transition">Full Menu & Pricing</a></li>
+                        <li><a href="about.html" class="hover:text-gold transition">Our Heritage & Quality</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Table Reservations</a></li>
+                        <li><a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-gold text-gold-muted transition">Petpooja Online Menu</a></li>
+                        <li><a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-gold transition">Google Maps Location</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact & Timings -->
+                <!-- Store Info -->
                 <div>
-                    <h4 class="font-cinzel text-stone-200 text-sm font-bold tracking-wider uppercase mb-4 border-l-2 border-warmGold pl-2">Store Info & Timing</h4>
-                    <ul class="space-y-3 text-sm">
+                    <h4 class="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-4 text-gold-light">Information</h4>
+                    <ul class="space-y-3 text-xs text-stone-300">
                         <li class="flex items-start gap-2.5">
-                            <span class="text-warmGold text-base">📞</span>
+                            <span class="text-gold-light mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></span>
                             <div>
-                                <span class="text-xs text-stone-400 block">Phone Order / Takeaway:</span>
-                                <a href="tel:09473045895" class="hover:text-warmGold transition font-bold text-stone-100 text-sm">094730 45895</a>
+                                <span class="text-[11px] text-stone-400 block">Phone Order / Takeaway:</span>
+                                <a href="tel:09473045895" class="hover:text-gold transition font-medium text-white">094730 45895</a>
                             </div>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <span class="text-warmGold text-base">📍</span>
+                            <span class="text-gold-light mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></span>
                             <div>
-                                <span class="text-xs text-stone-400 block">Address & Plus Code:</span>
-                                <span class="text-stone-300 text-xs leading-relaxed">8F9V+66, Jamalpur, Bihar 811214</span>
+                                <span class="text-[11px] text-stone-400 block">Location:</span>
+                                <span class="text-stone-300">8F9V+66, Jamalpur, Bihar 811214</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <span class="text-warmGold text-base">⏰</span>
+                            <span class="text-gold-light mt-0.5"><svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
                             <div>
-                                <span class="text-xs text-stone-400 block">Opening Hours:</span>
-                                <span class="text-stone-300 text-xs">Open Daily: 7:00 AM – 11:00 PM</span>
+                                <span class="text-[11px] text-stone-400 block">Timings:</span>
+                                <span class="text-stone-300">Open Daily: 7:00 AM – 11:00 PM</span>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
-                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved. (जय दुर्गा स्वीट शॉप & रेस्टोरेंट)</p>
-                <div class="flex items-center gap-4">
-                    <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-stone-400 transition">Google Business Profile</a>
+            <div class="mt-12 pt-8 border-t border-forest-900 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+                <p>© 2026 Jai Durga Sweet Shop & Restaurant. All Rights Reserved.</p>
+                <div class="flex items-center gap-4 text-stone-400">
+                    <a href="https://maps.app.goo.gl/arLtM21ZGs83AUtR6" target="_blank" class="hover:text-white transition">Google Business Profile</a>
                     <span>•</span>
-                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-stone-400 transition">Petpooja POS Menu</a>
+                    <a href="https://jaydurgarestaurant.petpooja.com/menu" target="_blank" class="hover:text-white transition">Petpooja Online Menu</a>
                 </div>
             </div>
         </div>
     </footer>
     
     <script>
-        let cart = JSON.parse(localStorage.getItem('jd_cart') || '[]');
+        let cart = JSON.parse(localStorage.getItem('jd_cart_v2') || '[]');
 
         function saveCart() {
-            localStorage.setItem('jd_cart', JSON.stringify(cart));
+            localStorage.setItem('jd_cart_v2', JSON.stringify(cart));
             updateCartUI();
         }
 
@@ -1104,7 +1111,7 @@
                 cart.push({ name, price, category, qty: 1 });
             }
             saveCart();
-            showToast(`Added "${name}" to basket! 🛒`);
+            showToast(`Added "${name}" to basket.`);
         }
 
         function updateQty(name, delta) {
@@ -1143,10 +1150,12 @@
                 if (cart.length === 0) {
                     listEl.innerHTML = `
                         <div id="emptyCartMessage" class="text-center py-16 text-stone-400">
-                            <div class="text-5xl mb-3">🍽️</div>
-                            <p class="text-sm font-semibold">Your basket is currently empty.</p>
-                            <p class="text-xs text-stone-500 mt-1">Browse our delicious sweets, dosas, noodles & biryanis to add items.</p>
-                            <a href="menu.html" class="inline-block mt-4 text-xs font-bold text-warmGold border border-warmGold/40 px-4 py-2 rounded-full hover:bg-warmGold hover:text-deepBrown transition">
+                            <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-stone-100 flex items-center justify-center text-stone-400">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v10.5m-6-10.5v10.5M3 3l18 18"/></svg>
+                            </div>
+                            <p class="text-sm font-medium text-stone-600">Your basket is empty</p>
+                            <p class="text-xs text-stone-400 mt-1">Select sweets, dosas, biryanis or snacks to get started.</p>
+                            <a href="menu.html" class="inline-block mt-4 text-xs font-semibold text-forest-800 border border-stone-300 px-4 py-2 rounded-full hover:bg-stone-50 transition">
                                 Explore Menu
                             </a>
                         </div>
@@ -1155,15 +1164,15 @@
                     let html = '';
                     cart.forEach(item => {
                         html += `
-                            <div class="flex items-center justify-between p-3 rounded-xl bg-cardDark border border-stone-800">
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-white border border-stone-200 shadow-sm">
                                 <div class="flex-1 pr-2">
-                                    <h4 class="text-xs font-bold text-stone-100">${item.name}</h4>
-                                    <div class="text-[11px] text-warmGold font-semibold">₹${item.price} each • Total: ₹${item.price * item.qty}</div>
+                                    <h4 class="text-xs font-semibold text-forest-950">${item.name}</h4>
+                                    <div class="text-[11px] text-forest-700 font-medium">₹${item.price} each • Total: ₹${item.price * item.qty}</div>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <button onclick="updateQty('${item.name}', -1)" class="w-6 h-6 rounded bg-surfaceDark border border-stone-700 text-stone-300 hover:text-white flex items-center justify-center font-bold text-xs">-</button>
-                                    <span class="text-xs font-bold text-stone-100 min-w-[16px] text-center">${item.qty}</span>
-                                    <button onclick="updateQty('${item.name}', 1)" class="w-6 h-6 rounded bg-warmGold text-deepBrown flex items-center justify-center font-bold text-xs">+</button>
+                                    <button onclick="updateQty('${item.name}', -1)" class="w-6 h-6 rounded bg-ivory-100 border border-stone-300 text-stone-700 hover:bg-stone-200 flex items-center justify-center font-bold text-xs">-</button>
+                                    <span class="text-xs font-bold text-stone-800 min-w-[16px] text-center">${item.qty}</span>
+                                    <button onclick="updateQty('${item.name}', 1)" class="w-6 h-6 rounded bg-forest-800 text-white flex items-center justify-center font-bold text-xs">+</button>
                                 </div>
                             </div>
                         `;
@@ -1227,13 +1236,13 @@
 
         function showToast(message) {
             const toast = document.createElement('div');
-            toast.className = 'fixed bottom-20 right-6 bg-warmGold text-deepBrown font-bold text-xs px-4 py-2.5 rounded-xl shadow-2xl z-50 transition transform duration-300 flex items-center gap-2 border border-amber-300';
+            toast.className = 'fixed bottom-20 right-6 bg-forest-900 text-gold-light font-medium text-xs px-4 py-2.5 rounded-xl shadow-2xl z-50 transition transform duration-300 flex items-center gap-2 border border-gold/40';
             toast.innerHTML = `<span>✓</span><span>${message}</span>`;
             document.body.appendChild(toast);
             setTimeout(() => {
                 toast.style.opacity = '0';
                 setTimeout(() => toast.remove(), 300);
-            }, 2500);
+            }, 2200);
         }
 
         function handleReservation(e) {
@@ -1255,10 +1264,10 @@
             msg += `*Guests:* ${guests} Persons%0A`;
             msg += `*Special Request:* ${notes}%0A`;
             msg += `-----------------------------------%0A`;
-            msg += `_Kindly confirm table availability._`;
+            msg += `_Kindly confirm availability._`;
 
             window.open(`https://api.whatsapp.com/send?phone=919473045895&text=${msg}`, '_blank');
-            showToast('Reservation request generated!');
+            showToast('Reservation request generated.');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
